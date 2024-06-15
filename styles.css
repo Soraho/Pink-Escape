@@ -285,7 +285,7 @@ body.fade-out {
     height: auto; /* 保持原始比例 */
     z-index: 0; 
 }
-@media screen and (min-width: 1920px), print {
+@media screen and (min-width: 3000px), print {
     .character {
         position: absolute;
         bottom: -100px;
@@ -310,14 +310,14 @@ body.fade-out {
     z-index: 1; 
     filter: drop-shadow(0 0 5px rgba(0,0,0,0.2)); /* 添加陰影效果 */
 }
-@media screen and (min-width: 1920px), print {
+@media screen and (min-width: 3000px), print {
     .dialog {
         position: fixed;
         font-family: "DotGothic16",Arial, sans-serif;
         width: 80%;
         height: auto;
-        top: 90px;
-        left: 5%; /* 調整對話框水平位置 */
+        top: 300px;
+        left: 10%;/* 調整對話框水平位置 */
         margin-left: -20px; /* 調整對話框位置 */
         z-index: 1; 
         filter: drop-shadow(0 0 5px rgba(0,0,0,0.2)); /* 添加陰影效果 */
@@ -326,7 +326,7 @@ body.fade-out {
 
 .dialog-name {
     position: absolute;
-    top: 58%; /* 調整對話文字的垂直位置 */
+    top: 600px; /* 調整對話文字的垂直位置 */
     left: 25%;
     transform: translate(-50%, -50%);
     font-size: 24px;
@@ -337,11 +337,11 @@ body.fade-out {
     white-space: nowrap; /* 不換行 */
     animation: typing 3s steps(40) forwards;
 }
-@media screen and (min-width: 1920px), print {
+@media screen and (min-width: 3000px), print {
     .dialog-name {
         position: absolute;
-        top: 60%;
-        left: 28%;
+        top: 690px;
+        left: 33%;
         transform: translate(-50%, -50%);
         font-size: 36px;
         color: #333;
@@ -372,7 +372,7 @@ body.fade-out {
     .dialog-text {
         position: absolute;
         top: 70%; /* 調整對話文字的垂直位置 */
-        left: 43%;
+        left: 45%;
         transform: translate(-50%, -50%);
         font-size: 24px;
         color: #333;
@@ -445,7 +445,7 @@ body.fade-out {
         z-index: 2;
     }
 }
-@media screen and (min-width: 1920px), print {
+@media screen and (min-width: 3000px), print {
     .tell-button {
         font-family: "DotGothic16", Arial, sans-serif; 
         position:absolute;
@@ -543,7 +543,7 @@ body.fade-out {
         z-index: 2;
     }
 }
-@media screen and (min-width: 1920px), print {
+@media screen and (min-width: 3000px), print {
     .option-button {
         font-family: "DotGothic16", Arial, sans-serif; 
         position:absolute;
@@ -616,7 +616,7 @@ body.fade-out {
         z-index: 2;
     }
 }
-@media screen and (min-width: 1920px), print {
+@media screen and (min-width: 3000px), print {
     .option2-button {
         font-family: "DotGothic16", Arial, sans-serif; 
         position:absolute;
@@ -733,7 +733,7 @@ body.fade-out {
     position:absolute;
     font-size: 20px;
     margin-bottom: 5px;
-    top: 13%;
+    top: 10%;
     left: 25%;
     color: #524747;
 }
@@ -785,7 +785,7 @@ body.fade-out {
     position:absolute;
     font-size: 20px;
     margin-bottom: 5px;
-    top: 13%;
+    top: 10%;
     left: 25%;
     color: #524747;
 }
@@ -843,7 +843,7 @@ body.fade-out {
     position:absolute;
     font-size: 20px;
     margin-bottom: 5px;
-    top: 13%;
+    top: 10%;
     left: 25%;
     color: #524747;
 }
@@ -922,7 +922,7 @@ body.fade-out {
     position:absolute;
     font-size: 20px;
     margin-bottom: 5px;
-    top: 13%;
+    top: 10%;
     left: 25%;
     color: #524747;
 }
@@ -1036,7 +1036,7 @@ body.fade-out {
     font-size: 24px;
     position: absolute;
     left: 22%;
-    bottom: 19%;
+    bottom: 17%;
     font-family:"DotGothic16",Arial, sans-serif;
     overflow: hidden; /* 隱藏超出範圍的內容 */
     white-space: nowrap; /* 確保內容不換行 */
@@ -1051,7 +1051,7 @@ body.fade-out {
         width: 100%;
     }
 }
-@media screen and (min-width: 1920px), print {
+@media screen and (min-width: 3000px), print {
     .chat-re  {
         margin: 0;
         font-size: 24px;
@@ -1087,7 +1087,7 @@ body.fade-out {
         visibility: hidden;
     }
 }
-@media screen and (min-width: 1920px), print {
+@media screen and (min-width: 3000px), print {
     .chat-button {
         position: absolute;
         right: 5%;
@@ -1134,7 +1134,7 @@ body.fade-out {
     position:absolute;
     font-size: 20px;
     margin-bottom: 5px;
-    top: 13%;
+    top: 10%;
     left: 27%;
     color: #524747;
 }
@@ -1204,7 +1204,7 @@ body.fade-out {
     position:absolute;
     font-size: 20px;
     margin-bottom: 5px;
-    top: 13%;
+    top: 10%;
     left: 25%;
     color: #524747;
 }
@@ -1276,7 +1276,7 @@ body.fade-out {
         animation: typing 3s steps(40) forwards; /* 打字機效果動畫 */
     }
 }
-@media screen and (min-width: 1920px),print {
+@media screen and (min-width: 3000px),print {
     .post  {
         margin: 0;
         font-size: 24px;
@@ -1302,7 +1302,7 @@ body.fade-out {
     display: none; /* 初始隱藏訊息 */
     animation: typing 3s steps(40) forwards; /* 打字機效果動畫 */
 }
-@media screen and (min-width: 1920px),print {
+@media screen and (min-width: 3000px),print {
     .post2 {
         margin: 0;
         font-size: 24px;
@@ -1374,7 +1374,7 @@ body.fade-out {
     top: 2%;
     font-family:"DotGothic16",Arial, sans-serif;
 }
-@media screen and (min-width: 1920px),print {
+@media screen and (min-width: 3000px),print {
     .com1{
         display: none;
     }  
@@ -1388,7 +1388,7 @@ body.fade-out {
     top: 26%;
     font-family:"DotGothic16",Arial, sans-serif;
 }
-@media screen and (min-width: 1920px),print {
+@media screen and (min-width: 3000px),print {
     .com2 h3{
         margin: 0;
         padding: 0;
@@ -1426,7 +1426,7 @@ body.fade-out {
     }
     
 }
-@media screen and (min-width: 1920px),print {
+@media screen and (min-width: 3000px),print {
     .com2 p {
         margin: 0;
         padding: 0;
@@ -1464,7 +1464,7 @@ body.fade-out {
     left: 35%;
     top: 68%;
 }
-@media screen and (min-width: 1920px),print {
+@media screen and (min-width: 3000px),print {
     .com4 p {
         margin: 0;
         font-size: 24px;
@@ -1480,7 +1480,7 @@ body.fade-out {
     left: 35%;
     top: 88%;
 }
-@media screen and (min-width: 1920px),print {
+@media screen and (min-width: 3000px),print {
     .com5 p {
         display: none;
     }
@@ -1537,7 +1537,7 @@ body.fade-out {
     
     }
 }
-@media screen and (min-width: 1920px),print {
+@media screen and (min-width: 3000px),print {
     .comment-button {
         font-family: "DotGothic16", Arial, sans-serif; 
         position:absolute;
