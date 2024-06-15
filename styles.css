@@ -449,8 +449,8 @@ body.fade-out {
     .tell-button {
         font-family: "DotGothic16", Arial, sans-serif; 
         position:absolute;
-        right: 400px;
-        bottom: 100px;
+        right: 820px;
+        bottom: 90px;
         padding: 0;
         margin: 10px;
         width: 120px;
@@ -522,7 +522,7 @@ body.fade-out {
     .option-button {
         font-family: "DotGothic16", Arial, sans-serif; 
         position:absolute;
-        right: 320px;
+        right: 370px;
         bottom: 100px;
         padding: 0;
         margin: 10px;
@@ -595,7 +595,7 @@ body.fade-out {
     .option2-button {
         font-family: "DotGothic16", Arial, sans-serif; 
         position:absolute;
-        right: 319px;
+        right: 370px;
         bottom: 160px;
         padding: 0;
         margin: 10px;
