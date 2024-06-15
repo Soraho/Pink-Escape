@@ -1647,8 +1647,9 @@ body.fade-out {
 }
 .card:hover {
     opacity: 1;
-    transform: scale(1.1); /* 移動到卡片上時放大 1.1 倍 */
+    transform: scale(1.6); /* 移動到卡片上時放大 1.1 倍 */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index:10 ;
 
 }
 @keyframes slide-up {
