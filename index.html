@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>不只粉紅和縮小</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="path/to/your/favicon.ico">
+    
+</head>
+<body>
+    <audio id="background-music" loop>
+        <source src="Lukrembo - Branch .mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div id="container">
+
+        <!-- 首頁 -->
+        <div id="scene1" class="scene scene1">
+            <img src="tittle.PNG" alt="Game Title" class="title">
+            <button class="start-button" onclick="startGame()">開始遊戲</button>
+            <p>＊為了最佳遊戲體驗請使用電腦，以及開啟音量</p>
+        </div>
+        
+        <!-- 故事場景一 -->
+
+        <!-- 場景 2 -->
+        <div id="scene2" class="scene scene2" style="display: none;">
+            <div class="story-content">
+                <h3>初始階段：公司的日常</h3>
+                <h4>場景 1：早晨會議</h4>
+                <p>參加公司的早晨會議，發現會議中關於新方案的討論忽略了女性用戶的需求。</p>
+                <button class="story-button" onclick="goToScene('scene3')">繼續</button>
+            </div>
+        </div>
+
+        <!-- 場景 3 -->
+        <div id="scene3" class="scene scene3" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">我</p>
+                <p class="dialog-text">（我覺得大家好像沒有注意到女性用戶會有不一樣的需求⋯⋯）</p>
+                <button class="tell-button" onclick="goToScene('scene4')">繼續▶</button>
+                <img src="main.png" alt="Main Character" class="character">
+            </div>
+        </div>
+
+        <!-- 場景 4 -->
+        <div id="scene4" class="scene scene4" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">我</p>
+                <p class="dialog-text">（我該⋯⋯）</p>
+                <button class="option-button" onclick="goToScene('scene5')">提出意見</button>
+                <button class="option2-button" onclick="goToScene('scene6')">保持沈默</button>
+
+                <img src="main.png" alt="Main Character" class="character">
+            </div>
+        </div>
+
+        <!-- 場景 5-->
+        <div id="scene5" class="scene scene5" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">我</p>
+                <p class="dialog-text">我認為我們應該考慮女性用戶的需求，例如增加更符合女性條件的物品。</p>
+                <button class="tell-button" onclick="goToScene('scene5_1')">繼續▶</button>
+                <img src="main.png" alt="Main Character" class="character">
+            </div>
+        </div>
+
+        <!-- 場景 5-1-->
+        <div id="scene5_1" class="scene scene5_1" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">清</p>
+                <p class="dialog-text">你有搞清楚重點嗎？這不是我們主要討論的問題。</p>
+                <button class="tell-button" onclick="goToScene('scene5_1_1')">繼續▶</button>
+                <img src="blue.PNG" alt="Main Character" class="character">
+            </div>
+        </div>
+        <!-- 場景 5-1-1-->
+        <div id="scene5_1_1" class="scene scene5_1_1" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">歆禹</p>
+                <p class="dialog-text">但其實我覺得這是蠻值得討論的點欸，可以先記下來。</p>
+                <button class="tell-button" onclick="goToScene('scene5_2')">繼續▶</button>
+                <img src="short.PNG" alt="Main Character" class="character">
+            </div>
+        </div>
+
+         <!-- 場景 5-2 -->
+         <div id="scene5_2" class="scene scene5_2" style="display: none;">
+            <div class="story-content">
+                <h3>結果</h3>
+                <p>會議結束後，意見被記錄下來，收到來自支持自己的聲音，表示願意一起努力這個議題</p>
+                <button class="story-button" onclick="goToScene('scene7')">開始調查</button>
+            </div>
+        </div>    
+        
+        <!-- 場景 6-->
+        <div id="scene6" class="scene scene6" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">我</p>
+                <p class="dialog-text">（雖然我覺得這很重要，但現在可能不是提出的好時機。<br>我先收集更多資料，再找適當的時機提出。）</p>
+                <button class="tell-button" onclick="goToScene('scene6_1')">繼續▶</button>
+                <img src="main.png" alt="Main Character" class="character">
+            </div>
+        </div>   
+         <!-- 場景 6-1 -->
+         <div id="scene6_1" class="scene scene6_1" style="display: none;">
+            <div class="story-content">
+                <h3>結果</h3>
+                <p>開始私下搜集相關資料，以便未來能夠更有力地支持自己的觀點。</p>
+                <button class="story-button" onclick="goToScene('scene7')">開始調查</button>
+            </div>
+        </div>
+      <!-- 場景 7 -->
+        <div id="scene7" class="scene scene7" style="display: none;">
+            <div class="choose-investigation">
+            <h3>選擇調查方式</h3>
+            <div class="investigation-option" onclick="goToScene('scene7_1')">
+                <img src="pc.png" alt="PC Search" class="investigation-image">
+                <p>上網搜尋</p>
+            </div>
+            <div class="investigation-option" onclick="goToScene('scene7_2')">
+                <img src="file.png" alt="File Search" class="investigation-image">
+                <p>翻閱資料</p>
+            </div>
+            </div>
+         </div>
+
+      <!-- 場景 7-1-->
+        <div id="scene7_1" class="scene scene7_1" style="display: none;">
+            <div class="loading-text">
+                <h2>搜尋中......</h2>
+            </div>
+        </div>
+
+      <!-- 場景 7-2-->
+        <div id="scene7_2" class="scene scene7_2" style="display: none;">
+            <div class="loading-text">
+                <h2>翻找中......</h2>
+            </div>
+        </div>
+
+        <!-- 場景 8-->
+        <div id="scene8" class="scene scene8" style="display: none;">
+            <div class="text-scene">
+                <h1>不只粉紅和縮小</h1>
+                <h2>「縮小它，然後變粉紅」</h2>
+                <p>這句話在產品設計中經常用來形容為女性設計產品的方式。<br>
+                    許多女性別無選擇，<br>只能使用那些由男性為男性設計，<br>
+                    然後僅僅縮小尺寸並染上粉紅色或其他刻板印象中女性顏色的產品。<br>
+                    在某些情況下，這可能是侮辱性的；在最糟的情況下，這可能是致命的。</p>
+                <button class="tell-button" onclick="goToScene('scene9')">下一篇▶</button>
+            </div>
+        </div>
+
+
+        <!-- 場景 9-->
+        <div id="scene9" class="scene scene9" style="display: none;">
+            <div class="text-scene">
+                <h1>經典範例</h1>
+                <h2>跑鞋設計的性別偏見</h2>
+                <p>現今市場上的大多數跑鞋都是用男性鞋楦設計的，<br>
+                    這是一個「縮小並粉紅」的典型例子。<br>
+                    女性跑者所穿的鞋實際上是為男性腳設計的鞋，<br>這種設計忽略了女性腳部的特殊需求。</p>
+                <button class="tell-button" onclick="goToScene('scene10')">下一篇▶</button>
+            </div>
+        </div>
+
+        <!-- 場景 10-->
+        <div id="scene10" class="scene scene10" style="display: none;">
+            <div class="text-scene10">
+                <h1>關於更多</h1>
+                <h2>女性占全球人口的超過一半，在美國，她們影響了近90%的購買決策。</h2>
+                <p>
+                    在工業設計師男女比失衡的情況下<br>
+                    從個人剃刀、手機到電動工具，這些聲稱是「中性」的產品，<br>實際上是由男性來決定「中性」是什麼，<br>
+                    結果顯然這基本上意味著「男性化」。</p>
+                <img src="char1.png">
+                <p class="text-scene-ref custom-class">資料來源：<a href="https://www.sir.advancedleadership.harvard.edu/articles/shrink-it-and-pink-it-gender-bias-product-design">Shrink It and Pink It: Gender Bias in Product Design</a></p>
+                <button class="tell-button" onclick="goToScene('scene11')">下一篇▶</button>
+            </div>
+        </div>
+
+        <!-- 場景 11-->
+        <div id="scene11" class="scene scene11" style="display: none;">
+            <div class="text-scene11">
+                <h1>女性在特定場合受傷的可能性</h1>
+                <h2>車禍、消防和軍隊</h2>
+                <p>
+                    汽車碰撞測試假人在1950年代引入，數十年來這些模型都是基於男性的生理特徵設計的<br>
+                    即使研究人員控制了身高、體重、安全帶使用和撞擊強度等因素<br><br>•女性在車禍中受嚴重傷的可能性比男性高47%
+                    ，中度受傷的可能性高71%，<br>死亡的可能性高達17%<br>
+                    <br>
+                    •女性消防員受傷的比率是男性的四倍<br>
+                    <br>
+                    •女性在軍隊中骨盆骨折的比率遠高於男性
+                </p>
+                <p class="text-scene-ref custom-class">資料來源：<a href="https://www.plasticsengineering.org/2023/06/gender-bias-in-design-000036/">Gender Bias In Design</a></p>
+                <button class="tell-button" onclick="goToScene('scene12')">下一篇▶</button>
+            </div>
+        </div>
+        <!-- 場景 12-->
+        <div id="scene12" class="scene scene12" style="display: none;">
+            <div class="text-scene12">
+                <h1>產品設計以男性為標準的例子</h1>
+                <h3>疫情期間女性前線醫護人員的PPE使用<br></h3>
+                <p>
+                    在COVID-19疫情期間，只有14%的女性醫護人員使用過合適的個人防護裝備（PPE）。<br>
+                </p>
+                <h3>鋼琴鍵盤設計的不平等</h3>
+                <p> 
+                    87%的成年女性鋼琴家和24%的成年男性鋼琴家手掌較小，他們在彈奏樂器時更容易感到疼痛和受傷。<br>
+                    相當多的高級鋼琴曲目對於這些人來說甚至是物理上不可能演奏的。<br>
+                </p>
+                <h3>機器人設計中的性別刻板印象</h3>
+                <p> 
+                    當機器人被認為是男性時，它們會被以不同於女性機器人的方式對待和評判。<br>
+                    即使機器人沒有明確的性別，它們仍可能被解釋為男性或女性。<br>
+                    機器人的設計方式可能會無意中反映和加強性別刻板印象。<br>
+                </p>
+                <h3>語音識別技術中的性別偏見</h3>
+                <p>
+                    語音識別軟體對女性語音的準確處理可能性較低，<br>
+                    因為這些程序的數據集中女性代表性不足。例如，Google的語音識別軟件顯著更有可能準確地轉錄男性語音。
+                </p>
+
+                <p class="text-scene-ref custom-class">資料來源：<a href="https://www.genderbias.design/examples_of_gender_bias">Examples of gender bias in products</a></p>
+                <button class="tell-button" onclick="goToScene('scene13')">儲存網頁▶</button>
+            </div>
+        </div>
+       <!-- 場景 14-->
+        <div id="scene14" class="scene scene14" style="display: none;">
+            <div class="text-scene">
+                <h1>不只粉紅和縮小</h1>
+                <h2>「縮小它，然後變粉紅」</h2>
+                <p>這句話在產品設計中經常用來形容為女性設計產品的方式。<br>
+                    許多女性別無選擇，<br>只能使用那些由男性為男性設計，<br>
+                    然後僅僅縮小尺寸並染上粉紅色或其他刻板印象中女性顏色的產品。<br>
+                    在某些情況下，這可能是侮辱性的；在最糟的情況下，這可能是致命的。</p>
+                <button class="tell-button" onclick="goToScene('scene15')">翻頁▶</button>
+            </div>
+        </div>
+
+
+        <!-- 場景 9-->
+        <div id="scene15" class="scene scene15" style="display: none;">
+            <div class="text-scene">
+                <h1>經典範例</h1>
+                <h2>跑鞋設計的性別偏見</h2>
+                <p>現今市場上的大多數跑鞋都是用男性鞋楦設計的，<br>
+                    這是一個「縮小並粉紅」的典型例子。<br>
+                    女性跑者所穿的鞋實際上是為男性腳設計的鞋，<br>這種設計忽略了女性腳部的特殊需求。</p>
+                <button class="tell-button" onclick="goToScene('scene16')">翻頁▶</button>
+            </div>
+        </div>
+
+        <!-- 場景 10-->
+        <div id="scene16" class="scene scene16" style="display: none;">
+            <div class="text-scene10">
+                <h1>關於更多</h1>
+                <h2>女性占全球人口的超過一半，在美國，她們影響了近90%的所有購買決策。</h2>
+                <p>
+                    在工業設計師男女比失衡的情況下<br>
+                    從個人剃刀、手機到電動工具，這些聲稱是「中性」的產品，<br>實際上是由男性來決定「中性」是什麼，<br>
+                    結果顯然是，這基本上意味著「男性化」。</p>
+                <img src="char1.png">
+                <p class="text-scene-ref custom-class">資料來源：<a href="https://www.sir.advancedleadership.harvard.edu/articles/shrink-it-and-pink-it-gender-bias-product-design">Shrink It and Pink It: Gender Bias in Product Design</a></p>
+                <button class="tell-button" onclick="goToScene('scene17')">翻頁▶</button>
+            </div>
+        </div>
+
+        <!-- 場景 11-->
+        <div id="scene17" class="scene scene17" style="display: none;">
+            <div class="text-scene11">
+                <h1>女性在特定場合受傷的可能性</h1>
+                <h2>車禍、消防和軍隊</h2>
+                <p>
+                    汽車碰撞測試假人在1950年代引入，數十年來這些模型都是基於男性的生理特徵設計的<br>
+                    即使研究人員控制了身高、體重、安全帶使用和撞擊強度等因素<br><br>•女性在車禍中受嚴重傷的可能性比男性高47%
+                    ，中度受傷的可能性高71%，<br>死亡的可能性高達17%<br>
+                    <br>
+                    •女性消防員受傷的比率是男性的四倍<br>
+                    <br>
+                    •女性在軍隊中骨盆骨折的比率遠高於男性
+                </p>
+                <p class="text-scene-ref custom-class">資料來源：<a href="https://www.plasticsengineering.org/2023/06/gender-bias-in-design-000036/">Gender Bias In Design</a></p>
+                <button class="tell-button" onclick="goToScene('scene18')">翻頁▶</button>
+            </div>
+        </div>
+        <!-- 場景 12-->
+        <div id="scene18" class="scene scene18" style="display: none;">
+            <div class="text-scene12">
+                <h1>產品設計以男性為標準的例子</h1>
+                <h3>疫情期間女性前線醫護人員的PPE使用<br></h3>
+                <p>
+                    在COVID-19疫情期間，只有14%的女性醫護人員使用過合適的個人防護裝備（PPE）。<br>
+                </p>
+                <h3>鋼琴鍵盤設計的不平等</h3>
+                <p> 
+                    87%的成年女性鋼琴家和24%的成年男性鋼琴家手掌較小，他們在彈奏樂器時更容易感到疼痛和受傷。<br>
+                    相當多的高級鋼琴曲目對於這些人來說甚至是物理上不可能演奏的。<br>
+                </p>
+                <h3>機器人設計中的性別刻板印象</h3>
+                <p> 
+                    當機器人被認為是男性時，它們會被以不同於女性機器人的方式對待和評判。<br>
+                    即使機器人沒有明確的性別，它們仍可能被解釋為男性或女性。<br>
+                    機器人的設計方式可能會無意中反映和加強性別刻板印象。<br>
+                </p>
+                <h3>語音識別技術中的性別偏見</h3>
+                <p>
+                    語音識別軟體對女性語音的準確處理可能性較低，<br>
+                    因為這些程序的數據集中女性代表性不足。例如，Google的語音識別軟件顯著更有可能準確地轉錄男性語音。
+                </p>
+
+                <p class="text-scene-ref custom-class">資料來源：<a href="https://www.genderbias.design/examples_of_gender_bias">Examples of gender bias in products</a></p>
+                <button class="tell-button" onclick="goToScene('scene13')">收起筆記▶</button>
+            </div>
+        </div>
+        <!-- 故事場景一結束 -->
+
+        <!-- 場景 13-->
+        <div id="scene13" class="scene scene13" style="display: none;">
+            <div class="story-content">
+                <h3>公司日常</h3>
+                <h4>場景 2：午餐時間</h4>
+                <p>與同事們共進午餐，和同事閒聊到辦公室溫度。</p>
+                <button class="story-button" onclick="goToScene('scene19')">繼續</button>
+            </div>
+        </div>
+        <!-- 場景 19-->
+        <div id="scene19" class="scene scene19" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">歆禹</p>
+                <p class="dialog-text">那個冷氣可不可以開高一點，我每次工作到一半都快冷到受不了⋯⋯</p>
+                <button class="tell-button" onclick="goToScene('scene20')">繼續▶</button>
+                <img src="short.PNG" alt="Main Character" class="character">
+            </div>
+        </div>
+        <!-- 場景 20-->
+        <div id="scene20" class="scene scene20" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">鴻</p>
+                <p class="dialog-text">蛤？還好吧，22度很舒服欸。</p>
+                <button class="tell-button" onclick="goToScene('scene21')">繼續▶</button>
+                <img src="red.PNG" alt="Main Character" class="character">
+            </div>
+        </div>
+        <!-- 場景 21-->
+        <div id="scene21" class="scene scene21" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">我</p>
+                <p class="dialog-text">其實我也覺得真的有點冷，我每次都要蓋毯子，<br>尤其是從廁所回來後的感覺更明顯，溫差真的超大！！</p>
+                <button class="tell-button" onclick="goToScene('scene22')">繼續▶</button>
+                <img src="main.png" alt="Main Character" class="character">
+            </div>
+        </div>
+        <!-- 場景 22-->
+        <div id="scene22" class="scene scene22" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">鴻</p>
+                <p class="dialog-text">會嗎，還是是因為你們待在廁所都待超久身體才反應不過來。</p>
+                <button class="tell-button" onclick="goToScene('scene23')">繼續▶</button>
+                <img src="red.PNG" alt="Main Character" class="character">
+            </div>
+        </div>
+        <!-- 場景 23-->
+        <div id="scene23" class="scene scene23" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">清</p>
+                <p class="dialog-text">欸對啊！！妳們在廁所都待超久欸。</p>
+                <button class="tell-button" onclick="goToScene('scene24')">繼續▶</button>
+                <img src="blue.PNG" alt="Main Character" class="character">
+            </div>
+        </div>
+        <!-- 場景 24-->
+        <div id="scene24" class="scene scene24" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">歆禹</p>
+                <p class="dialog-text">不是這個問題吧⋯⋯</p>
+                <button class="tell-button" onclick="goToScene('scene25')">繼續▶</button>
+                <img src="short.PNG" alt="Main Character" class="character">
+            </div>
+        </div>
+        <!-- 場景 25-->
+        <div id="scene25" class="scene scene25" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">我</p>
+                <p class="dialog-text">（到底想怎樣啊，我該⋯⋯）</p>
+                <button class="option-button" onclick="goToScene('scene27')">保持沈默</button>
+                <button class="option2-button" onclick="goToScene('scene26')">反駁意見</button>
+                <img src="main.png" alt="Main Character" class="character">
+            </div>
+        </div>
+
+        <!-- 場景 26-->
+        <div id="scene26" class="scene scene26" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">我</p>
+                <p class="dialog-text">奇怪欸就跟你說不是了，你自己看啊</p>
+                <button class="tell-button" onclick="goToScene('scene28')">拿出資料▶</button>
+                <img src="main.png" alt="Main Character" class="character">
+            </div>
+        </div>
+        <!-- 場景 27-->
+        <div id="scene27" class="scene scene27" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">我</p>
+                <p class="dialog-text">(算了⋯⋯懶得跟他們爭，我還是跟同溫層取暖就好。)</p>
+                <button class="tell-button" onclick="goToScene('scene29')">繼續▶</button>
+                <img src="main.png" alt="Main Character" class="character">
+            </div>
+        </div>
+
+        <div id="scene29" class="scene scene29" style="display: none;">
+            <div class="chat-box">
+                <div class="chat-msg" id="chat-msg-1-29">
+                    <p>欸欸蒂娜</p>
+                    </div>
+                    <div class="chat-msg2" id="chat-msg-2-29">
+                        <p>到底是怎</p>
+                    </div>
+                    <div class="chat-re" id="chat-re-29">
+                        <p>我哪知道 笑死</p>
+                    </div>
+                <button class="chat-button" onclick="goToScene('scene30')">➤</button>
+            </div>
+        </div>
+
+        <div id="scene30" class="scene scene30" style="display: none;">
+            <div class="chat-box">
+                <div class="chat-msg" id="chat-msg-1-30">
+                    <p>你看這個= = </p>
+                    </div>
+                    <div class="chat-msg2" id="chat-msg-2-30">
+                        <u>辦公室溫度是否以男性為標準設定？</u>
+                    </div>
+                    <div class="chat-re" id="chat-re-30">
+                        <p>......</p>
+                    </div>
+                <button class="chat-button" onclick="goToScene('scene28')">➤</button>
+            </div>
+        </div>
+
+        <!-- 場景 28-->
+        <div id="scene28" class="scene scene28" style="display: none;">
+            <div class="text-scene28">
+                <h1>辦公室溫度</h1>
+                <h2>辦公室溫度是否以男性為標準設定？</h2>
+                <p>
+                    女性在典型的寒冷辦公室中的代謝率較低，<br>舒適溫度區間在約23.2°C至26.1°C之間。<br>
+                    有大量非正式證據表明，女性比男性更容易感到寒冷<br><br><br><br><br>
+                    將辦公室溫度從20°C提高到約25°C可以減少錯誤並提高打字任務的生產力。<br><br>
+                    提高辦公室溫度不僅可以讓的工作人員感到舒適，還可以減少空調的使用，<br>
+                    美國能源部估計每年約有1億噸二氧化碳排放是由於美國家庭使用空調所致。
+                </p>
+                <img src="boxplot.png">
+                <p class="text-scene-ref custom-class">資料來源：<a href="https://www.popsci.com/study-finds-gender-bias-office-air-conditioning/">Are Office Temperatures Optimized For Men?</a></p>
+                <button class="tell-button" onclick="goToScene('scene31')">下一篇▶</button>
+            </div>
+        </div>
+        <!-- 場景 31-->
+        <div id="scene31" class="scene scene31" style="display: none;">
+            <div class="text-scene31">
+                <h1>女性廁所排隊：性別不平等的日常提醒</h1>
+                <h2>女性使用廁所的時間，是男性的 2.3 倍。</h2>
+                <p>•大多的老人和行動不便者都是女性，而這兩個族群使用廁所的時間都較長。<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;➤婦女帶著小孩、陪伴老人和行動不便者的機率也較高。<br><br>
+                    •女性中隨時有 20~25% 的正值月經來潮，必須定時更換生理用品。<br><br>
+                    •女性使用廁所的頻繁度也超過男人：<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;➤懷孕期間膀胱容量會大幅減少<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;➤婦女發生泌尿道感染的機率是男人的 8 倍<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;➤生理期間，沒有廁所供女性更換衛生棉條，得到鏈球菌毒性休克症候群的機率也會增加
+                </p>
+                <p class="text-scene-ref custom-class">資料來源：<a href="https://womany.net/read/article/24828">「女人已經習慣，上廁所免不了排隊」這件事有什麼問題？</a></p>
+                <button class="tell-button" onclick="goToScene('scene32')">儲存網頁▶</button>
+            </div>
+        </div>
+        <!-- 場景 32 -->
+        <div id="scene32" class="scene scene32" style="display: none;">
+            <div class="story-content">
+                <h3>中期階段：探索與改進</h3>
+                <h4>場景 3：設計會議</h4>
+                <p>參加設計會議，討論新的技術產品，這些產品專門針對女性日常生活中的不便之處。</p>
+                <button class="story-button" onclick="goToScene('scene33')">繼續</button>
+            </div>
+        </div>
+        <!-- 場景 33-->
+        <div id="scene33" class="scene scene33" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">我</p>
+                <p class="dialog-text">（我該⋯⋯）</p>
+                <button class="option-button" onclick="goToScene('scene34')">積極參與</button>
+                <button class="option2-button" onclick="goToScene('scene35')">觀察學習</button>
+                <img src="main.png" alt="Main Character" class="character">
+            </div>
+        </div>
+        <!-- 場景 34-->
+        <div id="scene34" class="scene scene34" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">我</p>
+                <p class="dialog-text">我們應該考慮設計適合女性的工具，這樣能更好地滿足女性用戶需求。</p>
+                <button class="tell-button" onclick="goToScene('scene34_1')">繼續▶</button>
+                <img src="main.png" alt="Main Character" class="character">
+            </div>
+        </div>
+        <!-- 場景 34-1-->
+        <div id="scene34_1" class="scene scene34_1" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">同事們</p>
+                <p class="dialog-text">看了你之前的資料，好像真的有必要進一步討論細節看看。</p>
+                <button class="tell-button" onclick="goToScene('scene34_2')">繼續▶</button>
+                <img src="people.png" alt="Main Character" class="character">
+            </div>
+        </div>
+        <!-- 場景 34-2 -->
+        <div id="scene34_2" class="scene scene34_2" style="display: none;">
+            <div class="story-content">
+                <h3>結果</h3>
+                <p>建議被採納，新的工具設計方案得到了進一步的討論和改進</p>
+                <button class="story-button" onclick="goToScene('scene36')">繼續</button>
+            </div>
+        </div>
+
+        <!-- 場景 35-->
+        <div id="scene35" class="scene scene35" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">我</p>
+                <p class="dialog-text">（我先觀察大家的意見，看看有沒有其他可改進的部分。）</p>
+                <button class="tell-button" onclick="goToScene('scene35_1')">繼續▶</button>
+                <img src="main.png" alt="Main Character" class="character">
+            </div>
+        </div>
+        <!-- 場景 35-1-->
+        <div id="scene35_1" class="scene scene35_1" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">我</p>
+                <p class="dialog-text">（先記錄下來大家的想法，還有一些淺在要改進的地方。）</p>
+                <button class="tell-button" onclick="goToScene('scene35_2')">繼續▶</button>
+                <img src="main.png" alt="Main Character" class="character">
+            </div>
+        </div>
+        <!-- 場景 35-2 -->
+        <div id="scene35_2" class="scene scene35_2" style="display: none;">
+            <div class="story-content">
+                <h3>結果</h3>
+                <p>記下了很多重點，準備在適當時機提出。</p>
+                <button class="story-button" onclick="goToScene('scene37')">繼續</button>
+            </div>
+        </div>
+        <!-- 場景 36 -->
+        <div id="scene36" class="scene scene36" style="display: none;">
+            <div class="story-content">
+                <h3>公司日常</h3>
+                <h4>場景 4：辦公室八卦</h4>
+                <p>有天某位女同事在社群媒體上發了和平常形象截然不同的照片。</p>
+                <button class="story-button" onclick="goToScene('scene36_1')">繼續</button>
+            </div>
+        </div>
+        <div id="scene36_1" class="scene scene36_1" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">鴻</p>
+                <p class="dialog-text">欸你有看到那誰前幾天發的照片嗎？</p>
+                <button class="tell-button" onclick="goToScene('scene36_2')">繼續▶</button>
+                <img src="red.PNG" alt="Main Character" class="character">
+            </div>
+        </div>
+        <div id="scene36_2" class="scene scene36_2" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">清</p>
+                <p class="dialog-text">我知道⋯⋯超扯的，整個超婆，如果是我女友一定超拿得出手。</p>
+                <button class="tell-button" onclick="goToScene('scene36_3')">繼續▶</button>
+                <img src="blue.PNG" alt="Main Character" class="character">
+            </div>
+        </div>
+        <div id="scene36_3" class="scene scene36_3" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">我</p>
+                <p class="dialog-text">（什麼啊⋯⋯如果是本人聽到的話一定超不舒服。）</p>
+                <button class="tell-button" onclick="goToScene('scene36_4')">繼續▶</button>
+                <img src="main.png" alt="Main Character" class="character">
+            </div>
+        </div>
+
+        <div id="scene36_4" class="scene scene36_4" style="display: none;">
+            <div class="newpost">
+                <div class="post" id="chat-re-36">
+                    <p>又來了，又是上次那個同事男!!!!</p>
+                </div>
+                <div class="post2" id="chat-re-36-2">
+                    <p>到底是憑什麼對女生評頭論足啊？？</p>
+                </div>
+                <button class="post-button" onclick="goToScene('scene36_5')">發佈</button>
+            </div>
+        </div>
+
+        <div id="scene36_5" class="scene scene36_5" style="display: none;">
+            <div class="comment">
+                <div class="com1">
+                    <p>又來了，又是上次那個同事男!!!!<br>到底是憑什麼對女生評頭論足啊？？</p>
+                </div>
+                <div class="com2">
+                    <h3>可以看下面這篇文章：</h3>
+                    <p>
+                        <a href="https://scholarsarchive.byu.edu/cgi/viewcontent.cgi?article=5263&context=etd">
+                            與男性相比，女性認為「異性」的外貌讚美更具騷擾性（p < .001，d = 1.33）。<br>
+                            與女性相比，男性認為「同性」的外貌讚美更具騷擾性（p < .001，d = 0.85）。<br>
+                            來自主管的讚美被認為比來自同事（p < .001）和下屬（p < .001）的讚美更具騷擾性，<br>
+                            而下屬的讚美被認為比來自同事的讚美更具騷擾性（p < .001）。
+                        </a>
+                    </p>
+                </div>
+                <div class="com3">
+                    <p>超大杯= = </p>
+                </div>
+                <div class="com4">
+                    <p>明明是在男凝，但自以為是在讚美？</p>
+                </div>
+                <div class="com5">
+                    <p>又不是發給他看的 點點點</p>
+                </div>
+            </div>
+            <button class="comment-button" onclick="goToScene('scene38')">繼續▶</button>
+        </div>
+
+        <!-- 場景 37 -->
+        <div id="scene37" class="scene scene37" style="display: none;">
+            <div class="story-content">
+                <h3>公司日常</h3>
+                <h4>場景 4：辦公室八卦</h4>
+                <p>同事們在討論社群媒體上女生發的照片。</p>
+                <button class="story-button" onclick="goToScene('scene37_1')">繼續</button>
+            </div>
+        </div>
+        <div id="scene37_1" class="scene scene37_1" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">鴻</p>
+                <p class="dialog-text">這女的根本坦克吧？？</p>
+                <button class="tell-button" onclick="goToScene('scene37_2')">繼續▶</button>
+                <img src="red.PNG" alt="Main Character" class="character">
+            </div>
+        </div>
+        <div id="scene37_2" class="scene scene37_2" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">清</p>
+                <p class="dialog-text">笑死這太扯了吧，不能只有我看到我要轉發。</p>
+                <button class="tell-button" onclick="goToScene('scene37_3')">繼續▶</button>
+                <img src="blue.PNG" alt="Main Character" class="character">
+            </div>
+        </div>
+        <div id="scene37_3" class="scene scene36_3" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">我</p>
+                <p class="dialog-text">（什麼啊⋯⋯如果是本人聽到的話一定超不舒服。）</p>
+                <button class="tell-button" onclick="goToScene('scene37_4')">繼續▶</button>
+                <img src="main.png" alt="Main Character" class="character">
+            </div>
+        </div>
+        <div id="scene37_4" class="scene scene37_4" style="display: none;">
+            <div class="newpost">
+                <div class="post" id="chat-re-37">
+                    <p>又來了，又是上次那個同事男!!!!</p>
+                </div>
+                <div class="post2" id="chat-re-37-2">
+                    <p>到底是憑什麼對女生評頭論足啊？？</p>
+                </div>
+                <button class="post-button" onclick="goToScene('scene37_5')">發佈</button>
+            </div>
+        </div>
+        <div id="scene37_5" class="scene scene37_5" style="display: none;">
+            <div class="comment">
+                <div class="com1">
+                    <p>又來了，又是上次那個同事男!!!!<br>到底是憑什麼對女生評頭論足啊？？</p>
+                </div>
+                <div class="com2">
+                    <h3>女生是要多累？？可以看下面這篇文章：</h3>
+                    <p>
+                        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9740310/">
+                            在運動動機量表中，相較於中年女性，成年早期且高度身體羞恥的女性<br>
+                            在社會壓力、體型擔憂和逃避/羞恥等方面得分顯著較高，
+                            但兩組在外貌方面的分數差異不明顯。<br>
+                            意味著年輕女性對自己身體的羞恥感更強，可能是因為她們更容易內化外貌標準，<br>
+                            並面臨更大的社會壓力來符合「完美身材」的標準。
+                        </a>
+                    </p>
+                </div>
+                <div class="com3">
+                    <p>手臂比我大腿還粗</p>
+                </div>
+                <div class="com4">
+                    <p>請尊重這輛女性</p>
+                </div>
+                <div class="com5">
+                    <p>不是不尊重，是這尊太重</p>
+                </div>
+            </div>
+            <button class="comment-button" onclick="goToScene('scene50')">繼續▶</button>
+        </div>
+
+        <!-- 場景 38-->        
+        <div id="scene38" class="scene scene38" style="display: none;">
+            <div class="story-content">
+                <h3>最後階段：面對挑戰與抗爭</h3>
+                <h4>場景 5：高層會議</h4>
+                <p>隨著方案的進展，參加公司高層會議，面臨來自保守派高層的壓力和反對聲音。</p>
+                <button class="story-button" onclick="goToScene('scene38_1')">繼續</button>
+            </div>
+        </div>
+        <!-- 場景 50-->        
+        <div id="scene50" class="scene scene50" style="display: none;">
+            <div class="story-content">
+                <h3>最後階段：面對挑戰與抗爭</h3>
+                <h4>場景 5：高層會議</h4>
+                <p>隨著方案的進展，參加公司高層會議，面臨來自保守派高層的壓力和反對聲音。</p>
+                <button class="story-button" onclick="goToScene('scene50_1')">繼續</button>
+            </div>
+        </div>
+        <div id="scene50_1" class="scene scene50_1" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">反對派</p>
+                <p class="dialog-text">這個成本真的太高了，而且沒有必要，以前的方式更經濟實惠且效果一樣好。</p>
+                <button class="tell-button" onclick="goToScene('scene50_2')">繼續▶</button>
+                <img src="people.png" alt="Main Character" class="character">
+            </div>
+        </div>
+        <div id="scene50_2" class="scene scene50_2" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">我</p>
+                <p class="dialog-text">（好不容易到這一步了，我該⋯⋯）</p>
+                <button class="option-button" onclick="goToScene('scene51')">堅持立場</button>
+                <button class="option2-button" onclick="goToScene('scene52')">尋求妥協</button>
+                <img src="main.png" alt="Main Character" class="character">
+            </div>
+        </div>
+        <div id="scene51" class="scene scene51" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">我</p>
+                <p class="dialog-text">我們的資料顯示，這些設計改進能夠顯著提高女性用戶的滿意度</p>
+                <button class="tell-button" onclick="goToScene('scene51_1')">繼續▶</button>
+                <img src="main.png" alt="Main Character" class="character">
+            </div>
+        </div>
+        <div id="scene51_1" class="scene scene51_1" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">我</p>
+                <p class="dialog-text">這不僅是道德上的正確選擇，也是商業上的明智決策。</p>
+                <button class="tell-button" onclick="goToScene('scene41_2')">繼續▶</button>
+                <img src="main.png" alt="Main Character" class="character">
+            </div>
+        </div>
+
+
+        <div id="scene38_1" class="scene scene38_1" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">反對派</p>
+                <p class="dialog-text">這個成本真的太高了，而且沒有必要，以前的方式更經濟實惠且效果一樣好。</p>
+                <button class="tell-button" onclick="goToScene('scene38_2')">繼續▶</button>
+                <img src="people.png" alt="Main Character" class="character">
+            </div>
+        </div>
+        <div id="scene38_2" class="scene scene38_2" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">我</p>
+                <p class="dialog-text">（好不容易到這一步了，我該⋯⋯）</p>
+                <button class="option-button" onclick="goToScene('scene39')">堅持立場</button>
+                <button class="option2-button" onclick="goToScene('scene41')">尋求妥協</button>
+                <img src="main.png" alt="Main Character" class="character">
+            </div>
+        </div>
+
+        <!-- 場景 39-->        
+        <div id="scene39" class="scene scene39" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">我</p>
+                <p class="dialog-text">我們的資料顯示，這些設計改進能夠顯著提高女性用戶的滿意度</p>
+                <button class="tell-button" onclick="goToScene('scene39_1')">繼續▶</button>
+                <img src="main.png" alt="Main Character" class="character">
+            </div>
+        </div>
+        <div id="scene39_1" class="scene scene39_1" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">我</p>
+                <p class="dialog-text">這不僅是道德上的正確選擇，也是商業上的明智決策。</p>
+                <button class="tell-button" onclick="goToScene('scene39_2')">繼續▶</button>
+                <img src="main.png" alt="Main Character" class="character">
+            </div>
+        </div>
+        <div id="scene39_2" class="scene scene39_2" style="display: none;">
+            <div class="card-head">
+                <h2>來<br>自<br>真<br>實<br>的<br>心<br>聲</h2>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <h3>服裝</h3>
+                    <p>雖然現狀有所改進，但仍然是一大困擾。<br>
+                         T 恤不需要都是短版上衣。<br>
+                        需要更多且更大的實用口袋。<br>
+                        否則我們需要更小的手機和錢包選擇。
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>鞋子</h3>
+                    <p>
+                        找到我們喜歡且合適尺寸的鞋款實在太難了<br>
+                        並不是所有女性的腳都是同樣大小。
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>運動服和設備</h3>
+                    <p>我們開始看到更多不是粉紅色、紫色的運動服了。<br>
+                        但還是有太多裝飾或收腰的款式。<br>
+                        還有希望運動設備也需要改進，<br>
+                        看到握把尺寸較小的網球拍和能夠適應更廣泛體型和身材的自行車裝備。</p>
+                </div>
+                <div class="card">
+                    <h3>產品包裝</h3>
+                    <p>雖然這不完全是女性專屬問題，但與許多女性相關<br>
+                        不應該需要像攀岩者一樣的握力才能打開一個罐頭。<br>
+                        這個問題隨著年齡增長、握力減弱而變得更嚴重。</p>
+                </div>
+                <div class="card">
+                    <h3>其他工具</h3>
+                    <p>我們很難找到為女性手部設計的合適工具，<br>
+                        無論是尺寸還是單手操作所需的指力。<br>
+                        設計女用工具不應該只是縮小男用工具。</p>
+                </div>
+                <div class="card">
+                    <h3>婦科檢查器具</h3>
+                    <p>鴨嘴的發明是一名男醫師，<br>有人說這是當代女性刑具。</p>
+                </div>
+                <div class="card">
+                    <h3>樂器</h3>
+                    <p>如薩克斯風和長號，對於手小或手臂較短的人<br>（通常是女性）來說更難演奏。<br>
+                        雖然重新設計可能會面臨影響音質的額外挑戰。<br>
+                        但值得解決這個問題，<br>不然這種情況會導致樂團分部的性別隔離持續存在</p>
+                </div>
+                <div class="card">
+                    <h3>安全帶</h3>
+                    <p>我們之前說過，並且會繼續說：<br>
+                        汽車中的安全帶需要設計成保護所有人，<br>
+                        而不僅僅是「平均男性」。</p>
+                </div>
+                <div class="card">
+                    <h3>傳統男性零售商</h3>
+                    <p>五金行、汽車經銷商等等<br>往往讓女性和非強勢男性感到疏離。<br>
+                        進門就意識到自己進入「不屬於你」的區域，<br>
+                        並預期會受到不相應的對待。</p>
+                </div>
+                <div class="card">
+                    <h3>安全設備</h3>
+                    <p>相關領域工作的女性通常很難找到合適的裝備，<br>
+                        如果你需要降落傘、防彈衣、頭盔、呼吸器、再呼吸器或摩托車服，
+                        選項非常有限，<br>
+                        這可能會導致額外的成本、時間損失或生產力降低以及增加的心理負擔。</p>
+                </div>
+                <div class="card">
+                    <h3>醫療服務</h3>
+                    <p>醫療服務確實需要重新設計以考慮女性需求。<br>
+                        與男性相比女性更容易被誤診，<br>
+                        其擔憂也更容易被醫療提供者忽視。<br>
+                        一項研究發現，女性因嚴重腹痛到急診室等待時間比同樣症狀的男性長33%。</p>
+                </div>
+                <div class="card">
+                    <h3>AI</h3>
+                    <p>
+                        自然語言處理中的詞嵌入被發現過時的刻板印象<br>
+                        例如一個AI系統可能推理<br>「男性是工程師，女性是家庭主婦」。<br>
+                        另一個例子中，系統對女性特別是深膚色女性的識別錯誤率過高
+                    </p>
+                </div>
+            </div>
+            <button class="card-button" onclick="goToScene('scene39_3')">繼續▶</button>
+        </div>
+        <div id="scene39_3" class="scene scene39_3" style="display: none;">
+            <div class="card-head">
+                <h2>設<br>計<br>更<br>好<br>女<br>性<br>產<br>品<br>的<br>七<br>種<br>方<br>法</h2>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <h3>為所有人設計</h3>
+                    <p>不要為男性或女性設計，為所有人設計。<br>
+                        缺乏的是包容性設計，<br>即使是設計為性別中立的產品，<br>往往也是為男性設計的。
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>辨別和質疑</h3>
+                    <p>
+                        談到汽車，它們對女性來說不那麼安全，<br>
+                        美國安全法規長期以來<br>更偏向於使用男性假人進行測試。
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>考慮訂制化</h3>
+                    <p>定制化可以很好地解決為所有人設計的問題。<br>
+                        對家庭使用的醫療產品進行了用戶研究，<br>
+                        發現多位女性對攜帶包都不滿意，<br>
+                        因為它們醜陋或攜帶不便。</p>
+                </div>
+
+                <div class="card">
+                    <h3>在工作場所踐行這些理念</h3>
+                    <p>多數男性組成的團隊可能會做出有利於男性用戶的決定。<br>這可能不是故意的，而是一種習慣。</p>
+                </div>
+                <div class="card">
+                    <h3>做研究，生成數據</h3>
+                    <p>數據最具有影響力，<br>進行用戶測試以支持你對產品應該如何設計和為誰設計的想法。</p>
+                </div>
+                <div class="card">
+                    <h3>女性不是一個整體</h3>
+                    <p>女性中有些人喜歡粉紅色，有些人不喜歡。<br>有些人喜歡花卉圖案，有些人不喜歡。</p>
+                </div>
+                <div class="card">
+                    <h3>評估你的行業</h3>
+                    <p>一些行業在為女性產品方面比其他更成熟。<br>像是運動服裝行業比大多數行業更好
+                    </p>
+                </div>
+            </div>
+            <button class="card-button" onclick="goToScene('scene39_4')">繼續▶</button>
+        </div>
+        <div id="scene39_4" class="scene scene39_4" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">同事們</p>
+                <p class="dialog-text">你的資料非常有力，那我們就朝著個方向研發新產品，並且請你當負責人。</p>
+                <button class="tell-button" onclick="goToScene('scene40')">繼續▶</button>
+                <img src="people.png" alt="Main Character" class="character">
+            </div>
+        </div>
+        <div id="scene40" class="scene scene40" style="display: none;">
+            <div class="story-content">
+                <h3>結果</h3>
+                <h4>結局：提案成功</h4>
+                <p>產品廣受歡迎，女性用品設計受到重視，你也因為努力和堅持獲得了公司和社會的認可。</p>
+                <button class="story-button" onclick="goToScene('scene46')">結束</button>
+            </div>
+        </div>
+
+        <!-- 場景 52--> 
+        <div id="scene52" class="scene scene52" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">我</p>
+                <p class="dialog-text">（也許我應該退一步，尋求一個各方都能接受的方案，先收集資料。）</p>
+                <button class="tell-button" onclick="goToScene('scene52_1')">繼續▶</button>
+                <img src="main.png" alt="Main Character" class="character">
+            </div>
+        </div>
+        <div id="scene52_1" class="scene scene52_1" style="display: none;">
+            <div class="card-head">
+                <h2>來<br>自<br>真<br>實<br>的<br>心<br>聲</h2>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <h3>服裝</h3>
+                    <p>雖然現狀有所改進，但仍然是一大困擾。<br>
+                         T 恤不需要都是短版上衣。<br>
+                        需要更多且更大的實用口袋。<br>
+                        否則我們需要更小的手機和錢包選擇。
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>鞋子</h3>
+                    <p>
+                        找到我們喜歡且合適尺寸的鞋款實在太難了<br>
+                        並不是所有女性的腳都是同樣大小。
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>運動服和設備</h3>
+                    <p>我們開始看到更多不是粉紅色、紫色的運動服了。<br>
+                        但還是有太多裝飾或收腰的款式。<br>
+                        還有希望運動設備也需要改進，<br>
+                        看到握把尺寸較小的網球拍和能夠適應更廣泛體型和身材的自行車裝備。</p>
+                </div>
+                <div class="card">
+                    <h3>產品包裝</h3>
+                    <p>雖然這不完全是女性專屬問題，但與許多女性相關<br>
+                        不應該需要像攀岩者一樣的握力才能打開一個罐頭。<br>
+                        這個問題隨著年齡增長、握力減弱而變得更嚴重。</p>
+                </div>
+                <div class="card">
+                    <h3>其他工具</h3>
+                    <p>我們很難找到為女性手部設計的合適工具，<br>
+                        無論是尺寸還是單手操作所需的指力。<br>
+                        設計女用工具不應該只是縮小男用工具。</p>
+                </div>
+                <div class="card">
+                    <h3>婦科檢查器具</h3>
+                    <p>鴨嘴的發明是一名男醫師，<br>有人說這是當代女性刑具。</p>
+                </div>
+                <div class="card">
+                    <h3>樂器</h3>
+                    <p>如薩克斯風和長號，對於手小或手臂較短的人<br>（通常是女性）來說更難演奏。<br>
+                        雖然重新設計可能會面臨影響音質的額外挑戰。<br>
+                        但值得解決這個問題，<br>不然這種情況會導致樂團分部的性別隔離持續存在</p>
+                </div>
+                <div class="card">
+                    <h3>安全帶</h3>
+                    <p>我們之前說過，並且會繼續說：<br>
+                        汽車中的安全帶需要設計成保護所有人，<br>
+                        而不僅僅是「平均男性」。</p>
+                </div>
+                <div class="card">
+                    <h3>傳統男性零售商</h3>
+                    <p>五金行、汽車經銷商等等<br>往往讓女性和非強勢男性感到疏離。<br>
+                        進門就意識到自己進入「不屬於你」的區域，<br>
+                        並預期會受到不相應的對待。</p>
+                </div>
+                <div class="card">
+                    <h3>安全設備</h3>
+                    <p>相關領域工作的女性通常很難找到合適的裝備，<br>
+                        如果你需要降落傘、防彈衣、頭盔、呼吸器、再呼吸器或摩托車服，
+                        選項非常有限，<br>
+                        這可能會導致額外的成本、時間損失或生產力降低以及增加的心理負擔。</p>
+                </div>
+                <div class="card">
+                    <h3>醫療服務</h3>
+                    <p>醫療服務確實需要重新設計以考慮女性需求。<br>
+                        與男性相比女性更容易被誤診，<br>
+                        其擔憂也更容易被醫療提供者忽視。<br>
+                        一項研究發現，女性因嚴重腹痛到急診室等待時間比同樣症狀的男性長33%。</p>
+                </div>
+                <div class="card">
+                    <h3>AI</h3>
+                    <p>
+                        自然語言處理中的詞嵌入被發現過時的刻板印象<br>
+                        例如一個AI系統可能推理<br>「男性是工程師，女性是家庭主婦」。<br>
+                        另一個例子中，系統對女性特別是深膚色女性的識別錯誤率過高
+                    </p>
+                </div>
+            </div>
+            <button class="card-button" onclick="goToScene('scene52_2')">繼續▶</button>
+        </div>
+        <div id="scene52_2" class="scene scene52_2" style="display: none;">
+            <div class="card-head">
+                <h2>設<br>計<br>更<br>好<br>女<br>性<br>產<br>品<br>的<br>七<br>種<br>方<br>法</h2>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <h3>為所有人設計</h3>
+                    <p>不要為男性或女性設計，為所有人設計。<br>
+                        缺乏的是包容性設計，<br>即使是設計為性別中立的產品，<br>往往也是為男性設計的。
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>辨別和質疑</h3>
+                    <p>
+                        談到汽車，它們對女性來說不那麼安全，<br>
+                        美國安全法規長期以來<br>更偏向於使用男性假人進行測試。
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>考慮訂制化</h3>
+                    <p>定制化可以很好地解決為所有人設計的問題。<br>
+                        對家庭使用的醫療產品進行了用戶研究，<br>
+                        發現多位女性對攜帶包都不滿意，<br>
+                        因為它們醜陋或攜帶不便。</p>
+                </div>
+
+                <div class="card">
+                    <h3>在工作場所踐行這些理念</h3>
+                    <p>多數男性組成的團隊可能會做出有利於男性用戶的決定。<br>這可能不是故意的，而是一種習慣。</p>
+                </div>
+                <div class="card">
+                    <h3>做研究，生成數據</h3>
+                    <p>數據最具有影響力，<br>進行用戶測試以支持你對產品應該如何設計和為誰設計的想法。</p>
+                </div>
+                <div class="card">
+                    <h3>女性不是一個整體</h3>
+                    <p>女性中有些人喜歡粉紅色，有些人不喜歡。<br>有些人喜歡花卉圖案，有些人不喜歡。</p>
+                </div>
+                <div class="card">
+                    <h3>評估你的行業</h3>
+                    <p>一些行業在為女性產品方面比其他更成熟。<br>像是運動服裝行業比大多數行業更好
+                    </p>
+                </div>
+            </div>
+            <button class="card-button" onclick="goToScene('scene52_3')">繼續▶</button>
+        </div>
+        <div id="scene52_3" class="scene scene52_3" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">同事們</p>
+                <p class="dialog-text">你準備的資料的只是紙上談兵，這實際效果一定很差。</p>
+                <button class="tell-button" onclick="goToScene('scene52_4')">繼續▶</button>
+                <img src="people.png" alt="Main Character" class="character">
+            </div>
+        </div>
+        <div id="scene52_4" class="scene scene52_4" style="display: none;">
+            <div class="story-content">
+                <h3>結果</h3>
+                <h4>結局：失敗</h4>
+                <p>這方案胎死腹中，意識到妥協並不是解決問題的最佳方法，決定重新堅持自己的立場。</p>
+                <button class="story-button" onclick="goToScene('scene46')">結束</button>
+            </div>
+        </div>
+
+        <!-- 場景 41-->        
+        <div id="scene41" class="scene scene41" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">我</p>
+                <p class="dialog-text">（也許我應該退一步，尋求一個各方都能接受的方案。）</p>
+                <button class="tell-button" onclick="goToScene('scene41_1')">繼續▶</button>
+                <img src="main.png" alt="Main Character" class="character">
+            </div>
+        </div>
+        <div id="scene41_1" class="scene scene41_1" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">我</p>
+                <p class="dialog-text">（提一些折衷的方案和參考資料應該可行。）</p>
+                <button class="tell-button" onclick="goToScene('scene41_2')">繼續▶</button>
+                <img src="main.png" alt="Main Character" class="character">
+            </div>
+        </div>
+        <div id="scene41_2" class="scene scene41_2" style="display: none;">
+            <div class="card-head">
+                <h2>來<br>自<br>真<br>實<br>的<br>心<br>聲</h2>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <h3>服裝</h3>
+                    <p>雖然現狀有所改進，但仍然是一大困擾。<br>
+                         T 恤不需要都是短版上衣。<br>
+                        需要更多且更大的實用口袋。<br>
+                        否則我們需要更小的手機和錢包選擇。
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>鞋子</h3>
+                    <p>
+                        找到我們喜歡且合適尺寸的鞋款實在太難了<br>
+                        並不是所有女性的腳都是同樣大小。
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>運動服和設備</h3>
+                    <p>我們開始看到更多不是粉紅色、紫色的運動服了。<br>
+                        但還是有太多裝飾或收腰的款式。<br>
+                        還有希望運動設備也需要改進，<br>
+                        看到握把尺寸較小的網球拍和能夠適應更廣泛體型和身材的自行車裝備。</p>
+                </div>
+                <div class="card">
+                    <h3>產品包裝</h3>
+                    <p>雖然這不完全是女性專屬問題，但與許多女性相關<br>
+                        不應該需要像攀岩者一樣的握力才能打開一個罐頭。<br>
+                        這個問題隨著年齡增長、握力減弱而變得更嚴重。</p>
+                </div>
+                <div class="card">
+                    <h3>其他工具</h3>
+                    <p>我們很難找到為女性手部設計的合適工具，<br>
+                        無論是尺寸還是單手操作所需的指力。<br>
+                        設計女用工具不應該只是縮小男用工具。</p>
+                </div>
+                <div class="card">
+                    <h3>婦科檢查器具</h3>
+                    <p>鴨嘴的發明是一名男醫師，<br>有人說這是當代女性刑具。</p>
+                </div>
+                <div class="card">
+                    <h3>樂器</h3>
+                    <p>如薩克斯風和長號，對於手小或手臂較短的人<br>（通常是女性）來說更難演奏。<br>
+                        雖然重新設計可能會面臨影響音質的額外挑戰。<br>
+                        但值得解決這個問題，<br>不然這種情況會導致樂團分部的性別隔離持續存在</p>
+                </div>
+                <div class="card">
+                    <h3>安全帶</h3>
+                    <p>我們之前說過，並且會繼續說：<br>
+                        汽車中的安全帶需要設計成保護所有人，<br>
+                        而不僅僅是「平均男性」。</p>
+                </div>
+                <div class="card">
+                    <h3>傳統男性零售商</h3>
+                    <p>五金行、汽車經銷商等等<br>往往讓女性和非強勢男性感到疏離。<br>
+                        進門就意識到自己進入「不屬於你」的區域，<br>
+                        並預期會受到不相應的對待。</p>
+                </div>
+                <div class="card">
+                    <h3>安全設備</h3>
+                    <p>相關領域工作的女性通常很難找到合適的裝備，<br>
+                        如果你需要降落傘、防彈衣、頭盔、呼吸器、再呼吸器或摩托車服，
+                        選項非常有限，<br>
+                        這可能會導致額外的成本、時間損失或生產力降低以及增加的心理負擔。</p>
+                </div>
+                <div class="card">
+                    <h3>醫療服務</h3>
+                    <p>醫療服務確實需要重新設計以考慮女性需求。<br>
+                        與男性相比女性更容易被誤診，<br>
+                        其擔憂也更容易被醫療提供者忽視。<br>
+                        一項研究發現，女性因嚴重腹痛到急診室等待時間比同樣症狀的男性長33%。</p>
+                </div>
+                <div class="card">
+                    <h3>AI</h3>
+                    <p>
+                        自然語言處理中的詞嵌入被發現過時的刻板印象<br>
+                        例如一個AI系統可能推理<br>「男性是工程師，女性是家庭主婦」。<br>
+                        另一個例子中，系統對女性特別是深膚色女性的識別錯誤率過高
+                    </p>
+                </div>
+            </div>
+            <button class="card-button" onclick="goToScene('scene41_3')">繼續▶</button>
+        </div>
+        <div id="scene41_3" class="scene scene41_3" style="display: none;">
+            <div class="card-head">
+                <h2>設<br>計<br>更<br>好<br>女<br>性<br>產<br>品<br>的<br>七<br>種<br>方<br>法</h2>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <h3>為所有人設計</h3>
+                    <p>不要為男性或女性設計，為所有人設計。<br>
+                        缺乏的是包容性設計，<br>即使是設計為性別中立的產品，<br>往往也是為男性設計的。
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>辨別和質疑</h3>
+                    <p>
+                        談到汽車，它們對女性來說不那麼安全，<br>
+                        美國安全法規長期以來<br>更偏向於使用男性假人進行測試。
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>考慮訂制化</h3>
+                    <p>定制化可以很好地解決為所有人設計的問題。<br>
+                        對家庭使用的醫療產品進行了用戶研究，<br>
+                        發現多位女性對攜帶包都不滿意，<br>
+                        因為它們醜陋或攜帶不便。</p>
+                </div>
+
+                <div class="card">
+                    <h3>在工作場所踐行這些理念</h3>
+                    <p>多數男性組成的團隊可能會做出有利於男性用戶的決定。<br>這可能不是故意的，而是一種習慣。</p>
+                </div>
+                <div class="card">
+                    <h3>做研究，生成數據</h3>
+                    <p>數據最具有影響力，<br>進行用戶測試以支持你對產品應該如何設計和為誰設計的想法。</p>
+                </div>
+                <div class="card">
+                    <h3>女性不是一個整體</h3>
+                    <p>女性中有些人喜歡粉紅色，有些人不喜歡。<br>有些人喜歡花卉圖案，有些人不喜歡。</p>
+                </div>
+                <div class="card">
+                    <h3>評估你的行業</h3>
+                    <p>一些行業在為女性產品方面比其他更成熟。<br>像是運動服裝行業比大多數行業更好
+                    </p>
+                </div>
+            </div>
+            <button class="card-button" onclick="goToScene('scene41_4')">繼續▶</button>
+        </div>
+        <div id="scene41_4" class="scene scene41_4" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">同事們</p>
+                <p class="dialog-text">你的資料準備的很不錯，但成本還是我們第一考量。</p>
+                <button class="tell-button" onclick="goToScene('scene41_5')">繼續▶</button>
+                <img src="people.png" alt="Main Character" class="character">
+            </div>
+        </div>
+        <div id="scene41_5" class="scene scene41_5" style="display: none;">
+            <div class="dialog-box">
+                <img src="tell.png" alt="Dialog Box" class="dialog">
+                <p class="dialog-name">同事們</p>
+                <p class="dialog-text">所以還是先記下來，以後有機會再提出。</p>
+                <button class="tell-button" onclick="goToScene('scene42')">繼續▶</button>
+                <img src="people.png" alt="Main Character" class="character">
+            </div>
+        </div>
+        <div id="scene42" class="scene scene42" style="display: none;">
+            <div class="story-content">
+                <h3>結果</h3>
+                <h4>結局：失敗</h4>
+                <p>場景方案在會議中反應不佳，無法達到預期的改進效果。但女性用品設計議題成功引起了關注。</p>
+                <button class="story-button" onclick="goToScene('scene46')">結束</button>
+            </div>
+        </div>
+
+        <!-- 結束遊戲 -->
+
+        <div id="scene46" class="scene scene46" style="display: none;">
+            <h2 style="text-align: center; margin-bottom: 20px;">遊戲結束，謝謝您的遊玩<br></h2>
+            <div class="end-button-container">
+                <button class="end-button" onclick="goToScene('scene1')">再玩一次</button>
+                <button class="end-button" onclick="goToScene('scene60')">辦公手冊</button>
+                <button class="end-button" onclick="goToScene('scene70')">參考資料</button>
+                <button class="end-button" onclick="goToScene('scene80')">關於作者</button>
+            </div>
+        </div>
+        <div id="scene80" class="scene scene80" style="display: none;">
+            <h2 class="auth-title">關於作者</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>劉芷婷｜大同大學資訊工程學系三年級</p>
+                    <p>不擅長畫畫，只是喜歡畫畫，高中上課都在課本亂塗</p>
+                    <p>不擅長寫程式，只是剛好讀資工（而且數學太差了頭很痛）</p>
+                    <p>不擅長想劇本，只是一個天馬行空的人，偶爾喜歡寫散文</p>
+                    <p>會製作這次遊戲的動機是因為2023年夏天在日本實習，參加和當地20代的交流會，我分配到的題目是「Ｇender gap」，
+                    拿到題目時不知道該怎麼用日文和其他人討論，於是找了非常多資料，結果在和日本人討論時，
+                    也許是因為講到較為敏感的話題，對方反應不是很好，我只好順著對方的話題完成交流。
+                    從那次之後我就一直對於我想表達的話無從說出口很可惜，所以想透過這次遊戲的方式來讓大家認識到女性權益的問題。
+                </p>
+                <p>小提示一下遊戲有好幾個支線和結局，歡迎大家探索看看喔！</p>
+
+                </div>
+            </div>
+            <button class="ref-button" onclick="goToScene('scene46')">選單</button>
+
+        </div>
+        
+        <div id="scene70" class="scene scene70" style="display: none;">
+            <h2 class="ref-title">參考資料</h2>
+            <div class="reference-container">
+                <div class="reference">
+                    <p><a href="https://www.sir.advancedleadership.harvard.edu/articles/shrink-it-and-pink-it-gender-bias-product-design" target="_blank">Shrink It and Pink It: Gender Bias in Product Design</a></p>
+                </div>
+                <div class="reference">
+                    <p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9740310/" target="_blank">The Role of Body Shame and Age on Appearance-Based Exercise and Positive Body Image in Women from Poland: Preliminary Results of a Cluster Analysis</a></p>
+                </div>
+                <div class="reference">
+                    <p><a href="https://scholarsarchive.byu.edu/cgi/viewcontent.cgi?article=5263&context=etd" target="_blank">"You're Looking Good": Compliment or Harassment?</a></p>
+                </div>
+                <div class="reference">
+                    <p><a href="https://www.plasticsengineering.org/2023/06/gender-bias-in-design-000036/" target="_blank">Gender Bias In Design</a></p>
+                </div>
+                <div class="reference">
+                    <p><a href="https://www.genderbias.design/examples_of_gender_bias" target="_blank">Examples of gender bias in products</a></p>
+                </div>
+                <div class="reference">
+                    <p><a href="https://www.delve.com/insights/7-ways-to-design-better-products-for-women" target="_blank">7 Ways to Design Better Products for Women</a></p>
+                </div>
+                <div class="reference">
+                    <p><a href="https://www.smashingmagazine.com/2022/09/unconscious-biases-inclusive-design/" target="_blank">Unconscious Biases That Get In The Way Of Inclusive Design</a></p>
+                </div>
+                <!-- 更多參考資料 -->
+            </div>
+            <button class="ref-button" onclick="goToScene('scene46')">選單</button>
+
+        </div>
+    </div>
+        
+       <!-- 場景 60-->
+       <div id="scene60" class="scene scene60" style="display: none;">
+            <div class="text-scene">
+                <h1>不只粉紅和縮小</h1>
+                <h2>「縮小它，然後變粉紅」</h2>
+                <p>這句話在產品設計中經常用來形容為女性設計產品的方式。<br>
+                    許多女性別無選擇，<br>只能使用那些由男性為男性設計，<br>
+                    然後僅僅縮小尺寸並染上粉紅色或其他刻板印象中女性顏色的產品。<br>
+                    在某些情況下，這可能是侮辱性的；在最糟的情況下，這可能是致命的。</p>
+                <button class="tell-button" onclick="goToScene('scene61')">翻頁▶</button>
+            </div>
+        </div>
+
+
+    <!-- 場景 9-->
+    <div id="scene61" class="scene scene61" style="display: none;">
+        <div class="text-scene">
+            <h1>經典範例</h1>
+            <h2>跑鞋設計的性別偏見</h2>
+            <p>現今市場上的大多數跑鞋都是用男性鞋楦設計的，<br>
+                這是一個「縮小並粉紅」的典型例子。<br>
+                女性跑者所穿的鞋實際上是為男性腳設計的鞋，<br>這種設計忽略了女性腳部的特殊需求。</p>
+            <button class="tell-button" onclick="goToScene('scene62')">翻頁▶</button>
+        </div>
+    </div>
+
+    <!-- 場景 10-->
+    <div id="scene62" class="scene scene62" style="display: none;">
+        <div class="text-scene10">
+            <h1>關於更多</h1>
+            <h2>女性占全球人口的超過一半，在美國，她們影響了近90%的所有購買決策。</h2>
+            <p>
+                在工業設計師男女比失衡的情況下<br>
+                從個人剃刀、手機到電動工具，這些聲稱是「中性」的產品，<br>實際上是由男性來決定「中性」是什麼，<br>
+                結果顯然是，這基本上意味著「男性化」。</p>
+            <img src="char1.png">
+            <p class="text-scene-ref custom-class">資料來源：<a href="https://www.sir.advancedleadership.harvard.edu/articles/shrink-it-and-pink-it-gender-bias-product-design">Shrink It and Pink It: Gender Bias in Product Design</a></p>
+            <button class="tell-button" onclick="goToScene('scene63')">翻頁▶</button>
+        </div>
+    </div>
+
+    <!-- 場景 11-->
+    <div id="scene63" class="scene scene63" style="display: none;">
+        <div class="text-scene11">
+            <h1>女性在特定場合受傷的可能性</h1>
+            <h2>車禍、消防和軍隊</h2>
+            <p>
+                汽車碰撞測試假人在1950年代引入，數十年來這些模型都是基於男性的生理特徵設計的<br>
+                即使研究人員控制了身高、體重、安全帶使用和撞擊強度等因素<br><br>•女性在車禍中受嚴重傷的可能性比男性高47%
+                ，中度受傷的可能性高71%，<br>死亡的可能性高達17%<br>
+                <br>
+                •女性消防員受傷的比率是男性的四倍<br>
+                <br>
+                •女性在軍隊中骨盆骨折的比率遠高於男性
+            </p>
+            <p class="text-scene-ref custom-class">資料來源：<a href="https://www.plasticsengineering.org/2023/06/gender-bias-in-design-000036/">Gender Bias In Design</a></p>
+            <button class="tell-button" onclick="goToScene('scene64')">翻頁▶</button>
+        </div>
+    </div>
+    <!-- 場景 12-->
+    <div id="scene64" class="scene scene64" style="display: none;">
+        <div class="text-scene12">
+            <h1>產品設計以男性為標準的例子</h1>
+            <h3>疫情期間女性前線醫護人員的PPE使用<br></h3>
+            <p>
+                在COVID-19疫情期間，只有14%的女性醫護人員使用過合適的個人防護裝備（PPE）。<br>
+            </p>
+            <h3>鋼琴鍵盤設計的不平等</h3>
+            <p> 
+                87%的成年女性鋼琴家和24%的成年男性鋼琴家手掌較小，他們在彈奏樂器時更容易感到疼痛和受傷。<br>
+                相當多的高級鋼琴曲目對於這些人來說甚至是物理上不可能演奏的。<br>
+            </p>
+            <h3>機器人設計中的性別刻板印象</h3>
+            <p> 
+                當機器人被認為是男性時，它們會被以不同於女性機器人的方式對待和評判。<br>
+                即使機器人沒有明確的性別，它們仍可能被解釋為男性或女性。<br>
+                機器人的設計方式可能會無意中反映和加強性別刻板印象。<br>
+            </p>
+            <h3>語音識別技術中的性別偏見</h3>
+            <p>
+                語音識別軟體對女性語音的準確處理可能性較低，<br>
+                因為這些程序的數據集中女性代表性不足。例如，Google的語音識別軟件顯著更有可能準確地轉錄男性語音。
+            </p>
+
+            <p class="text-scene-ref custom-class">資料來源：<a href="https://www.genderbias.design/examples_of_gender_bias">Examples of gender bias in products</a></p>
+            <button class="tell-button" onclick="goToScene('scene65')">繼續▶</button>
+        </div>
+    </div>
+    <div id="scene65" class="scene scene65" style="display: none;">
+        <div class="text-scene28">
+            <h1>辦公室溫度</h1>
+            <h2>辦公室溫度是否以男性為標準設定？</h2>
+            <p>
+                女性在典型的寒冷辦公室中的代謝率較低，<br>舒適溫度區間在約23.2°C至26.1°C之間。<br>
+                有大量非正式證據表明，女性比男性更容易感到寒冷<br><br><br><br><br>
+                將辦公室溫度從20°C提高到約25°C可以減少錯誤並提高打字任務的生產力。<br><br>
+                提高辦公室溫度不僅可以讓的工作人員感到舒適，還可以減少空調的使用，<br>
+                美國能源部估計每年約有1億噸二氧化碳排放是由於美國家庭使用空調所致。
+            </p>
+            <img src="boxplot.png">
+            <p class="text-scene-ref custom-class">資料來源：<a href="https://www.popsci.com/study-finds-gender-bias-office-air-conditioning/">Are Office Temperatures Optimized For Men?</a></p>
+            <button class="tell-button" onclick="goToScene('scene66')">下一篇▶</button>
+        </div>
+    </div>
+    <!-- 場景 31-->
+    <div id="scene66" class="scene scene66" style="display: none;">
+        <div class="text-scene31">
+            <h1>女性廁所排隊：性別不平等的日常提醒</h1>
+            <h2>女性使用廁所的時間，是男性的 2.3 倍。</h2>
+            <p>•大多的老人和行動不便者都是女性，而這兩個族群使用廁所的時間都較長。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;➤婦女帶著小孩、陪伴老人和行動不便者的機率也較高。<br><br>
+                •女性中隨時有 20~25% 的正值月經來潮，必須定時更換生理用品。<br><br>
+                •女性使用廁所的頻繁度也超過男人：<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;➤懷孕期間膀胱容量會大幅減少<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;➤婦女發生泌尿道感染的機率是男人的 8 倍<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;➤生理期間，沒有廁所供女性更換衛生棉條，得到鏈球菌毒性休克症候群的機率也會增加
+            </p>
+            <p class="text-scene-ref custom-class">資料來源：<a href="https://womany.net/read/article/24828">「女人已經習慣，上廁所免不了排隊」這件事有什麼問題？</a></p>
+            <button class="tell-button" onclick="goToScene('scene67')">繼續▶</button>
+        </div>
+    </div>
+    <div id="scene67" class="scene scene67" style="display: none;">
+        <div class="card-head">
+            <h2>來<br>自<br>真<br>實<br>的<br>心<br>聲</h2>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <h3>服裝</h3>
+                <p>雖然現狀有所改進，但仍然是一大困擾。<br>
+                     T 恤不需要都是短版上衣。<br>
+                    需要更多且更大的實用口袋。<br>
+                    否則我們需要更小的手機和錢包選擇。
+                </p>
+            </div>
+            <div class="card">
+                <h3>鞋子</h3>
+                <p>
+                    找到我們喜歡且合適尺寸的鞋款實在太難了<br>
+                    並不是所有女性的腳都是同樣大小。
+                </p>
+            </div>
+            <div class="card">
+                <h3>運動服和設備</h3>
+                <p>我們開始看到更多不是粉紅色、紫色的運動服了。<br>
+                    但還是有太多裝飾或收腰的款式。<br>
+                    還有希望運動設備也需要改進，<br>
+                    看到握把尺寸較小的網球拍和能夠適應更廣泛體型和身材的自行車裝備。</p>
+            </div>
+            <div class="card">
+                <h3>產品包裝</h3>
+                <p>雖然這不完全是女性專屬問題，但與許多女性相關<br>
+                    不應該需要像攀岩者一樣的握力才能打開一個罐頭。<br>
+                    這個問題隨著年齡增長、握力減弱而變得更嚴重。</p>
+            </div>
+            <div class="card">
+                <h3>其他工具</h3>
+                <p>我們很難找到為女性手部設計的合適工具，<br>
+                    無論是尺寸還是單手操作所需的指力。<br>
+                    設計女用工具不應該只是縮小男用工具。</p>
+            </div>
+            <div class="card">
+                <h3>婦科檢查器具</h3>
+                <p>鴨嘴的發明是一名男醫師，<br>有人說這是當代女性刑具。</p>
+            </div>
+            <div class="card">
+                <h3>樂器</h3>
+                <p>如薩克斯風和長號，對於手小或手臂較短的人<br>（通常是女性）來說更難演奏。<br>
+                    雖然重新設計可能會面臨影響音質的額外挑戰。<br>
+                    但值得解決這個問題，<br>不然這種情況會導致樂團分部的性別隔離持續存在</p>
+            </div>
+            <div class="card">
+                <h3>安全帶</h3>
+                <p>我們之前說過，並且會繼續說：<br>
+                    汽車中的安全帶需要設計成保護所有人，<br>
+                    而不僅僅是「平均男性」。</p>
+            </div>
+            <div class="card">
+                <h3>傳統男性零售商</h3>
+                <p>五金行、汽車經銷商等等<br>往往讓女性和非強勢男性感到疏離。<br>
+                    進門就意識到自己進入「不屬於你」的區域，<br>
+                    並預期會受到不相應的對待。</p>
+            </div>
+            <div class="card">
+                <h3>安全設備</h3>
+                <p>相關領域工作的女性通常很難找到合適的裝備，<br>
+                    如果你需要降落傘、防彈衣、頭盔、呼吸器、再呼吸器或摩托車服，
+                    選項非常有限，<br>
+                    這可能會導致額外的成本、時間損失或生產力降低以及增加的心理負擔。</p>
+            </div>
+            <div class="card">
+                <h3>醫療服務</h3>
+                <p>醫療服務確實需要重新設計以考慮女性需求。<br>
+                    與男性相比女性更容易被誤診，<br>
+                    其擔憂也更容易被醫療提供者忽視。<br>
+                    一項研究發現，女性因嚴重腹痛到急診室等待時間比同樣症狀的男性長33%。</p>
+            </div>
+            <div class="card">
+                <h3>AI</h3>
+                <p>
+                    自然語言處理中的詞嵌入被發現過時的刻板印象<br>
+                    例如一個AI系統可能推理<br>「男性是工程師，女性是家庭主婦」。<br>
+                    另一個例子中，系統對女性特別是深膚色女性的識別錯誤率過高
+                </p>
+            </div>
+        </div>
+        <button class="card-button" onclick="goToScene('scene68')">繼續▶</button>
+    </div>
+    <div id="scene68" class="scene scene68" style="display: none;">
+        <div class="card-head">
+            <h2>設<br>計<br>更<br>好<br>女<br>性<br>產<br>品<br>的<br>七<br>種<br>方<br>法</h2>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <h3>為所有人設計</h3>
+                <p>不要為男性或女性設計，為所有人設計。<br>
+                    缺乏的是包容性設計，<br>即使是設計為性別中立的產品，<br>往往也是為男性設計的。
+                </p>
+            </div>
+            <div class="card">
+                <h3>辨別和質疑</h3>
+                <p>
+                    談到汽車，它們對女性來說不那麼安全，<br>
+                    美國安全法規長期以來<br>更偏向於使用男性假人進行測試。
+                </p>
+            </div>
+            <div class="card">
+                <h3>考慮訂制化</h3>
+                <p>定制化可以很好地解決為所有人設計的問題。<br>
+                    對家庭使用的醫療產品進行了用戶研究，<br>
+                    發現多位女性對攜帶包都不滿意，<br>
+                    因為它們醜陋或攜帶不便。</p>
+            </div>
+
+            <div class="card">
+                <h3>在工作場所踐行這些理念</h3>
+                <p>多數男性組成的團隊可能會做出有利於男性用戶的決定。<br>這可能不是故意的，而是一種習慣。</p>
+            </div>
+            <div class="card">
+                <h3>做研究，生成數據</h3>
+                <p>數據最具有影響力，<br>進行用戶測試以支持你對產品應該如何設計和為誰設計的想法。</p>
+            </div>
+            <div class="card">
+                <h3>女性不是一個整體</h3>
+                <p>女性中有些人喜歡粉紅色，有些人不喜歡。<br>有些人喜歡花卉圖案，有些人不喜歡。</p>
+            </div>
+            <div class="card">
+                <h3>評估你的行業</h3>
+                <p>一些行業在為女性產品方面比其他更成熟。<br>像是運動服裝行業比大多數行業更好
+                </p>
+            </div>
+        </div>
+        <button class="ref-button" onclick="goToScene('scene46')">選單</button>
+    </div>
+        
+
+</div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

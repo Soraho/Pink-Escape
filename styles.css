@@ -1,0 +1,1891 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "DotGothic16",Arial, sans-serif;
+    transition: opacity 1s;
+    opacity: 1;
+    overflow: hidden;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+.scene {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* 場景背景 */
+
+/* 首頁背景 */
+#scene1 {
+    background-image: url('cover.png');
+    background-size: cover; 
+}
+
+/* 場景 2 背景 */
+#scene2,#scene3,#scene4,#scene32,#scene5,#scene6,#scene6_1,#scene5_1,#scene5_1_1,#scene5_2,
+#scene33,#scene34,#scene34_1,#scene34_2,#scene35,#scene35_1,#scene35_2,#scene38,#scene38_1,#scene38_2,
+#scene40,#scene39_4,#scene41_1,#scene41_4,#scene41_5,#scene52_3,#scene52_4,#scene51_1,
+#scene51,#scene50_2,#scene50_1,#scene50,#scene52,#scene42,#scene39,#scene39_1,#scene41  {
+    background-image: url('meeting.png');
+    background-size: cover;
+
+}
+#scene36_5,#scene37_5 {
+    background-image: url('comment.jpg');
+    background-size: cover; 
+}
+#scene36_4,#scene37_4{
+    background-image: url('mrdia.jpg');
+    background-size: cover; 
+}
+#scene7 {
+    background-image: url('bg.jpg');
+    background-size: cover; 
+}
+#scene36,#scene36_1,#scene36_2,#scene36_3,#scene37,#scene37_1,#scene37_2,#scene37_3  {
+    background-image: url('office.JPG');
+    background-size: cover; 
+}
+#scene8,#scene9,#scene10,#scene11,#scene12,#scene28,#scene31,#scene66,#scene65{
+    background-image: url('webpage.jpg');
+    background-size: cover; 
+    background-position: center; /* 將背景圖片置中 */
+    /* background-repeat: no-repeat; 不重複顯示背景圖片 */
+}
+
+#scene14,#scene15, #scene16, #scene17, #scene18 , #scene60, #scene64, #scene61, #scene62, #scene63 {
+    background-size: cover; /* 使背景圖片覆蓋整個區域 */
+    background-position: center; /* 將背景圖片置中 */
+    background-image: url('note.jpg');
+}
+
+#scene13,#scene19,#scene20,#scene21,#scene22,#scene23,#scene24,#scene25,#scene25,#scene26,#scene27{
+    background-image: url('tea.PNG');
+    background-size: cover; 
+}
+
+#scene29,#scene30 {
+    background-image: url('chat.jpg');
+    background-size: cover; 
+}
+
+.story-content {
+    text-align: left;
+    max-width: 800px;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.story-content h3, .story-content h4, .story-content p {
+    margin: 0;
+}
+
+.title {
+    width: 45%;
+    max-width: 600px;
+    animation: glow 1.5s infinite alternate, shake 0.5s infinite alternate;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 0; 
+    left: 100px;
+}
+
+
+@keyframes glow {
+    from {
+        filter: drop-shadow(0 0 10px #ffc0cb);
+    }
+    to {
+        filter: drop-shadow(0 0 20px #ff69b4);
+    }
+}
+
+@keyframes shake {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(3px, 3px);
+    }
+}
+
+.scene1 p{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+}
+.start-button {
+    position: absolute;
+    bottom: 32%;
+    left: 10%;
+    width: 250px;
+    height: 75px;
+    padding: 0;
+    font-size: 28px;
+    color: #ff77aa;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-transform: uppercase;
+    font-family: "DotGothic16",Arial, sans-serif;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 75px;
+    text-shadow: 0 0 10px rgba(255, 246, 119, 0.815);
+}
+
+.start-button::before {
+    content: '❤';
+    display: block;
+    font-size: 30px;
+    height: 75px;
+    width: 75px;
+    margin-right: 10px;
+    float: left;
+    background-color: #ff77aa;
+    color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.start-button:hover::before {
+    transform: scale(1.2);
+}
+
+.start-button:hover {
+    color: white;
+    background-color: #ff77aa;
+}
+
+/* 過場 */
+.story-content {
+    text-align: center; 
+    max-width: 800px;
+    margin: 20px auto; /* 上下間距20px，左右自動居中 */
+    padding: 20px;
+    background-color: rgba(255, 192, 203, 0.8); 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* 相對位置，用於打字機效果  */
+    /* overflow: hidden;  */
+}
+
+.story-content h3 {
+    font-size: 48px; 
+    color: #ae5f89;
+}
+
+.story-content h4 {
+    font-size: 36px; 
+    color: #9e7689; 
+}
+
+.story-content p {
+    font-size: 18px; 
+    color: #333; 
+    margin-bottom: 10px; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    letter-spacing: 2px; 
+    animation: typing 3s steps(40) forwards; /* 打字機效果動畫 */
+    animation-delay: 1s;
+
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+/*繼續按钮 */
+.story-button {
+    position: absolute;
+    font-family: "DotGothic16", Arial, sans-serif; 
+    position: relative;
+    padding: 0;
+    margin: 10px;
+    width: 120px; 
+    height: 40px;
+    font-size: 26px; 
+    color: #f1e7ec;
+    background-color: transparent; 
+    border: none; 
+    cursor: pointer;
+    overflow: hidden; 
+    transition: color 0.3s;
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.8); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px; 
+}
+
+.story-button::before,
+.story-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s; 
+}
+
+
+.story-button:hover::before,
+.story-button:hover::after {
+    transform: scale(0); /* 懸停時縮回 */
+}
+
+.story-button:hover {
+    color: white; 
+}
+
+
+
+
+.character {
+    position: absolute;
+    bottom:10px;
+    right: 750px;
+    width: 45%;
+    height: auto; /* 保持原始比例 */
+    z-index: 0; 
+}
+@media screen and (min-width: 1920px), print {
+    .character {
+        position: absolute;
+        bottom: -100px;
+        left: 550px;
+        width: 35%;
+        height: auto; /* 保持原始比例 */
+        z-index: 0; 
+    }
+}
+
+
+/* 對話框框 */
+
+.dialog {
+    position: fixed;
+    font-family: "DotGothic16",Arial, sans-serif;
+    width: 100%; /* 調整對話框寬度 */
+    height: auto; /* 保持原始比例 */
+    top: 90px; /* 調整對話框距離人物頭部的距離 */
+    left: -30px; /* 調整對話框水平位置 */
+    margin-left: -20px; /* 調整對話框位置 */
+    z-index: 1; 
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.2)); /* 添加陰影效果 */
+}
+@media screen and (min-width: 1920px), print {
+    .dialog {
+        position: fixed;
+        font-family: "DotGothic16",Arial, sans-serif;
+        width: 80%;
+        height: auto;
+        top: 90px;
+        left: 5%; /* 調整對話框水平位置 */
+        margin-left: -20px; /* 調整對話框位置 */
+        z-index: 1; 
+        filter: drop-shadow(0 0 5px rgba(0,0,0,0.2)); /* 添加陰影效果 */
+    }
+}
+
+.dialog-name {
+    position: absolute;
+    top: 58%; /* 調整對話文字的垂直位置 */
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    z-index: 2; /* 確保在人物圖像前面顯示 */
+    overflow: hidden; /* 隱藏溢出內容 */
+    white-space: nowrap; /* 不換行 */
+    animation: typing 3s steps(40) forwards;
+}
+@media screen and (min-width: 1920px), print {
+    .dialog-name {
+        position: absolute;
+        top: 60%;
+        left: 28%;
+        transform: translate(-50%, -50%);
+        font-size: 36px;
+        color: #333;
+        text-align: center;
+        z-index: 2; /* 確保在人物圖像前面顯示 */
+        overflow: hidden; /* 隱藏溢出內容 */
+        white-space: nowrap; /* 不換行 */
+        animation: typing 3s steps(40) forwards;
+    }   
+}
+
+.dialog-text {
+    position: absolute;
+    top: 70%; /* 調整對話文字的垂直位置 */
+    left: 37%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    z-index: 2; /* 確保在人物圖像前面顯示 */
+    overflow: hidden; /* 隱藏溢出內容 */
+    white-space: nowrap; /* 不換行 */
+    animation: typing 3s steps(40) forwards;
+    /* animation-delay: 1s; */
+
+}
+@media screen and (min-width:400px) and (max-width:1900px){
+    .dialog-text {
+        position: absolute;
+        top: 70%; /* 調整對話文字的垂直位置 */
+        left: 43%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        color: #333;
+        text-align: center;
+        z-index: 2; /* 確保在人物圖像前面顯示 */
+        overflow: hidden; /* 隱藏溢出內容 */
+        white-space: nowrap; /* 不換行 */
+        animation: typing 3s steps(40) forwards;
+        /* animation-delay: 1s; */
+    
+    }
+}
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* 對話按鈕 */
+.tell-button {
+    font-family: "DotGothic16", Arial, sans-serif; 
+    position:absolute;
+    right: 450px;
+    bottom: 150px;
+    padding: 0;
+    margin: 10px;
+    width: 120px; 
+    height: 40px;
+    font-size: 24px; 
+    color: #94838c;
+    background-color: transparent; 
+    border: none; 
+    cursor: pointer;
+    overflow: hidden; 
+    transition: color 0.3s;
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.8); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px; 
+    z-index: 2;
+}
+@media screen and (min-width:400px) and (max-width:1900px){
+    .tell-button {
+        font-family: "DotGothic16", Arial, sans-serif; 
+        position:absolute;
+        right: 300px;
+        bottom: 120px;
+        padding: 0;
+        margin: 10px;
+        width: 120px; 
+        height: 40px;
+        font-size: 24px; 
+        color: #94838c;
+        background-color: transparent; 
+        border: none; 
+        cursor: pointer;
+        overflow: hidden; 
+        transition: color 0.3s;
+        text-shadow: 0 0 10px rgba(255, 105, 180, 0.8); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px; 
+        z-index: 2;
+    }
+}
+@media screen and (min-width: 1920px), print {
+    .tell-button {
+        font-family: "DotGothic16", Arial, sans-serif; 
+        position:absolute;
+        right: 820px;
+        bottom: 100px;
+        padding: 0;
+        margin: 10px;
+        width: 120px;
+        height: 40px;
+        font-size: 22px;
+        color: #94838c;
+        background-color: transparent; 
+        border: none; 
+        cursor: pointer;
+        overflow: hidden; 
+        transition: color 0.3s;
+        text-shadow: 0 0 10px rgba(255, 105, 180, 0.8); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px; 
+        z-index: 2;
+    }
+}
+
+
+.tell-button::before,
+.tell-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s; 
+}
+
+
+.tell-button:hover::before,
+.tell-button:hover::after {
+    transform: scale(0); /* 懸停時縮回 */
+}
+
+.tell-button:hover {
+    color: white; 
+}
+
+/* 抉擇按鈕 */
+/* 下 */
+.option-button {
+    font-family: "DotGothic16", Arial, sans-serif; 
+    position:absolute;
+    right: 450px;
+    bottom: 150px;
+    padding: 0;
+    margin: 10px;
+    width: 120px; 
+    height: 40px;
+    font-size: 24px; 
+    color: #94838c;
+    background-color: transparent; 
+    border: none; 
+    cursor: pointer;
+    overflow: hidden; 
+    transition: color 0.3s;
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.8); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px; 
+    z-index: 2;
+}
+@media screen and (min-width:400px) and (max-width:1900px){
+    .option-button {
+        font-family: "DotGothic16", Arial, sans-serif; 
+        position:absolute;
+        right: 320px;
+        bottom: 100px;
+        padding: 0;
+        margin: 10px;
+        width: 120px; 
+        height: 40px;
+        font-size: 24px; 
+        color: #94838c;
+        background-color: transparent; 
+        border: none; 
+        cursor: pointer;
+        overflow: hidden; 
+        transition: color 0.3s;
+        text-shadow: 0 0 10px rgba(255, 105, 180, 0.8); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px; 
+        z-index: 2;
+    }
+}
+@media screen and (min-width: 1920px), print {
+    .option-button {
+        font-family: "DotGothic16", Arial, sans-serif; 
+        position:absolute;
+        right: 820px;
+        bottom: 100px;
+        padding: 0;
+        margin: 10px;
+        width: 120px;
+        height: 40px;
+        font-size: 22px;
+        color: #94838c;
+        background-color: transparent; 
+        border: none; 
+        cursor: pointer;
+        transition: color 0.3s;
+        text-shadow: 0 0 10px rgba(255, 105, 180, 0.8); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px; 
+        z-index: 2;
+    }
+}
+/* 上 */
+.option2-button {
+    font-family: "DotGothic16", Arial, sans-serif; 
+    position:absolute;
+    right: 450px;
+    bottom: 210px;
+    padding: 0;
+    margin: 10px;
+    width: 120px; 
+    height: 40px;
+    font-size: 24px; 
+    color: #94838c;
+    background-color: transparent; 
+    border: none; 
+    cursor: pointer;
+    overflow: hidden; 
+    transition: color 0.3s;
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.8); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px; 
+    z-index: 2;
+}
+@media screen and (min-width:400px) and (max-width:1900px){
+    .option2-button {
+        font-family: "DotGothic16", Arial, sans-serif; 
+        position:absolute;
+        right: 319px;
+        bottom: 160px;
+        padding: 0;
+        margin: 10px;
+        width: 120px; 
+        height: 40px;
+        font-size: 24px; 
+        color: #94838c;
+        background-color: transparent; 
+        border: none; 
+        cursor: pointer;
+        overflow: hidden; 
+        transition: color 0.3s;
+        text-shadow: 0 0 10px rgba(255, 105, 180, 0.8); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px; 
+        z-index: 2;
+    }
+}
+@media screen and (min-width: 1920px), print {
+    .option2-button {
+        font-family: "DotGothic16", Arial, sans-serif; 
+        position:absolute;
+        right: 820px;
+        bottom: 140px;
+        padding: 0;
+        margin: 10px;
+        width: 120px;
+        height: 40px;
+        font-size: 22px;
+        color: #94838c;
+        background-color: transparent; 
+        border: none; 
+        cursor: pointer;
+        transition: color 0.3s;
+        text-shadow: 0 0 10px rgba(255, 105, 180, 0.8); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px; 
+        z-index: 2;
+    }  
+}
+.option-button::before,
+.option-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s; 
+}
+
+
+.option-button:hover::before,
+.option-button:hover::after {
+    transform: scale(0); /* 懸停時縮回 */
+}
+
+.option-button:hover {
+    color: white; 
+}
+.option2-button::before,
+.option2-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s; 
+}
+
+
+.option2-button:hover::before,
+.option2-button:hover::after {
+    transform: scale(0); /* 懸停時縮回 */
+}
+
+.option2-button:hover {
+    color: white; 
+}
+
+
+.scene7 .choose-investigation {
+    text-align: center;
+    font-size: 24px;
+}
+
+.scene7 .investigation-option {
+    display: inline-block;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.scene7 .investigation-option img {
+    display: block;
+    margin: 0 auto;
+    width: 400px; /* 根据需要调整图片大小 */
+    height: auto;
+}
+
+.scene7 .investigation-option p {
+    margin-top: 10px;
+    font-size: 24px;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+
+
+.scene7 .investigation-option:hover {
+    box-shadow: 0 0 15px rgba(238, 238, 201, 0.8); /* 你可以调整颜色和效果 */
+    transform: scale(1.05); /* 图片微微放大效果 */
+}
+
+
+/* 資料畫面 */
+.text-scene {
+    /* position: relative; */
+    margin: 0;
+    padding: 0;
+    font-family:"DotGothic16",Arial, sans-serif;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.text-scene h1 {
+    position:absolute;
+    font-size: 20px;
+    margin-bottom: 5px;
+    top: 13%;
+    left: 25%;
+    color: #524747;
+}
+
+.text-scene h2 {
+    position:absolute;
+    top: 35%;
+    font-size: 36px;
+    color: #ff69b4; /* 粉紅色 */
+    margin-bottom: 1em;
+    left: 30%;
+}
+
+.text-scene p {
+    position:absolute;
+    top: 45%;
+    left: 30%;
+    font-size: 24px;
+    color: #333333;
+    line-height: 1.6;
+    text-align: left;
+    
+}
+
+.text-scene-ref.custom-class {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    font-size: 12px;
+    color: #999999;
+}
+
+
+.text-scene10 {
+    /* position: relative; */
+    margin: 0;
+    padding: 0;
+    font-family:"DotGothic16",Arial, sans-serif;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.text-scene10 h1 {
+    position:absolute;
+    font-size: 20px;
+    margin-bottom: 5px;
+    top: 13%;
+    left: 25%;
+    color: #524747;
+}
+
+.text-scene10 h2 {
+    position:absolute;
+    top: 23%;
+    font-size: 26px;
+    color: #ff69b4; /* 粉紅色 */
+    margin-bottom: 1em;
+    left: 20%;
+}
+
+.text-scene10 p {
+    position:absolute;
+    top: 43%;
+    left: 20%;
+    font-size: 22px;
+    color: #333333;
+    line-height: 1.6;
+    text-align: left;
+    
+}
+.text-scene10 img{
+    position: absolute;
+    width: 550px;
+    top: 37%;
+    left: 52%;
+}
+@media screen and (min-width:400px) and (max-width:1900px){
+    .text-scene10 img{
+        position: absolute;
+        width: 300px;
+        top: 45%;
+        left: 63%;
+    }
+}
+
+
+.text-scene11 {
+    /* position: relative; */
+    margin: 0;
+    padding: 0;
+    font-family:"DotGothic16",Arial, sans-serif;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.text-scene11 h1 {
+    position:absolute;
+    font-size: 20px;
+    margin-bottom: 5px;
+    top: 13%;
+    left: 25%;
+    color: #524747;
+}
+
+.text-scene11 h2 {
+    position:absolute;
+    top: 22%;
+    font-size: 36px;
+    color: #ff69b4; /* 粉紅色 */
+    margin-bottom: 1em;
+    left: 20%;
+}
+
+.text-scene11 p {
+    position:absolute;
+    top: 37%;
+    left: 20%;
+    font-size: 22px;
+    color: #333333;
+    line-height: 1.6;
+    text-align: left;
+    
+}
+
+.loading-text h2 {
+    position: relative;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.loading-text h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #f00; 
+    animation: wave 2s infinite linear;
+}
+
+@keyframes wave {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s forwards;
+}
+
+/* .text-scene12 {
+    margin: 0;
+    padding: 0;
+    font-family:"DotGothic16",Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+
+} */
+
+.text-scene12 h1 {
+    position:absolute;
+    font-size: 20px;
+    margin-bottom: 5px;
+    top: 13%;
+    left: 25%;
+    color: #524747;
+}
+
+
+.text-scene12 h3{
+    background-color:#e4bac8;
+    font-size: 26px;
+
+}
+@media screen and (min-width:400px) and (max-width:1900px){
+    .text-scene12 h3{
+        background-color:#e4bac8;
+        font-size: 18px;
+    
+    }
+}
+
+.text-scene12 p{
+    font-size: 22px;
+
+}
+@media screen and (min-width:400px) and (max-width:1900px){
+    .text-scene12 p{
+        font-size: 16px;
+    
+    }
+}
+/* 聊天室背景 */
+
+
+
+.chat-msg {
+    background-color: #ffc7d4;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: absolute;
+    left: 20%;
+    top:32%;
+    max-width: 80%;
+    word-wrap: break-word;
+    display: none; /* 初始隱藏訊息 */
+
+
+}
+.chat-msg2 {
+    background-color: #ffc7d4;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: absolute;
+    left: 20%;
+    top:40%;
+    max-width: 80%;
+    word-wrap: break-word;
+    display: none; /* 初始隱藏訊息 */
+
+
+}
+
+.chat-msg.show, .chat-msg2.show {
+    opacity: 1;
+}
+
+.chat-msg::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid #ffc7d4;
+    border-right: 10px solid transparent;
+    position: absolute;
+    left: -10px;
+    top: 10px;
+}
+
+.chat-msg p {
+    margin: 0;
+    font-size: 24px;
+    font-family:"DotGothic16",Arial, sans-serif;
+}
+.chat-msg u {
+    margin: 0;
+    font-size: 24px;
+    font-family:"DotGothic16",Arial, sans-serif;
+}
+.chat-msg2::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid #ffc7d4;
+    border-right: 10px solid transparent;
+    position: absolute;
+    left: -10px;
+    top: 10px;
+}
+
+.chat-msg2 p {
+    margin: 0;
+    font-size: 24px;
+    font-family:"DotGothic16",Arial, sans-serif;
+}
+.chat-msg2 u {
+    margin: 0;
+    color: blue;
+    font-size: 24px;
+    font-family:"DotGothic16",Arial, sans-serif;
+}
+.chat-re  {
+    margin: 0;
+    font-size: 24px;
+    position: absolute;
+    left: 22%;
+    bottom: 19%;
+    font-family:"DotGothic16",Arial, sans-serif;
+    overflow: hidden; /* 隱藏超出範圍的內容 */
+    white-space: nowrap; /* 確保內容不換行 */
+    display: none; /* 初始隱藏訊息 */
+    animation: typing 3s steps(40) forwards; /* 打字機效果動畫 */
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1920px), print {
+    .chat-re  {
+        margin: 0;
+        font-size: 24px;
+        position: absolute;
+        left: 22%;
+        bottom: 10%;
+        font-family:"DotGothic16",Arial, sans-serif;
+        overflow: hidden; /* 隱藏超出範圍的內容 */
+        white-space: nowrap; /* 確保內容不換行 */
+        display: none; /* 初始隱藏訊息 */
+        animation: typing 3s steps(40) forwards; /* 打字機效果動畫 */
+    }    
+}
+
+.chat-button {
+    position: absolute;
+    right: 5%;
+    bottom: 17%;
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-family:"DotGothic16",Arial, sans-serif;
+    font-size: 48px;
+    cursor: pointer;
+    animation: blink-animation 1.5s steps(5, start) infinite;
+    margin-top: 10px;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+@media screen and (min-width: 1920px), print {
+    .chat-button {
+        position: absolute;
+        right: 5%;
+        bottom: 55px;
+        background: transparent;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        font-family:"DotGothic16",Arial, sans-serif;
+        font-size: 72px;
+        cursor: pointer;
+        animation: blink-animation 1.5s steps(5, start) infinite;
+        margin-top: 10px;
+    }
+}
+
+.chat-button:hover {
+    color: #9e7689;
+}
+
+@keyframes flash {
+    0% { opacity: 0.7; }
+    50% { opacity: 0.05; }
+    100% { opacity: 1; }
+}
+
+
+.text-scene28 {
+    /* position: relative; */
+    margin: 0;
+    padding: 0;
+    font-family:"DotGothic16",Arial, sans-serif;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.text-scene28 h1 {
+    position:absolute;
+    font-size: 20px;
+    margin-bottom: 5px;
+    top: 13%;
+    left: 27%;
+    color: #524747;
+}
+
+.text-scene28 h2 {
+    position:absolute;
+    top: 23%;
+    font-size: 28px;
+    color: #ff69b4; /* 粉紅色 */
+    margin-bottom: 1em;
+    left: 20%;
+}
+
+
+.text-scene28 p {
+    position:absolute;
+    top: 31%;
+    left: 20%;
+    font-size: 24px;
+    color: #333333;
+    line-height: 1.6;
+    text-align: left;
+    
+}
+@media screen and (min-width:400px) and (max-width:1900px){
+    .text-scene28 p {
+        position:absolute;
+        top: 31%;
+        left: 20%;
+        font-size: 18px;
+        color: #333333;
+        line-height: 1.6;
+        text-align: left;
+        
+    }
+}
+.text-scene28 img{
+    position: absolute;
+    width: 580px;
+    top: 23%;
+    left: 52%;
+}
+@media screen and (min-width:400px) and (max-width:1900px){
+    .text-scene28 img{
+        position: absolute;
+        width: 440px;
+        top: 23%;
+        left: 52%;
+    }
+}
+
+.text-scene31 {
+    /* position: relative; */
+    margin: 0;
+    padding: 0;
+    font-family:"DotGothic16",Arial, sans-serif;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.text-scene31 h1 {
+    position:absolute;
+    font-size: 20px;
+    margin-bottom: 5px;
+    top: 13%;
+    left: 25%;
+    color: #524747;
+}
+
+.text-scene31 h2 {
+    position:absolute;
+    top: 23%;
+    font-size: 28px;
+    color: #ff69b4; /* 粉紅色 */
+    margin-bottom: 1em;
+    left: 20%;
+}
+
+.text-scene31 p {
+    position:absolute;
+    top: 30%;
+    left: 20%;
+    font-size: 24px;
+    color: #333333;
+    line-height: 1.6;
+    text-align: left;
+    
+}
+@media screen and (min-width:400px) and (max-width:1900px){
+    .text-scene31 p {
+        position:absolute;
+        top: 30%;
+        left: 20%;
+        font-size: 20px;
+        color: #333333;
+        line-height: 1.6;
+        text-align: left;
+        
+    }
+}
+
+/* 發文 */
+.post  {
+    margin: 0;
+    font-size: 24px;
+    position: absolute;
+    left: 35%;
+    top: 26%;
+    font-family:"DotGothic16",Arial, sans-serif;
+    overflow: hidden; /* 隱藏超出範圍的內容 */
+    white-space: nowrap; /* 確保內容不換行 */
+    display: none; /* 初始隱藏訊息 */
+    animation: typing 3s steps(40) forwards; /* 打字機效果動畫 */
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+@media screen and (min-width:400px) and (max-width:1900px){
+    .post  {
+        margin: 0;
+        font-size: 24px;
+        position: absolute;
+        left: 35%;
+        top: 25%;
+        font-family:"DotGothic16",Arial, sans-serif;
+        overflow: hidden; /* 隱藏超出範圍的內容 */
+        white-space: nowrap; /* 確保內容不換行 */
+        display: none; /* 初始隱藏訊息 */
+        animation: typing 3s steps(40) forwards; /* 打字機效果動畫 */
+    }
+}
+@media screen and (min-width: 1920px),print {
+    .post  {
+        margin: 0;
+        font-size: 24px;
+        position: absolute;
+        left: 35%;
+        top: 19%;
+        font-family:"DotGothic16",Arial, sans-serif;
+        overflow: hidden; /* 隱藏超出範圍的內容 */
+        white-space: nowrap; /* 確保內容不換行 */
+        display: none; /* 初始隱藏訊息 */
+        animation: typing 3s steps(40) forwards; /* 打字機效果動畫 */
+    }   
+}
+.post2 {
+    margin: 0;
+    font-size: 24px;
+    position: absolute;
+    left: 35%;
+    top: 29%;
+    font-family:"DotGothic16",Arial, sans-serif;
+    overflow: hidden; /* 隱藏超出範圍的內容 */
+    white-space: nowrap; /* 確保內容不換行 */
+    display: none; /* 初始隱藏訊息 */
+    animation: typing 3s steps(40) forwards; /* 打字機效果動畫 */
+}
+@media screen and (min-width: 1920px),print {
+    .post2 {
+        margin: 0;
+        font-size: 24px;
+        position: absolute;
+        left: 35%;
+        top: 24%;
+        font-family:"DotGothic16",Arial, sans-serif;
+        overflow: hidden; /* 隱藏超出範圍的內容 */
+        white-space: nowrap; /* 確保內容不換行 */
+        display: none; /* 初始隱藏訊息 */
+        animation: typing 3s steps(40) forwards; /* 打字機效果動畫 */
+    }  
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.post-button {
+    position: absolute;
+    background-color: #751530; 
+    left: 70%;
+    top:50%;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    animation: blink-animation 1.5s steps(5, start) infinite; /* 閃爍效果 */
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+@media screen and (min-width:400px) and (max-width:1900px){
+    .post-button {
+        position: absolute;
+        background-color: #751530; 
+        left: 68%;
+        top:50%;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+        animation: blink-animation 1.5s steps(5, start) infinite; /* 閃爍效果 */
+    }
+}
+
+.post-button:hover {
+    opacity: 0.4; /* 滑鼠懸停時降低透明度 */
+}
+
+.com1{
+    margin: 0;
+    font-size: 24px;
+    position: absolute;
+    left: 33%;
+    top: 2%;
+    font-family:"DotGothic16",Arial, sans-serif;
+}
+@media screen and (min-width: 1920px),print {
+    .com1{
+        display: none;
+    }  
+}
+.com2 h3{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    position: absolute;
+    left: 35%;
+    top: 26%;
+    font-family:"DotGothic16",Arial, sans-serif;
+}
+@media screen and (min-width: 1920px),print {
+    .com2 h3{
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        position: absolute;
+        left: 35%;
+        top: 20%;
+        font-family:"DotGothic16",Arial, sans-serif;
+    }  
+}
+.com2 p {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    position: absolute;
+    left: 35%;
+    top: 30%;
+    font-family: "DotGothic16", Arial, sans-serif;
+    background-color: #e0dddd;
+    border-radius: 1em;
+    box-shadow: #e0dddd;
+}
+@media screen and (min-width:400px) and (max-width:1900px){
+    .com2 p {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        position: absolute;
+        left: 35%;
+        top: 30%;
+        font-family: "DotGothic16", Arial, sans-serif;
+        background-color: #e0dddd;
+        border-radius: 1em;
+        box-shadow: #e0dddd;
+    }
+    
+}
+@media screen and (min-width: 1920px),print {
+    .com2 p {
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        position: absolute;
+        left: 35%;
+        top: 23%;
+        font-family: "DotGothic16", Arial, sans-serif;
+        background-color: #e0dddd;
+        border-radius: 1em;
+        box-shadow: #e0dddd;
+    }  
+}
+
+.com2 a {
+    color: #751530; /* 連結文字顏色 */
+    text-decoration: none; /* 移除底線 */
+}
+
+.com2 a:hover {
+    color: #9e7689; /* hover時改變文字顏色 */
+}
+
+.com3 p {
+    margin: 0;
+    font-size: 24px;
+    position: absolute;
+    left: 35%;
+    top: 50%;
+}
+.com4 p {
+    margin: 0;
+    font-size: 24px;
+    position: absolute;
+    left: 35%;
+    top: 68%;
+}
+@media screen and (min-width: 1920px),print {
+    .com4 p {
+        margin: 0;
+        font-size: 24px;
+        position: absolute;
+        left: 35%;
+        top: 75%;
+    }
+}
+.com5 p {
+    margin: 0;
+    font-size: 24px;
+    position: absolute;
+    left: 35%;
+    top: 88%;
+}
+@media screen and (min-width: 1920px),print {
+    .com5 p {
+        display: none;
+    }
+}
+.comment-button {
+    font-family: "DotGothic16", Arial, sans-serif; 
+    position:absolute;
+    right: 350px;
+    bottom: 450px;
+    padding: 0;
+    margin: 10px;
+    width: 120px; 
+    height: 40px;
+    font-size: 24px; 
+    color: #f3e3ec;
+    background-color: transparent; 
+    border: none; 
+    cursor: pointer;
+    overflow: hidden; 
+    transition: color 0.3s;
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.8); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px; 
+    z-index: 2;
+    animation: blink-animation 1.5s steps(5, start) infinite; /* 閃爍效果 */
+
+}
+@media screen and (min-width:400px) and (max-width:1900px){
+    .comment-button {
+        font-family: "DotGothic16", Arial, sans-serif; 
+        position:absolute;
+        right: 200px;
+        bottom: 350px;
+        padding: 0;
+        margin: 10px;
+        width: 120px; 
+        height: 40px;
+        font-size: 24px; 
+        color: #f3e3ec;
+        background-color: transparent; 
+        border: none; 
+        cursor: pointer;
+        overflow: hidden; 
+        transition: color 0.3s;
+        text-shadow: 0 0 10px rgba(255, 105, 180, 0.8); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px; 
+        z-index: 2;
+        animation: blink-animation 1.5s steps(5, start) infinite; /* 閃爍效果 */
+    
+    }
+}
+@media screen and (min-width: 1920px),print {
+    .comment-button {
+        font-family: "DotGothic16", Arial, sans-serif; 
+        position:absolute;
+        right: 450px;
+        bottom: 450px;
+        padding: 0;
+        margin: 10px;
+        width: 120px; 
+        height: 40px;
+        font-size: 35px; 
+        color: #f3e3ec;
+        background-color: transparent; 
+        border: none; 
+        cursor: pointer;
+        overflow: hidden; 
+        transition: color 0.3s;
+        text-shadow: 0 0 10px rgba(255, 105, 180, 0.8); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px; 
+        z-index: 2;
+        animation: blink-animation 1.5s steps(5, start) infinite; /* 閃爍效果 */
+    
+    }
+}
+
+
+.comment-button::before,
+.comment-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s; 
+}
+
+
+.comment-button:hover::before,
+.comment-button:hover::after {
+    transform: scale(0); /* 懸停時縮回 */
+}
+
+.comment-button:hover {
+    color: white; 
+}
+
+/* 展示資料卡 */
+.card-head{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 600px;
+    padding-bottom: 620px;
+    border-radius: 5px;
+    background-color: #c191a7;
+    color: white;
+    margin: 10px;
+    font-family: "Dela Gothic One", sans-serif;
+
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.card h3{
+    background-color: #9e7689;
+    color: #e0dddd;
+}
+
+.card {
+    opacity: 0.5;
+    background-color: #e1d5d8;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Monomaniac One", sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 200px; /* 設置卡片的高度 */
+    animation: slide-up 0.7s ease-out; /* 卡片從下面冒出來的動畫 */
+    transition: transform 0.3s; /* 添加變換的過渡效果 */
+
+}
+@media screen and (min-width:400px) and (max-width:1900px){
+    .card {
+        opacity: 0.5;
+        background-color: #e1d5d8;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 14px;
+        font-family: "Monomaniac One", sans-serif;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        height: 200px; /* 設置卡片的高度 */
+        animation: slide-up 0.7s ease-out; /* 卡片從下面冒出來的動畫 */
+        transition: transform 0.3s; /* 添加變換的過渡效果 */
+    
+    }
+}
+.card:hover {
+    opacity: 1;
+    transform: scale(1.1); /* 移動到卡片上時放大 1.1 倍 */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+}
+@keyframes slide-up {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.card-button {
+    font-family: "DotGothic16", Arial, sans-serif;
+    color: white;
+    padding: 2px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 26px;
+    background-color: #c191a7;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .card-button:hover {
+    background-color: #986f84;
+    transform: scale(1.1);
+  }
+  
+  .card-button span {
+    color: white;
+    font-size: 18px;
+    font-family: "DotGothic16", Arial, sans-serif;
+  }
+  
+
+.scene46 {
+    text-align: center;
+    padding-top: 20px;
+    background-color: #efe5ea;
+}
+
+.end-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.end-button {
+    font-family: "DotGothic16", Arial, sans-serif;
+    background-color: #ffccdd;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    margin: 14px 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 按鈕放大特效 */
+.end-button:hover {
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+}
+
+/* 按鈕按下去的特效 */
+.end-button:active {
+    transform: translateY(2px);
+}
+
+.scene46 h2 {
+    font-family:  Arial, sans-serif;
+    position: absolute;;
+    font-family: "Microsoft JhengHei", sans-serif;
+    font-size: 48px;
+    text-align: center;
+    top: 30%;
+}
+
+.scene70 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.ref-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family: 'Cute Font', cursive;
+}
+
+.reference-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.reference {
+    padding: 5px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.reference a {
+    text-decoration: underline;
+    color: #751530;
+    font-size: 18px;
+    font-family: "DotGothic16", Arial, sans-serif;
+    display: block;
+}
+
+.reference a:hover {
+    transform: scale(1.05) translateY(-5px);
+    background-color: #ffe0e0;
+    transition-duration: 0.4s;
+    color: white; 
+}
+
+.reference a:active {
+    transform: translateY(2px);
+}
+.ref-button {
+    font-family: "DotGothic16", Arial, sans-serif;
+    color: white;
+    position: absolute;
+    padding: 2px;
+    bottom: 100px;
+    right: 48%;
+    font-size: 26px;
+    background-color: #c191a7;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  @media screen and (min-width:400px) and (max-width:1900px){
+    .ref-button {
+        font-family: "DotGothic16", Arial, sans-serif;
+        color: white;
+        position: absolute;
+        padding: 2px;
+        bottom: 1%;
+        right: 48%;
+        font-size: 26px;
+        background-color: #c191a7;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+      } 
+}
+  
+  .ref-button:hover {
+    background-color: #986f84;
+    transform: scale(1.1);
+  }
+  
+  .ref-button span {
+    color: white;
+    font-size: 18px;
+    font-family: "DotGothic16", Arial, sans-serif;
+  }
+
+  .scene80 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color:#e1cdd6;
+    font-family: 'Cute Font', cursive;
+    text-align: center;
+    padding: 20px;
+}
+
+.auth-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.about-text p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.heart {
+    position: fixed;
+    color: rgb(173, 38, 61);
+    font-size: 36px;
+    pointer-events: none; /* 讓愛心不影響滑鼠事件 */
+    z-index: 9999; /* 確保愛心在最上層 */
+    animation: float 3s infinite; /* 浮動動畫，持續3秒，無限循環 */
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}
