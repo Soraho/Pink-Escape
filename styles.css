@@ -326,7 +326,7 @@ body.fade-out {
 
 .dialog-name {
     position: absolute;
-    top: 600px; /* 調整對話文字的垂直位置 */
+    top: 56%; /* 調整對話文字的垂直位置 */
     left: 25%;
     transform: translate(-50%, -50%);
     font-size: 24px;
@@ -356,7 +356,7 @@ body.fade-out {
 .dialog-text {
     position: absolute;
     top: 70%; /* 調整對話文字的垂直位置 */
-    left: 37%;
+    left: 44%;
     transform: translate(-50%, -50%);
     font-size: 24px;
     color: #333;
@@ -368,7 +368,7 @@ body.fade-out {
     /* animation-delay: 1s; */
 
 }
-@media screen and (min-width:400px) and (max-width:1900px){
+@media screen and (min-width:400px) and (max-width:1200px){
     .dialog-text {
         position: absolute;
         top: 70%; /* 調整對話文字的垂直位置 */
@@ -400,7 +400,7 @@ body.fade-out {
 .tell-button {
     font-family: "DotGothic16", Arial, sans-serif; 
     position:absolute;
-    right: 450px;
+    right: 22%;
     bottom: 150px;
     padding: 0;
     margin: 10px;
@@ -420,7 +420,7 @@ body.fade-out {
     border-radius: 5px; 
     z-index: 2;
 }
-@media screen and (min-width:400px) and (max-width:1900px){
+@media screen and (min-width:400px) and (max-width:1200px){
     .tell-button {
         font-family: "DotGothic16", Arial, sans-serif; 
         position:absolute;
@@ -498,8 +498,8 @@ body.fade-out {
 .option-button {
     font-family: "DotGothic16", Arial, sans-serif; 
     position:absolute;
-    right: 450px;
-    bottom: 150px;
+    right: 22%;
+    bottom: 16%;
     padding: 0;
     margin: 10px;
     width: 120px; 
@@ -518,12 +518,12 @@ body.fade-out {
     border-radius: 5px; 
     z-index: 2;
 }
-@media screen and (min-width:400px) and (max-width:1900px){
+@media screen and (min-width:400px) and (max-width:1200px){
     .option-button {
         font-family: "DotGothic16", Arial, sans-serif; 
         position:absolute;
         right: 420px;
-        bottom: 180px;
+        bottom: 15%;
         padding: 0;
         margin: 10px;
         width: 120px; 
@@ -571,8 +571,8 @@ body.fade-out {
 .option2-button {
     font-family: "DotGothic16", Arial, sans-serif; 
     position:absolute;
-    right: 450px;
-    bottom: 210px;
+    right: 22%;
+    bottom: 21%;
     padding: 0;
     margin: 10px;
     width: 120px; 
@@ -591,12 +591,12 @@ body.fade-out {
     border-radius: 5px; 
     z-index: 2;
 }
-@media screen and (min-width:400px) and (max-width:1900px){
+@media screen and (min-width:400px) and (max-width:1200px){
     .option2-button {
         font-family: "DotGothic16", Arial, sans-serif; 
         position:absolute;
         right: 420px;
-        bottom: 180px;
+        bottom: 20%;
         padding: 0;
         margin: 10px;
         width: 120px; 
@@ -733,7 +733,7 @@ body.fade-out {
     position:absolute;
     font-size: 20px;
     margin-bottom: 5px;
-    top: 10%;
+    top: 11.5%;
     left: 25%;
     color: #524747;
 }
@@ -785,7 +785,7 @@ body.fade-out {
     position:absolute;
     font-size: 20px;
     margin-bottom: 5px;
-    top: 10%;
+    top: 11.5%;
     left: 25%;
     color: #524747;
 }
@@ -801,7 +801,7 @@ body.fade-out {
 
 .text-scene10 p {
     position:absolute;
-    top: 43%;
+    top: 30%;
     left: 20%;
     font-size: 22px;
     color: #333333;
@@ -811,11 +811,11 @@ body.fade-out {
 }
 .text-scene10 img{
     position: absolute;
-    width: 550px;
-    top: 37%;
-    left: 52%;
+    width: 380px;
+    top: 39%;
+    left: 50%;
 }
-@media screen and (min-width:400px) and (max-width:1900px){
+@media screen and (min-width:400px) and (max-width:1200px){
     .text-scene10 img{
         position: absolute;
         width: 300px;
@@ -843,7 +843,7 @@ body.fade-out {
     position:absolute;
     font-size: 20px;
     margin-bottom: 5px;
-    top: 10%;
+    top: 11.5%;
     left: 25%;
     color: #524747;
 }
@@ -922,7 +922,7 @@ body.fade-out {
     position:absolute;
     font-size: 20px;
     margin-bottom: 5px;
-    top: 10%;
+    top: 11.5%;
     left: 25%;
     color: #524747;
 }
@@ -930,10 +930,10 @@ body.fade-out {
 
 .text-scene12 h3{
     background-color:#e4bac8;
-    font-size: 26px;
+    font-size: 22px;
 
 }
-@media screen and (min-width:400px) and (max-width:1900px){
+@media screen and (min-width:400px) and (max-width:1200px){
     .text-scene12 h3{
         background-color:#e4bac8;
         font-size: 18px;
@@ -942,10 +942,10 @@ body.fade-out {
 }
 
 .text-scene12 p{
-    font-size: 22px;
+    font-size: 18px;
 
 }
-@media screen and (min-width:400px) and (max-width:1900px){
+@media screen and (min-width:400px) and (max-width:1200px){
     .text-scene12 p{
         font-size: 16px;
     
@@ -1134,7 +1134,7 @@ body.fade-out {
     position:absolute;
     font-size: 20px;
     margin-bottom: 5px;
-    top: 10%;
+    top: 11.5%;
     left: 27%;
     color: #524747;
 }
@@ -1159,7 +1159,7 @@ body.fade-out {
     text-align: left;
     
 }
-@media screen and (min-width:400px) and (max-width:1900px){
+@media screen and (min-width:400px) and (max-width:1200px){
     .text-scene28 p {
         position:absolute;
         top: 31%;
@@ -1173,11 +1173,11 @@ body.fade-out {
 }
 .text-scene28 img{
     position: absolute;
-    width: 580px;
+    width: 380px;
     top: 23%;
-    left: 52%;
+    left: 56%;
 }
-@media screen and (min-width:400px) and (max-width:1900px){
+@media screen and (min-width:400px) and (max-width:1200px){
     .text-scene28 img{
         position: absolute;
         width: 440px;
@@ -1204,7 +1204,7 @@ body.fade-out {
     position:absolute;
     font-size: 20px;
     margin-bottom: 5px;
-    top: 10%;
+    top: 11.5%;
     left: 25%;
     color: #524747;
 }
@@ -1228,7 +1228,7 @@ body.fade-out {
     text-align: left;
     
 }
-@media screen and (min-width:400px) and (max-width:1900px){
+@media screen and (min-width:400px) and (max-width:1200px){
     .text-scene31 p {
         position:absolute;
         top: 30%;
@@ -1262,7 +1262,7 @@ body.fade-out {
         width: 100%;
     }
 }
-@media screen and (min-width:400px) and (max-width:1900px){
+@media screen and (min-width:400px) and (max-width:1200px){
     .post  {
         margin: 0;
         font-size: 24px;
@@ -1345,7 +1345,7 @@ body.fade-out {
         visibility: hidden;
     }
 }
-@media screen and (min-width:400px) and (max-width:1900px){
+@media screen and (min-width:400px) and (max-width:1200px){
     .post-button {
         position: absolute;
         background-color: #751530; 
@@ -1372,6 +1372,7 @@ body.fade-out {
     position: absolute;
     left: 33%;
     top: 2%;
+    color: #94838c;
     font-family:"DotGothic16",Arial, sans-serif;
 }
 @media screen and (min-width: 3000px),print {
@@ -1402,16 +1403,19 @@ body.fade-out {
 .com2 p {
     margin: 0;
     padding: 0;
-    font-size: 18px;
+    font-size: 14px;
     position: absolute;
-    left: 35%;
+    left: 33%;
     top: 30%;
     font-family: "DotGothic16", Arial, sans-serif;
-    background-color: #e0dddd;
+    background-color: #eee5e5;
     border-radius: 1em;
     box-shadow: #e0dddd;
 }
-@media screen and (min-width:400px) and (max-width:1900px){
+.com2  :hover{
+    background-color: #e0dddd;
+}
+@media screen and (min-width:400px) and (max-width:1200px){
     .com2 p {
         margin: 0;
         padding: 0;
@@ -1456,6 +1460,7 @@ body.fade-out {
     position: absolute;
     left: 35%;
     top: 50%;
+    color: #94838c;
 }
 .com4 p {
     margin: 0;
@@ -1463,6 +1468,8 @@ body.fade-out {
     position: absolute;
     left: 35%;
     top: 68%;
+    color: #94838c;
+
 }
 @media screen and (min-width: 3000px),print {
     .com4 p {
@@ -1471,6 +1478,8 @@ body.fade-out {
         position: absolute;
         left: 35%;
         top: 75%;
+        color: #94838c;
+
     }
 }
 .com5 p {
@@ -1479,6 +1488,7 @@ body.fade-out {
     position: absolute;
     left: 35%;
     top: 88%;
+    color: #94838c;
 }
 @media screen and (min-width: 3000px),print {
     .com5 p {
@@ -1510,7 +1520,7 @@ body.fade-out {
     animation: blink-animation 1.5s steps(5, start) infinite; /* 閃爍效果 */
 
 }
-@media screen and (min-width:400px) and (max-width:1900px){
+@media screen and (min-width:400px) and (max-width:1200px){
     .comment-button {
         font-family: "DotGothic16", Arial, sans-serif; 
         position:absolute;
@@ -1621,7 +1631,7 @@ body.fade-out {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    font-size: 18px;
+    font-size: 14px;
     font-family: "Monomaniac One", sans-serif;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: 200px; /* 設置卡片的高度 */
@@ -1629,7 +1639,7 @@ body.fade-out {
     transition: transform 0.3s; /* 添加變換的過渡效果 */
 
 }
-@media screen and (min-width:400px) and (max-width:1900px){
+@media screen and (min-width:400px) and (max-width:1200px){
     .card {
         opacity: 0.5;
         background-color: #e1d5d8;
@@ -1807,7 +1817,7 @@ body.fade-out {
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
   }
-  @media screen and (min-width:400px) and (max-width:1900px){
+  @media screen and (min-width:400px) and (max-width:1200px){
     .ref-button {
         font-family: "DotGothic16", Arial, sans-serif;
         color: white;
