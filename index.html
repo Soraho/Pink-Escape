@@ -21,8 +21,9 @@
         <!-- 首頁 -->
         <div id="scene1" class="scene scene1">
             <img src="tittle.PNG" alt="Game Title" class="title">
+            <img src="coveritem.png" alt="Game Title" class="cover-item">
             <button class="start-button" onclick="startGame()">開始遊戲</button>
-            <p>＊為了最佳遊戲體驗請使用電腦，以及開啟音量</p>
+            <p>＊為了最佳遊戲體驗請使用電腦全螢幕（1920px*2080px），以及開啟音量</p>
         </div>
         
         <!-- 故事場景一 -->
@@ -44,7 +45,7 @@
                 <p class="dialog-name">我</p>
                 <p class="dialog-text">（我覺得大家好像沒有注意到女性用戶會有不一樣的需求⋯⋯）</p>
                 <button class="tell-button" onclick="goToScene('scene4')">繼續▶</button>
-                <img src="main.png" alt="Main Character" class="character">
+                <img src="mainangry.png" alt="Main Character" class="character">
             </div>
         </div>
 
@@ -234,7 +235,7 @@
                 </p>
 
                 <p class="text-scene-ref custom-class">資料來源：<a href="https://www.genderbias.design/examples_of_gender_bias">Examples of gender bias in products</a></p>
-                <button class="tell-button" onclick="goToScene('scene13')">儲存網頁▶</button>
+                <button class="tell-button" onclick="goToScene('scene13_1')">繼續▶</button>
             </div>
         </div>
        <!-- 場景 14-->
@@ -322,9 +323,72 @@
                 </p>
 
                 <p class="text-scene-ref custom-class">資料來源：<a href="https://www.genderbias.design/examples_of_gender_bias">Examples of gender bias in products</a></p>
-                <button class="tell-button" onclick="goToScene('scene13')">收起筆記▶</button>
+                <button class="tell-button" onclick="goToScene('scene13_1')">繼續▶</button>
             </div>
         </div>
+
+        <div id="scene13_1" class="scene scene13_1" style="display: none;">
+            <div class="text-scene13_1">
+                <h1>酷兒理論</h1>
+                <p class="highlight">性認同是建立在社會建構之上的，而這些建構是由社會創造的。<br>
+                    因此，性別不是由我們的生理差異形成的，而是建構在文化上作為一種認同。<br>  
+                    酷兒理論家聲稱男性和女性的角色是可以學習的，而且更重要的是，是可以打破的。</p>
+                <button class="tell-button" onclick="goToScene('scene13_2')">繼續▶</button>
+            </div>
+        </div>
+        <div id="scene13_2" class="scene scene13_2" style="display: none;">
+            <div class="text-scene13_1">
+                <h1>產品設計中的性別理論：除毛刀為例</h1>
+                <p>社會建構的刻板印象導致產品設計中出現性別差異<br>
+                    男性和女性除毛刀在技術上可能完全相同，但它們的設計卻大不相同</p>
+                <p class="highlight">女用：淺紫色、透明塑膠材質，圓潤的設計<br>
+                    男用：金屬灰和深藍色，金屬材質，直線設計</p>
+                <p>結果，產品的設計方式強化了：</p>
+                <p class="highlight">男性＞線性形狀、技術複雜且強調功能性的產品 <br>
+                    女性＞圓潤形狀、色彩繽紛具有美學吸引力的產品</p>
+                <p>也體現和強化社會建構的性別刻板印象</p>
+                <button class="tell-button" onclick="goToScene('scene13_3')">繼續▶</button>
+            </div>
+        </div>
+        <div id="scene13_3" class="scene scene13_3" style="display: none;">
+            <div class="text-scene13_3">
+                <h1>重視產品非理性的面向</h1>
+                <div class="left-side">
+                    <p>性別價值</p>
+                    <p class="highlight">男性化：侵略、獨立、智慧和自信<br>
+                        女性化：美麗、溫柔、可愛和賢慧</p>
+                    <p>性價值</p>
+                    <p class="highlight">強調與產品相關的生理性別差異和性慾</p>
+                    <p>浪漫愛情價值</p>
+                    <p class="highlight">強調與產品相關的男女之間的愛情</p>
+                </div>
+                <div class="center-side">
+                    <p class="highlight alt">・不參與重要決策或事物</p>
+                    <p class="highlight">・年輕、苗條、膚色白皙、美麗</p>
+                    <p class="highlight alt">・主要活動範圍在家庭</p>
+                    <p class="highlight">・依賴男性的保護和庇護</p>
+                </div>
+                <div class="right-side">
+                    <p class="highlight alt">・不是主要勞動力</p>
+                    <p class="highlight ">・沒有肢體衝突性</p>
+                    <p class="highlight alt">・“X”被認為是男性化的</p>
+                    <p class="highlight ">・“C”、“L”和“Y”與女性氣質相關聯</p>
+                </div>
+                <button class="tell-button" onclick="goToScene('scene13_4')">繼續▶</button>
+            </div>
+        </div>
+        <div id="scene13_4" class="scene scene13_4" style="display: none;">
+            <div class="text-scene13_1">
+                <h1>科技領域產品</h1>
+                <p>科技設計相關領域缺乏對性別影響的討論</p>
+                <p class="highlight">
+                    當考慮到性別時，產品設計往往採用理想化的性別「使用者」模型<br>
+                    人們還不太了解在設計過程中是如何建構性別偏見或性別中立性的</p>
+                <p>「性別」通常不是在設計這些科技時明確考慮的因素</p>
+                <button class="tell-button" onclick="goToScene('scene13')">關閉▶</button>
+            </div>
+        </div>
+
         <!-- 故事場景一結束 -->
 
         <!-- 場景 13-->
@@ -363,7 +427,7 @@
                 <p class="dialog-name">我</p>
                 <p class="dialog-text">其實我也覺得真的有點冷，我每次都要蓋毯子，<br>尤其是從廁所回來後的感覺更明顯，溫差真的超大！！</p>
                 <button class="tell-button" onclick="goToScene('scene22')">繼續▶</button>
-                <img src="main.png" alt="Main Character" class="character">
+                <img src="mainangry.png" alt="Main Character" class="character">
             </div>
         </div>
         <!-- 場景 22-->
@@ -404,7 +468,7 @@
                 <p class="dialog-text">（到底想怎樣啊，我該⋯⋯）</p>
                 <button class="option-button" onclick="goToScene('scene27')">保持沈默</button>
                 <button class="option2-button" onclick="goToScene('scene26')">反駁意見</button>
-                <img src="main.png" alt="Main Character" class="character">
+                <img src="mainangry.png" alt="Main Character" class="character">
             </div>
         </div>
 
@@ -415,7 +479,7 @@
                 <p class="dialog-name">我</p>
                 <p class="dialog-text">奇怪欸就跟你說不是了，你自己看啊</p>
                 <button class="tell-button" onclick="goToScene('scene28')">拿出資料▶</button>
-                <img src="main.png" alt="Main Character" class="character">
+                <img src="mainangry.png" alt="Main Character" class="character">
             </div>
         </div>
         <!-- 場景 27-->
@@ -603,7 +667,7 @@
                 <p class="dialog-name">我</p>
                 <p class="dialog-text">（什麼啊⋯⋯如果是本人聽到的話一定超不舒服。）</p>
                 <button class="tell-button" onclick="goToScene('scene36_4')">繼續▶</button>
-                <img src="main.png" alt="Main Character" class="character">
+                <img src="mainangry.png" alt="Main Character" class="character">
             </div>
         </div>
 
@@ -681,7 +745,7 @@
                 <p class="dialog-name">我</p>
                 <p class="dialog-text">（什麼啊⋯⋯如果是本人聽到的話一定超不舒服。）</p>
                 <button class="tell-button" onclick="goToScene('scene37_4')">繼續▶</button>
-                <img src="main.png" alt="Main Character" class="character">
+                <img src="mainangry.png" alt="Main Character" class="character">
             </div>
         </div>
         <div id="scene37_4" class="scene scene37_4" style="display: none;">
@@ -759,7 +823,7 @@
                 <p class="dialog-text">（好不容易到這一步了，我該⋯⋯）</p>
                 <button class="option-button" onclick="goToScene('scene51')">堅持立場</button>
                 <button class="option2-button" onclick="goToScene('scene52')">尋求妥協</button>
-                <img src="main.png" alt="Main Character" class="character">
+                <img src="mainangry.png" alt="Main Character" class="character">
             </div>
         </div>
         <div id="scene51" class="scene scene51" style="display: none;">
@@ -817,8 +881,35 @@
                 <img src="tell.png" alt="Dialog Box" class="dialog">
                 <p class="dialog-name">我</p>
                 <p class="dialog-text">這不僅是道德上的正確選擇，也是商業上的明智決策。</p>
-                <button class="tell-button" onclick="goToScene('scene39_2')">繼續▶</button>
+                <button class="tell-button" onclick="goToScene('scene92')">繼續▶</button>
                 <img src="main.png" alt="Main Character" class="character">
+            </div>
+        </div>
+        <div id="scene92" class="scene scene92" style="display: none;">
+            <div class="text-scene13_1">
+                <h1>強化或挑戰社會建構的性別認同</h1>
+                <p class="highlight">模糊男性和女性產品之間的界線</p>
+                <p>設計師應該努力消除產品中男性氣概和女性氣質之間的區別。<br>
+                    例如透過使用中性色彩、形狀、尺寸和介面來實現</p>
+                <p class="highlight">專注於所有使用者共同關心的特性</p>
+                <p>設計師可以創造出對所有性別都具有吸引力的產品。</p>
+                <p class="highlight">考慮產品的背景</p>
+                <p>產品的類型會影響設計師處理性別議題的方式。<br>
+                    這是因為某些性別識別元素（如尺寸、顏色和曲線類型）<br>
+                    對於不同類型的產品具有不同的優先順序。</p>
+                <button class="tell-button" onclick="goToScene('scene93')">繼續▶</button>
+            </div>
+        </div>
+        <div id="scene93" class="scene scene93" style="display: none;">
+            <div class="text-scene13_1">
+                <h1>促進科技領域性別的多元與包容性</h1>
+                <p class="highlight">增加對科技設計和使用性別影響的研究和理解</p>
+                <p>討論什麼構成性別中立或性別包容的設計／開發環境，<br>
+                    包括考慮軟體工具以及數位或實體協作設計／開發環境中的設計偏見。</p>
+                <p class="highlight">思考如何在科技領域以及與科技生產相關的領域</p>
+                <p>包括電腦科學與工程，以及設計、設計研究和相關領域<br>
+                    的設計過程中，增加細緻入微的性別觀點的代表性</p>
+                <button class="tell-button" onclick="goToScene('scene39_2')">繼續▶</button>
             </div>
         </div>
         <div id="scene39_2" class="scene scene39_2" style="display: none;">
@@ -907,6 +998,7 @@
             </div>
             <button class="card-button" onclick="goToScene('scene39_3')">繼續▶</button>
         </div>
+
         <div id="scene39_3" class="scene scene39_3" style="display: none;">
             <div class="card-head">
                 <h2>設<br>計<br>更<br>好<br>女<br>性<br>產<br>品<br>的<br>七<br>種<br>方<br>法</h2>
@@ -977,10 +1069,39 @@
                 <img src="tell.png" alt="Dialog Box" class="dialog">
                 <p class="dialog-name">我</p>
                 <p class="dialog-text">（也許我應該退一步，尋求一個各方都能接受的方案，先收集資料。）</p>
-                <button class="tell-button" onclick="goToScene('scene52_1')">繼續▶</button>
+                <button class="tell-button" onclick="goToScene('scene90')">繼續▶</button>
                 <img src="main.png" alt="Main Character" class="character">
             </div>
         </div>
+
+        <div id="scene90" class="scene scene90" style="display: none;">
+            <div class="text-scene13_1">
+                <h1>強化或挑戰社會建構的性別認同</h1>
+                <p class="highlight">模糊男性和女性產品之間的界線</p>
+                <p>設計師應該努力消除產品中男性氣概和女性氣質之間的區別。<br>
+                    例如透過使用中性色彩、形狀、尺寸和介面來實現</p>
+                <p class="highlight">專注於所有使用者共同關心的特性</p>
+                <p>設計師可以創造出對所有性別都具有吸引力的產品。</p>
+                <p class="highlight">考慮產品的背景</p>
+                <p>產品的類型會影響設計師處理性別議題的方式。<br>
+                    這是因為某些性別識別元素（如尺寸、顏色和曲線類型）<br>
+                    對於不同類型的產品具有不同的優先順序。</p>
+                <button class="tell-button" onclick="goToScene('scene91')">繼續▶</button>
+            </div>
+        </div>
+        <div id="scene91" class="scene scene91" style="display: none;">
+            <div class="text-scene13_1">
+                <h1>促進科技領域性別的多元與包容性</h1>
+                <p class="highlight">增加對科技設計和使用性別影響的研究和理解</p>
+                <p>討論什麼構成性別中立或性別包容的設計／開發環境，<br>
+                    包括考慮軟體工具以及數位或實體協作設計／開發環境中的設計偏見。</p>
+                <p class="highlight">思考如何在科技領域以及與科技生產相關的領域</p>
+                <p>包括電腦科學與工程，以及設計、設計研究和相關領域<br>
+                    的設計過程中，增加細緻入微的性別觀點的代表性</p>
+                <button class="tell-button" onclick="goToScene('scene52_1')">繼續▶</button>
+            </div>
+        </div>
+
         <div id="scene52_1" class="scene scene52_1" style="display: none;">
             <div class="card-head">
                 <h2>來<br>自<br>真<br>實<br>的<br>心<br>聲</h2>
@@ -1146,8 +1267,35 @@
                 <img src="tell.png" alt="Dialog Box" class="dialog">
                 <p class="dialog-name">我</p>
                 <p class="dialog-text">（提一些折衷的方案和參考資料應該可行。）</p>
-                <button class="tell-button" onclick="goToScene('scene41_2')">繼續▶</button>
+                <button class="tell-button" onclick="goToScene('scene94')">繼續▶</button>
                 <img src="main.png" alt="Main Character" class="character">
+            </div>
+        </div>
+        <div id="scene94" class="scene scene94" style="display: none;">
+            <div class="text-scene13_1">
+                <h1>強化或挑戰社會建構的性別認同</h1>
+                <p class="highlight">模糊男性和女性產品之間的界線</p>
+                <p>設計師應該努力消除產品中男性氣概和女性氣質之間的區別。<br>
+                    例如透過使用中性色彩、形狀、尺寸和介面來實現</p>
+                <p class="highlight">專注於所有使用者共同關心的特性</p>
+                <p>設計師可以創造出對所有性別都具有吸引力的產品。</p>
+                <p class="highlight">考慮產品的背景</p>
+                <p>產品的類型會影響設計師處理性別議題的方式。<br>
+                    這是因為某些性別識別元素（如尺寸、顏色和曲線類型）<br>
+                    對於不同類型的產品具有不同的優先順序。</p>
+                <button class="tell-button" onclick="goToScene('scene95')">繼續▶</button>
+            </div>
+        </div>
+        <div id="scene95" class="scene scene95" style="display: none;">
+            <div class="text-scene13_1">
+                <h1>促進科技領域性別的多元與包容性</h1>
+                <p class="highlight">增加對科技設計和使用性別影響的研究和理解</p>
+                <p>討論什麼構成性別中立或性別包容的設計／開發環境，<br>
+                    包括考慮軟體工具以及數位或實體協作設計／開發環境中的設計偏見。</p>
+                <p class="highlight">思考如何在科技領域以及與科技生產相關的領域</p>
+                <p>包括電腦科學與工程，以及設計、設計研究和相關領域<br>
+                    的設計過程中，增加細緻入微的性別觀點的代表性</p>
+                <button class="tell-button" onclick="goToScene('scene41_2')">繼續▶</button>
             </div>
         </div>
         <div id="scene41_2" class="scene scene41_2" style="display: none;">
@@ -1312,13 +1460,17 @@
         <!-- 結束遊戲 -->
 
         <div id="scene46" class="scene scene46" style="display: none;">
-            <h2 style="text-align: center; margin-bottom: 20px;">遊戲結束，謝謝您的遊玩<br></h2>
+            <div class="gif-container">
+                <img src="thx.gif" alt="Animated GIF">
+            </div>
+            <h2>遊戲結束，謝謝您的遊玩<br></h2>
             <div class="end-button-container">
                 <button class="end-button" onclick="goToScene('scene1')">再玩一次</button>
                 <button class="end-button" onclick="goToScene('scene60')">辦公手冊</button>
                 <button class="end-button" onclick="goToScene('scene70')">參考資料</button>
                 <button class="end-button" onclick="goToScene('scene80')">關於作者</button>
             </div>
+
         </div>
         <div id="scene80" class="scene scene80" style="display: none;">
             <h2 class="auth-title">關於作者</h2>
@@ -1428,7 +1580,68 @@
                 •女性在軍隊中骨盆骨折的比率遠高於男性
             </p>
             <p class="text-scene-ref custom-class">資料來源：<a href="https://www.plasticsengineering.org/2023/06/gender-bias-in-design-000036/">Gender Bias In Design</a></p>
-            <button class="tell-button" onclick="goToScene('scene64')">翻頁▶</button>
+            <button class="tell-button" onclick="goToScene('scene63_1')">翻頁▶</button>
+        </div>
+    </div>
+    <div id="scene63_1" class="scene scene63_1" style="display: none;">
+        <div class="text-scene13_1">
+            <h1>酷兒理論</h1>
+            <p class="highlight">性認同是建立在社會建構之上的，而這些建構是由社會創造的。<br>
+                因此，性別不是由我們的生理差異形成的，而是建構在文化上作為一種認同。<br>  
+                酷兒理論家聲稱男性和女性的角色是可以學習的，而且更重要的是，是可以打破的。</p>
+            <button class="tell-button" onclick="goToScene('scene63_2')">繼續▶</button>
+        </div>
+    </div>
+    <div id="scene63_2" class="scene scene63_2" style="display: none;">
+        <div class="text-scene13_1">
+            <h1>產品設計中的性別理論：除毛刀為例</h1>
+            <p>社會建構的刻板印象導致產品設計中出現性別差異<br>
+                男性和女性除毛刀在技術上可能完全相同，但它們的設計卻大不相同</p>
+            <p class="highlight">女用：淺紫色、透明塑膠材質，圓潤的設計<br>
+                男用：金屬灰和深藍色，金屬材質，直線設計</p>
+            <p>結果，產品的設計方式強化了：</p>
+            <p class="highlight">男性＞線性形狀、技術複雜且強調功能性的產品 <br>
+                女性＞圓潤形狀、色彩繽紛具有美學吸引力的產品</p>
+            <p>也體現和強化社會建構的性別刻板印象</p>
+            <button class="tell-button" onclick="goToScene('scene63_3')">繼續▶</button>
+        </div>
+    </div>
+    <div id="scene63_3" class="scene scene63_3" style="display: none;">
+        <div class="text-scene13_3">
+            <h1>重視產品非理性的面向</h1>
+            <div class="left-side">
+                <p>性別價值</p>
+                <p class="highlight">男性化：侵略、獨立、智慧和自信<br>
+                    女性化：美麗、溫柔、可愛和賢慧</p>
+                <p>性價值</p>
+                <p class="highlight">強調與產品相關的生理性別差異和性慾</p>
+                <p>浪漫愛情價值</p>
+                <p class="highlight">強調與產品相關的男女之間的愛情</p>
+            </div>
+            <div class="center-side">
+                <p class="highlight alt">・不參與重要決策或事物</p>
+                <p class="highlight">・年輕、苗條、膚色白皙、美麗</p>
+                <p class="highlight alt">・主要活動範圍在家庭</p>
+                <p class="highlight">・依賴男性的保護和庇護</p>
+            </div>
+            <div class="right-side">
+                <p class="highlight alt">・不是主要勞動力</p>
+                <p class="highlight ">・沒有肢體衝突性</p>
+                <p class="highlight alt">・“X”被認為是男性化的</p>
+                <p class="highlight ">・“C”、“L”和“Y”與女性氣質相關聯</p>
+            </div>
+            <button class="tell-button" onclick="goToScene('scene63_4')">繼續▶</button>
+        </div>
+    </div>
+    <div id="scene63_4" class="scene scene63_4" style="display: none;">
+        <div class="text-scene13_1">
+            <h1>科技領域產品</h1>
+            <p>科技設計相關領域缺乏對性別影響的討論</p>
+            <p class="highlight">
+                當考慮到性別時，產品設計往往採用理想化的性別「使用者」模型<br>
+                人們還不太了解在設計過程中是如何建構性別偏見或性別中立性的</p>
+            <p>「性別」通常不是在設計這些科技時明確考慮的因素</p>
+            <button class="tell-button" onclick="goToScene('scene64')">關閉▶</button>
         </div>
     </div>
     <!-- 場景 12-->
@@ -1490,6 +1703,33 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;➤生理期間沒有廁所供女性更換衛生棉條，感染鏈球菌毒性休克症候群的機率也會增加
             </p>
             <p class="text-scene-ref custom-class">資料來源：<a href="https://womany.net/read/article/24828">「女人已經習慣，上廁所免不了排隊」這件事有什麼問題？</a></p>
+            <button class="tell-button" onclick="goToScene('scene66_1')">繼續▶</button>
+        </div>
+    </div>
+    <div id="scene66_1" class="scene scene66_1" style="display: none;">
+        <div class="text-scene13_1">
+            <h1>強化或挑戰社會建構的性別認同</h1>
+            <p class="highlight">模糊男性和女性產品之間的界線</p>
+            <p>設計師應該努力消除產品中男性氣概和女性氣質之間的區別。<br>
+                例如透過使用中性色彩、形狀、尺寸和介面來實現</p>
+            <p class="highlight">專注於所有使用者共同關心的特性</p>
+            <p>設計師可以創造出對所有性別都具有吸引力的產品。</p>
+            <p class="highlight">考慮產品的背景</p>
+            <p>產品的類型會影響設計師處理性別議題的方式。<br>
+                這是因為某些性別識別元素（如尺寸、顏色和曲線類型）<br>
+                對於不同類型的產品具有不同的優先順序。</p>
+            <button class="tell-button" onclick="goToScene('scene66_2')">繼續▶</button>
+        </div>
+    </div>
+    <div id="scene66_2" class="scene scene66_2" style="display: none;">
+        <div class="text-scene13_1">
+            <h1>促進科技領域性別的多元與包容性</h1>
+            <p class="highlight">增加對科技設計和使用性別影響的研究和理解</p>
+            <p>討論什麼構成性別中立或性別包容的設計／開發環境，<br>
+                包括考慮軟體工具以及數位或實體協作設計／開發環境中的設計偏見。</p>
+            <p class="highlight">思考如何在科技領域以及與科技生產相關的領域</p>
+            <p>包括電腦科學與工程，以及設計、設計研究和相關領域<br>
+                的設計過程中，增加細緻入微的性別觀點的代表性</p>
             <button class="tell-button" onclick="goToScene('scene67')">繼續▶</button>
         </div>
     </div>

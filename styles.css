@@ -38,9 +38,17 @@ body.fade-out {
 /* 場景背景 */
 
 /* 首頁背景 */
-#scene1 {
-    background-image: url('cover.png');
+#scene1,#scene46 {
+    background-image: url('covergb.jpg');
     background-size: cover; 
+}
+
+#scene13_1,#scene13_2,#scene13_3,#scene13_4,#scene90,#scene91,#scene63_4,#scene63_3,
+#scene63_2,#scene63_1,#scene92,#scene93,#scene66_1,#scene66_2,#scene94,#scene95{
+    background-image: url('file_bg.JPG');
+    background-size: cover; 
+    background-position: center; /* 將背景圖片置中 */
+
 }
 
 /* 場景 2 背景 */
@@ -105,13 +113,15 @@ body.fade-out {
 }
 
 .title {
-    width: 45%;
-    max-width: 600px;
+    width: 85%;
+    max-width: 700px;
     animation: glow 1.5s infinite alternate, shake 0.5s infinite alternate;
     margin-bottom: 20px;
+    margin-top: 0;
     position: absolute;
-    top: 0; 
-    left: 100px;
+    top: 1px; 
+    left: 1%;
+    z-index: 3;
 }
 
 
@@ -132,10 +142,30 @@ body.fade-out {
         transform: translate(3px, 3px);
     }
 }
+.cover-item {
+    width: 100%;
+    max-width: 1700px;
+    animation: glow2 1.5s infinite alternate, shake 0.5s infinite alternate;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 10%; 
+    right: 7%;
+}
+
+
+@keyframes glow2 {
+    from {
+        filter: drop-shadow(0 0 10px #ffc0cb);
+    }
+    to {
+        filter: drop-shadow(0 0 20px #ab79c0);
+    }
+}
+
 
 .scene1 p{
     position: absolute;
-    left: 10%;
+    left: 6%;
     top: 50%;
 }
 .start-button {
@@ -151,6 +181,7 @@ body.fade-out {
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    animation: glow 1.5s infinite alternate, shake 0.8s infinite alternate;
     transition: background-color 0.3s, color 0.3s;
     text-transform: uppercase;
     font-family: "DotGothic16",Arial, sans-serif;
@@ -1706,22 +1737,33 @@ body.fade-out {
     padding-top: 20px;
     background-color: #efe5ea;
 }
+.scene46 h2{
+    text-align: center; 
+    margin-bottom: 20px;
+    color: white;
+    animation: glow 1.5s infinite alternate;
+}
 
 .end-button-container {
+    animation: glow 1.5s infinite alternate, shake 0.5s infinite alternate;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
     margin-right: 40px;
+    position: relative;
+    z-index: 1;
 }
 
 .end-button {
     font-family: "DotGothic16", Arial, sans-serif;
-    background-color: #ffccdd;
+    background-color: #734e52;
     border: none;
+    opacity: 0.7;
     color: white;
     padding: 10px 20px;
     text-align: center;
+    font-weight: bolder;
     text-decoration: none;
     display: inline-block;
     font-size: 32px;
@@ -1734,6 +1776,7 @@ body.fade-out {
 
 /* 按鈕放大特效 */
 .end-button:hover {
+    box-shadow: 0 0 20px rgba(201, 122, 122, 0.838);
     transform: scale(1.1);
     transition-duration: 0.4s;
 }
@@ -1750,6 +1793,21 @@ body.fade-out {
     font-size: 48px;
     text-align: center;
     top: 30%;
+}
+.gif-container {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    z-index: 0;
+    top:10px;
+    right: 35%;
+    position: absolute;
+
+}
+
+.gif-container img {
+    width: 720px;
+    max-width: 100%;
 }
 
 .scene70 {
@@ -1859,11 +1917,15 @@ body.fade-out {
 }
 
 .auth-title {
+    position: absolute;
+    top: 5%;
     font-size: 2.5em;
     margin-bottom: 20px;
 }
 
 .about-container {
+    top: 50%;
+    left: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1900,3 +1962,105 @@ body.fade-out {
         opacity: 0;
     }
 }
+
+/* 多增加的資料畫面 */
+
+.text-scene13_1 h1 {
+    font-family: "Mochiy Pop One", sans-serif;
+    text-align: center;
+    font-size: 64px;
+    color: #deb0c7;
+    margin-bottom: 20px;
+    padding: 10px;
+    letter-spacing: 2px;
+    text-shadow:
+        -1px -1px 0 #fff,
+        1px 1px 0 #a17979,
+        2px 2px 0 #a17979,
+        3px 3px 0 #a17979,
+        4px 4px 0 #a17979;  
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.text-scene13_1 p{
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 28px;
+}
+.text-scene13_1{
+    width: 1080px;
+}
+
+
+
+.text-scene13_3 h1 {
+    font-family: "Mochiy Pop One", sans-serif;
+    grid-column: 1 / -1;
+    font-size: 36px;
+    color: #deb0c7;
+    margin-top: 60px;
+    margin-left: 30px;
+    width: 450px;
+    margin-bottom: 20px;
+    padding: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow:
+        -1px -1px 0 #fff,
+        1px 1px 0 #a17979,
+        2px 2px 0 #a17979,
+        3px 3px 0 #a17979,
+        4px 4px 0 #a17979;  
+}
+.text-scene13_1 .highlight{
+    font-weight: bold; /* 加粗字體 */
+    color: white;
+    background-color: rgba(169, 102, 136, 0.638);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.scene13_3 {
+    text-align: center;
+    width: auto;
+}
+
+.text-scene13_3 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-weight: bold;
+}
+
+.text-scene13_3 h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.left-side{
+    margin-right: 10px;
+    border: 2px dashed rgb(98, 87, 87);
+    border-radius: 10px; 
+    padding: 20px;  
+}
+
+.left-side, .center-side, .right-side {
+    display: inline-block;
+    vertical-align: top;
+    /* margin: 0 10px; */
+    width: 500px;
+    font-size: 24px;
+}
+
+.left-side .highlight, .right-side .highlight ,.center-side .highlight{
+    background-color: rgba(255, 153, 204, 0.3);
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.left-side .highlight.alt, .right-side .highlight.alt , .center-side .highlight.alt{
+    background-color: rgba(204, 204, 255, 0.3);
+    font-weight: bold;
+}
+
