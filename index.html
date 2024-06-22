@@ -23,7 +23,7 @@
             <img src="tittle.PNG" alt="Game Title" class="title">
             <img src="coveritem.png" alt="Game Title" class="cover-item">
             <button class="start-button" onclick="startGame()">開始遊戲</button>
-            <p>＊為了最佳遊戲體驗<br>&nbsp;&nbsp;請使用電腦全螢幕（1920px*2080px），以及開啟音量</p>
+            <p>※為了最佳遊戲體驗<br>&nbsp;&nbsp;請使用電腦全螢幕（1920px*2080px），以及開啟音量</p>
         </div>
         
         <!-- 故事場景一 -->
@@ -34,7 +34,7 @@
                 <h3>初始階段：公司的日常</h3>
                 <h4>場景 1：早晨會議</h4>
                 <p>參加公司的早晨會議，發現會議中關於新方案的討論忽略了女性用戶的需求。</p>
-                <button class="story-button" onclick="goToScene('scene3')">繼續</button>
+                <button class="story-button" onclick="goToScene('scene46')">繼續</button>
             </div>
         </div>
 
@@ -124,15 +124,15 @@
       <!-- 場景 7 -->
         <div id="scene7" class="scene scene7" style="display: none;">
             <div class="choose-investigation">
-            <h3>選擇調查方式</h3>
+            <!-- <h3>選擇調查方式</h3> -->
             <div class="investigation-option" onclick="goToScene('scene7_1')">
                 <img src="pc.png" alt="PC Search" class="investigation-image">
                 <p>上網搜尋</p>
             </div>
-            <div class="investigation-option" onclick="goToScene('scene7_2')">
+            <!-- <div class="investigation-option" onclick="goToScene('scene7_2')">
                 <img src="file.png" alt="File Search" class="investigation-image">
                 <p>翻閱資料</p>
-            </div>
+            </div> -->
             </div>
          </div>
 
@@ -152,7 +152,33 @@
 
         <!-- 場景 8-->
         <div id="scene8" class="scene scene8" style="display: none;">
-            <div class="text-scene">
+            <div class="center-container">
+                <div class="window">
+                    <div class="titlebar">
+                        <div class="window-top">
+                            <div class="window-circle">
+                                <span class="red window-circle2"></span>
+                            </div>
+                            <div class="window-circle">
+                                <span class="yellow window-circle2"></span>
+                            </div>
+                            <div class="window-circle">
+                                <span class="green window-circle2"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="window-container">
+                        <h1>不只粉紅和縮小</h1>
+                        <h2>「縮小它，然後變粉紅」</h2>
+                        <p>這句話在產品設計中經常用來形容為女性設計產品的方式。<br>
+                            許多女性別無選擇，<br>只能使用那些由男性為男性設計，<br>
+                            然後<span class="point">僅僅縮小尺寸並染上粉紅色或其他刻板印象中女性顏色的產品。</span><br>
+                            在某些情況下，這可能是侮辱性的；在最糟的情況下，這可能是致命的。</p>
+                        <button class="tell-button" onclick="goToScene('scene9')">下一篇▶</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="text-scene">
                 <h1>不只粉紅和縮小</h1>
                 <h2>「縮小它，然後變粉紅」</h2>
                 <p>這句話在產品設計中經常用來形容為女性設計產品的方式。<br>
@@ -160,25 +186,77 @@
                     然後僅僅縮小尺寸並染上粉紅色或其他刻板印象中女性顏色的產品。<br>
                     在某些情況下，這可能是侮辱性的；在最糟的情況下，這可能是致命的。</p>
                 <button class="tell-button" onclick="goToScene('scene9')">下一篇▶</button>
-            </div>
+            </div> -->
         </div>
 
 
         <!-- 場景 9-->
         <div id="scene9" class="scene scene9" style="display: none;">
-            <div class="text-scene">
+            <div class="center-container">
+                <div class="window">
+                    <div class="titlebar">
+                        <div class="window-top">
+                            <div class="window-circle">
+                                <span class="red window-circle2"></span>
+                            </div>
+                            <div class="window-circle">
+                                <span class="yellow window-circle2"></span>
+                            </div>
+                            <div class="window-circle">
+                                <span class="green window-circle2"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="window-container">
+                        <h1>經典範例</h1>
+                        <h2>跑鞋設計看見性別偏見</h2>
+                        <p>現今市場上的大多數跑鞋都是用男性鞋楦設計的，
+                            這是一個<span class="point">「縮小並粉紅」</span>的典型例子。<br>
+                            女性跑者所穿的鞋實際上是為男性腳設計的鞋，這種設計忽略了女性腳部的特殊需求。</p>
+                        <button class="tell-button" onclick="goToScene('scene10')">下一篇▶</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="text-scene">
                 <h1>經典範例</h1>
                 <h2>跑鞋設計看見性別偏見</h2>
                 <p>現今市場上的大多數跑鞋都是用男性鞋楦設計的，<br>
                     這是一個「縮小並粉紅」的典型例子。<br>
                     女性跑者所穿的鞋實際上是為男性腳設計的鞋，<br>這種設計忽略了女性腳部的特殊需求。</p>
                 <button class="tell-button" onclick="goToScene('scene10')">下一篇▶</button>
-            </div>
+            </div> -->
         </div>
 
         <!-- 場景 10-->
         <div id="scene10" class="scene scene10" style="display: none;">
-            <div class="text-scene10">
+            <div class="center-container">
+                <div class="window">
+                    <div class="titlebar">
+                        <div class="window-top">
+                            <div class="window-circle">
+                                <span class="red window-circle2"></span>
+                            </div>
+                            <div class="window-circle">
+                                <span class="yellow window-circle2"></span>
+                            </div>
+                            <div class="window-circle">
+                                <span class="green window-circle2"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="window-container">
+                        <h1>關於更多</h1>
+                        <h2>女性占全球人口的超過一半，在美國，她們影響了近90%的購買決策。</h2>
+                        <p>在工業設計師男女比失衡的情況下<br>
+                            從個人剃刀、手機到電動工具，這些聲稱是「中性」的產品，<br>實際上是由<span class="point">男性來決定「中性」是什麼，</span><br>
+                            結果顯然這基本上意味著「男性化」。</p>
+                        <img src="barchart.png">
+                        <p class="text-scene-ref custom-class">資料來源：<a href="https://www.sir.advancedleadership.harvard.edu/articles/shrink-it-and-pink-it-gender-bias-product-design">Shrink It and Pink It: Gender Bias in Product Design</a></p>
+                        <button class="tell-button" onclick="goToScene('scene11')">下一篇▶</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="text-scene10">
                 <h1>關於更多</h1>
                 <h2>女性占全球人口的超過一半，在美國，她們影響了近90%的購買決策。</h2>
                 <p>
@@ -188,12 +266,42 @@
                 <img src="barchart.png">
                 <p class="text-scene-ref custom-class">資料來源：<a href="https://www.sir.advancedleadership.harvard.edu/articles/shrink-it-and-pink-it-gender-bias-product-design">Shrink It and Pink It: Gender Bias in Product Design</a></p>
                 <button class="tell-button" onclick="goToScene('scene11')">下一篇▶</button>
-            </div>
+            </div> -->
         </div>
 
         <!-- 場景 11-->
         <div id="scene11" class="scene scene11" style="display: none;">
-            <div class="text-scene11">
+            <div class="center-container">
+                <div class="window">
+                    <div class="titlebar">
+                        <div class="window-top">
+                            <div class="window-circle">
+                                <span class="red window-circle2"></span>
+                            </div>
+                            <div class="window-circle">
+                                <span class="yellow window-circle2"></span>
+                            </div>
+                            <div class="window-circle">
+                                <span class="green window-circle2"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="window-container">
+                        <h1>女性在特定場合受傷的可能性</h1>
+                        <h2>車禍、消防和軍隊</h2>
+                        <p>汽車碰撞測試假人在1950年代引入，數十年來這些模型都是基於男性的生理特徵設計的<br>
+                            即使研究人員控制了身高、體重、安全帶使用和撞擊強度等因素<br><br>•女性在車禍中受嚴重傷的可能性比男性高47%
+                            ，中度受傷的可能性高71%，<br><span class="point">死亡的可能性高達17%</span><br>
+                            <br>
+                            •女性消防員受傷的比率是男性的<span class="point">四倍</span><br>
+                            <br>
+                            •女性在軍隊中<span class="point">骨盆骨折</span>的比率遠高於男性</p>
+                        <p class="text-scene-ref custom-class">資料來源：<a href="https://www.plasticsengineering.org/2023/06/gender-bias-in-design-000036/">Gender Bias In Design</a></p>
+                        <button class="tell-button" onclick="goToScene('scene12')">下一篇▶</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="text-scene11">
                 <h1>女性在特定場合受傷的可能性</h1>
                 <h2>車禍、消防和軍隊</h2>
                 <p>
@@ -207,126 +315,54 @@
                 </p>
                 <p class="text-scene-ref custom-class">資料來源：<a href="https://www.plasticsengineering.org/2023/06/gender-bias-in-design-000036/">Gender Bias In Design</a></p>
                 <button class="tell-button" onclick="goToScene('scene12')">下一篇▶</button>
-            </div>
+            </div> -->
         </div>
         <!-- 場景 12-->
         <div id="scene12" class="scene scene12" style="display: none;">
-            <div class="text-scene12">
-                <h1>產品設計以男性為標準的例子</h1>
-                <h3>疫情期間女性前線醫護人員的PPE使用<br></h3>
-                <p>
-                    在COVID-19疫情期間，只有14%的女性醫護人員使用過合適的個人防護裝備（PPE）。<br>
-                </p>
-                <h3>鋼琴鍵盤設計的不平等</h3>
-                <p> 
-                    87%的成年女性鋼琴家和24%的成年男性鋼琴家手掌較小，他們在彈奏樂器時更容易感到疼痛和受傷。<br>
-                    相當多的高級鋼琴曲目對於這些人來說甚至是物理上不可能演奏的。<br>
-                </p>
-                <h3>機器人設計中的性別刻板印象</h3>
-                <p> 
-                    當機器人被認為是男性時，它們會被以不同於女性機器人的方式對待和評判。<br>
-                    即使機器人沒有明確的性別，它們仍可能被解釋為男性或女性。<br>
-                    機器人的設計方式可能會無意中反映和加強性別刻板印象。<br>
-                </p>
-                <h3>語音識別技術中的性別偏見</h3>
-                <p>
-                    語音識別軟體對女性語音的準確處理可能性較低，
-                    因為這些數據女性代表性不足。<br>例如，Google的語音識別軟件顯著更有可能準確地轉錄男性語音。
-                </p>
-
-                <p class="text-scene-ref custom-class">資料來源：<a href="https://www.genderbias.design/examples_of_gender_bias">Examples of gender bias in products</a></p>
-                <button class="tell-button" onclick="goToScene('scene13_1')">繼續▶</button>
+            <div class="center-container">
+                <div class="window">
+                    <div class="titlebar">
+                        <div class="window-top">
+                            <div class="window-circle">
+                                <span class="red window-circle2"></span>
+                            </div>
+                            <div class="window-circle">
+                                <span class="yellow window-circle2"></span>
+                            </div>
+                            <div class="window-circle">
+                                <span class="green window-circle2"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="window-container">
+                        <h1>產品設計以男性為標準的例子</h1>
+                        <h3 class="t1">疫情期間女性前線醫護人員的PPE使用<br></h3>
+                        <p class="t1-1">
+                            在COVID-19疫情期間，只有<span class="point">14%的女性</span>醫護人員使用過合適的個人防護裝備（PPE）。<br>
+                        </p>
+                        <h3 class="t2">鋼琴鍵盤設計的不平等</h3>
+                        <p class="t2-1"> 
+                            <span class="point">87%的成年女性</span>鋼琴家和24%的成年男性鋼琴家手掌較小，他們在彈奏樂器時更容易感到疼痛和受傷。<br>
+                            相當多的高級鋼琴曲目對於這些人來說甚至是物理上不可能演奏的。<br>
+                        </p>
+                        <h3 class="t3">機器人設計中的性別刻板印象</h3>
+                        <p class="t3-1"> 
+                            當機器人被認為是男性時，它們會被以不同於女性機器人的方式對待和評判。<br>
+                            即使機器人沒有明確的性別，它們仍可能被解釋為男性或女性。<br>
+                            機器人的設計方式可能會無意中反映和<span class="point">加強性別刻板印象</span>。<br>
+                        </p>
+                        <h3 class="t4">語音識別技術中的性別偏見</h3>
+                        <p class="t4-1">
+                            語音識別軟體對女性語音的準確處理可能性較低，
+                            因為這些<span class="point">數據女性代表性不足</span>。<br>例如，Google的語音識別軟件顯著更有可能準確地轉錄男性語音。
+                        </p>
+                        <p class="text-scene-ref custom-class">資料來源：<a href="https://www.genderbias.design/examples_of_gender_bias">Examples of gender bias in products</a></p>
+                        <button class="tell-button" onclick="goToScene('scene13_1')">下一篇▶</button>
+                    </div>
+                </div>
             </div>
         </div>
-       <!-- 場景 14-->
-        <div id="scene14" class="scene scene14" style="display: none;">
-            <div class="text-scene">
-                <h1>不只粉紅和縮小</h1>
-                <h2>「縮小它，然後變粉紅」</h2>
-                <p>這句話在產品設計中經常用來形容為女性設計產品的方式。<br>
-                    許多女性別無選擇，<br>只能使用那些由男性為男性設計，<br>
-                    然後僅僅縮小尺寸並染上粉紅色或其他刻板印象中女性顏色的產品。<br>
-                    在某些情況下，這可能是侮辱性的；在最糟的情況下，這可能是致命的。</p>
-                <button class="tell-button" onclick="goToScene('scene15')">翻頁▶</button>
-            </div>
-        </div>
-
-
-        <!-- 場景 9-->
-        <div id="scene15" class="scene scene15" style="display: none;">
-            <div class="text-scene">
-                <h1>經典範例</h1>
-                <h2>跑鞋設計的性別偏見</h2>
-                <p>現今市場上的大多數跑鞋都是用男性鞋楦設計的，<br>
-                    這是一個「縮小並粉紅」的典型例子。<br>
-                    女性跑者所穿的鞋實際上是為男性腳設計的鞋，<br>這種設計忽略了女性腳部的特殊需求。</p>
-                <button class="tell-button" onclick="goToScene('scene16')">翻頁▶</button>
-            </div>
-        </div>
-
-        <!-- 場景 10-->
-        <div id="scene16" class="scene scene16" style="display: none;">
-            <div class="text-scene10">
-                <h1>關於更多</h1>
-                <h2>女性占全球人口的超過一半，在美國，她們影響了近90%的所有購買決策。</h2>
-                <p>
-                    在工業設計師男女比失衡的情況下<br>
-                    從個人剃刀、手機到電動工具，這些聲稱是「中性」的產品，<br>實際上是由男性來決定「中性」是什麼，<br>
-                    結果顯然是，這基本上意味著「男性化」。</p>
-                <img src="barchart.png">
-                <p class="text-scene-ref custom-class">資料來源：<a href="https://www.sir.advancedleadership.harvard.edu/articles/shrink-it-and-pink-it-gender-bias-product-design">Shrink It and Pink It: Gender Bias in Product Design</a></p>
-                <button class="tell-button" onclick="goToScene('scene17')">翻頁▶</button>
-            </div>
-        </div>
-
-        <!-- 場景 11-->
-        <div id="scene17" class="scene scene17" style="display: none;">
-            <div class="text-scene11">
-                <h1>女性在特定場合受傷的可能性</h1>
-                <h2>車禍、消防和軍隊</h2>
-                <p>
-                    汽車碰撞測試假人在1950年代引入，數十年來這些模型都是基於男性的生理特徵設計的<br>
-                    即使研究人員控制了身高、體重、安全帶使用和撞擊強度等因素<br><br>•女性在車禍中受嚴重傷的可能性比男性高47%
-                    ，中度受傷的可能性高71%，<br>死亡的可能性高達17%<br>
-                    <br>
-                    •女性消防員受傷的比率是男性的四倍<br>
-                    <br>
-                    •女性在軍隊中骨盆骨折的比率遠高於男性
-                </p>
-                <p class="text-scene-ref custom-class">資料來源：<a href="https://www.plasticsengineering.org/2023/06/gender-bias-in-design-000036/">Gender Bias In Design</a></p>
-                <button class="tell-button" onclick="goToScene('scene18')">翻頁▶</button>
-            </div>
-        </div>
-        <!-- 場景 12-->
-        <div id="scene18" class="scene scene18" style="display: none;">
-            <div class="text-scene12">
-                <h1>產品設計以男性為標準的例子</h1>
-                <h3>疫情期間女性前線醫護人員的PPE使用<br></h3>
-                <p>
-                    在COVID-19疫情期間，只有14%的女性醫護人員使用過合適的個人防護裝備（PPE）。<br>
-                </p>
-                <h3>鋼琴鍵盤設計的不平等</h3>
-                <p> 
-                    87%的成年女性鋼琴家和24%的成年男性鋼琴家手掌較小，他們在彈奏樂器時更容易感到疼痛和受傷。<br>
-                    相當多的高級鋼琴曲目對於這些人來說甚至是物理上不可能演奏的。<br>
-                </p>
-                <h3>機器人設計中的性別刻板印象</h3>
-                <p> 
-                    當機器人被認為是男性時，它們會被以不同於女性機器人的方式對待和評判。<br>
-                    即使機器人沒有明確的性別，它們仍可能被解釋為男性或女性。<br>
-                    機器人的設計方式可能會無意中反映和加強性別刻板印象。<br>
-                </p>
-                <h3>語音識別技術中的性別偏見</h3>
-                <p>
-                    語音識別軟體對女性語音的準確處理可能性較低，<br>
-                    因為這些程序的數據集中女性代表性不足。例如，Google的語音識別軟件顯著更有可能準確地轉錄男性語音。
-                </p>
-
-                <p class="text-scene-ref custom-class">資料來源：<a href="https://www.genderbias.design/examples_of_gender_bias">Examples of gender bias in products</a></p>
-                <button class="tell-button" onclick="goToScene('scene13_1')">繼續▶</button>
-            </div>
-        </div>
-
+            
         <div id="scene13_1" class="scene scene13_1" style="display: none;">
             <div class="text-scene13_1">
                 <h1>酷兒理論</h1>
@@ -336,6 +372,7 @@
                 <button class="tell-button" onclick="goToScene('scene13_2')">繼續▶</button>
             </div>
         </div>
+
         <div id="scene13_2" class="scene scene13_2" style="display: none;">
             <div class="text-scene13_1">
                 <h1>產品設計中的性別理論：除毛刀為例</h1>
@@ -525,7 +562,36 @@
 
         <!-- 場景 28-->
         <div id="scene28" class="scene scene28" style="display: none;">
-            <div class="text-scene28">
+            <div class="center-container">
+                <div class="window">
+                    <div class="titlebar">
+                        <div class="window-top">
+                            <div class="window-circle">
+                                <span class="red window-circle2"></span>
+                            </div>
+                            <div class="window-circle">
+                                <span class="yellow window-circle2"></span>
+                            </div>
+                            <div class="window-circle">
+                                <span class="green window-circle2"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="window-container">
+                        <h1>辦公室溫度</h1>
+                        <h2>辦公室溫度是否以男性為標準設定？</h2>
+                        <p>女性在典型的寒冷辦公室中的代謝率較低，<br>舒適溫度區間在約<span class="point">23.2°C至26.1°C</span> 之間。<br>
+                            有大量非正式證據表明，女性比男性更容易感到寒冷<br><br><br>
+                            將辦公室溫度從20°C<span class="point">提高到約25°C</span> 可以減少錯誤並提高打字任務的生產力。<br>
+                            提高辦公室溫度不僅可以讓的工作人員感到舒適，還可以減少空調的使用，<br>
+                            美國能源部估計每年約有<span class="point">1億噸二氧化碳排放</span> 是由於美國家庭使用空調所致。</p>
+                        <img src="boxplot.png">
+                        <p class="text-scene-ref custom-class">資料來源：<a href="https://www.popsci.com/study-finds-gender-bias-office-air-conditioning/">Are Office Temperatures Optimized For Men?</a></p>
+                        <button class="tell-button" onclick="goToScene('scene31')">下一篇▶</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="text-scene28">
                 <h1>辦公室溫度</h1>
                 <h2>辦公室溫度是否以男性為標準設定？</h2>
                 <p>
@@ -538,11 +604,41 @@
                 <img src="boxplot.png">
                 <p class="text-scene-ref custom-class">資料來源：<a href="https://www.popsci.com/study-finds-gender-bias-office-air-conditioning/">Are Office Temperatures Optimized For Men?</a></p>
                 <button class="tell-button" onclick="goToScene('scene31')">下一篇▶</button>
-            </div>
+            </div> -->
         </div>
         <!-- 場景 31-->
         <div id="scene31" class="scene scene31" style="display: none;">
-            <div class="text-scene31">
+            <div class="center-container">
+                <div class="window">
+                    <div class="titlebar">
+                        <div class="window-top">
+                            <div class="window-circle">
+                                <span class="red window-circle2"></span>
+                            </div>
+                            <div class="window-circle">
+                                <span class="yellow window-circle2"></span>
+                            </div>
+                            <div class="window-circle">
+                                <span class="green window-circle2"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="window-container">
+                        <h1>女性廁所排隊：性別不平等的日常提醒</h1>
+                        <h2>女性使用廁所的時間，是男性的 2.3 倍。</h2>
+                        <p><span class="info-title">•大多的<span class="point"> 老人 </span>和<span class="point"> 行動不便者 </span> 都是女性，而這兩個族群使用廁所的時間都較長。</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;➤婦女帶著小孩、陪伴老人和行動不便者的機率也較高。<br><br>
+                            <span class="info-title">•女性中隨時有 <span class="point">20%~25% 的正值月經</span> 來潮，必須定時更換生理用品。</span><br><br>
+                            <span class="info-title">•女性使用廁所的頻繁度也超過男性：</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;➤懷孕期間膀胱容量會大幅減少<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;➤婦女發生<span class="point"> 泌尿道感染 </span>的機率是男人的<span class="point"> 8倍</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;➤生理期間沒有廁所供女性更換衛生棉條，感染<span class="point"> 鏈球菌毒性休克症候群 </span>的機率也會增加</p>
+                        <p class="text-scene-ref custom-class">資料來源：<a href="https://womany.net/read/article/24828">「女人已經習慣，上廁所免不了排隊」這件事有什麼問題？</a></p>
+                        <button class="tell-button" onclick="goToScene('scene32')">下一篇▶</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="text-scene31">
                 <h1>女性廁所排隊：性別不平等的日常提醒</h1>
                 <h2>女性使用廁所的時間，是男性的 2.3 倍。</h2>
                 <p>•大多的老人和行動不便者都是女性，而這兩個族群使用廁所的時間都較長。<br>
@@ -555,7 +651,7 @@
                 </p>
                 <p class="text-scene-ref custom-class">資料來源：<a href="https://womany.net/read/article/24828">「女人已經習慣，上廁所免不了排隊」這件事有什麼問題？</a></p>
                 <button class="tell-button" onclick="goToScene('scene32')">儲存網頁▶</button>
-            </div>
+            </div> -->
         </div>
         <!-- 場景 32 -->
         <div id="scene32" class="scene scene32" style="display: none;">
@@ -917,162 +1013,150 @@
                 <h2>來<br>自<br>真<br>實<br>的<br>心<br>聲</h2>
             </div>
             <div class="card-container">
-                    <div class="card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <h3>服裝</h3>
-                            </div>
-                            <div class="card-back">
-                                <p>雖然現狀有所改進，但仍然是一大困擾。<br>
-                                    T 恤不需要都是短版上衣。<br>
-                                    需要更多且更大的實用口袋。<br>
-                                    否則我們需要更小的手機和錢包選擇。
-                                </p>
-                            </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">服裝</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>雖然現狀有所改進，但仍然是一大困擾。<br>
+                                T 恤不需要都是短版上衣。<br>
+                                需要更多且更大的實用口袋。<br>
+                                否則我們需要更小的手機和錢包選擇。</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <h3>鞋子</h3>
-                            </div>
-                            <div class="card-back">
-                                <p>找到我們喜歡且合適尺寸的鞋款實在太難了<br>
-                                    並不是所有女性的腳都是同樣大小。
-                                </p>
-                            </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">鞋子</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>找到我們喜歡且合適尺寸的鞋款實在太難了<br>
+                                並不是所有女性的腳都是同樣大小。</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <h3>運動服和設備</h3>
-                            </div>
-                            <div class="card-back">
-                                <p>運動服還是有太多裝飾或收腰的款式。<br>
-                                    還有希望運動設備也需要改進，<br>
-                                    像是握把尺寸較小的網球拍和能夠適應更廣泛體型和身材的自行車裝備。
-                                </p>
-                            </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">運動服和設備</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>運動服還是有太多裝飾或收腰的款式。<br>
+                                還有希望運動設備也需要改進，<br>
+                                像是握把尺寸較小的網球拍和能夠適應更廣泛體型和身材的自行車裝備。</p>
                         </div>
                     </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>產品包裝</h3>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">產品包裝</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>不完全是女性專屬問題，但與許多女性相關。<br>
                                 不應該需要像攀岩者一樣的握力才能打開一個罐頭。
-                                這個問題隨著年齡增長、握力減弱而變得更嚴重。
-                            </p>
+                                這個問題隨著年齡增長、握力減弱而變得更嚴重。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>其他工具</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">其他工具</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>我們很難找到為女性手部設計的合適工具，<br>
                                 無論是尺寸還是單手操作所需的指力。<br>
-                                設計女用工具不應該只是縮小男用工具。
-                            </p>
+                                設計女用工具不應該只是縮小男用工具。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>婦科檢查器具</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">婦科檢查器具</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>鴨嘴的發明是一名男醫師，<br>
-                                有人說這是當代女性刑具。
-                            </p>
+                                有人說這是當代女性刑具。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>樂器</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">樂器</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>如薩克斯風和長號，<br>
                                 對於手小或手臂較短的人來說更難演奏。
                                 雖然重新設計可能會面臨影響音質的額外挑戰。
-                                但值得解決這個問題，不然這種情況會導致樂團分部的性別隔離持續存在。
-                            </p>
+                                但值得解決這個問題，不然這種情況會導致樂團分部的性別隔離持續存在。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>安全帶</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">安全帶</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>我們之前說過，並且會繼續說：<br>
                                 汽車中的安全帶需要設計成保護所有人，<br>
-                                而不僅僅是「平均男性」。
-                            </p>
+                                而不僅僅是「平均男性」。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>傳統男性零售商</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">傳統男性零售商</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>五金行、汽車經銷商等等<br>
                                 往往讓女性和非強勢男性感到疏離。<br>
                                 進門就意識到自己進入「不屬於你」的區域，<br>
-                                並預期會受到不相應的對待。
-                            </p>
+                                並預期會受到不相應的對待。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>安全設備</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">安全設備</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>相關領域的女性通常很難找到合適的裝備，<br>
                                 如果你需要降落傘、防彈衣、頭盔、呼吸器、再呼吸器或摩托車服，
                                 選項非常有限，<br>
-                                這可能會導致額外的成本、時間損失或生產力降低以及增加的心理負擔。
-                            </p>
+                                這可能會導致額外的成本、時間損失或生產力降低以及增加的心理負擔。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>醫療服務</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">醫療服務</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>醫療服務確實需要重新設計以考慮女性需求。<br>
                                 與男性相比女性更容易被誤診，<br>
                                 其擔憂也更容易被醫療提供者忽視。<br>
-                                一項研究發現，女性因嚴重腹痛到急診室等待時間比同樣症狀的男性長33%。
-                            </p>
+                                一項研究發現，女性因嚴重腹痛到急診室等待時間比同樣症狀的男性長33%。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>AI</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">AI</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>自然語言處理中的詞嵌入有些過時的刻板印象<br>
                                 例如一個AI系統可能推理<br>「男性是工程師，女性是家庭主婦」。<br>
-                                另一個例子中，系統對女性特別是深膚色女性的識別錯誤率過高。
-                            </p>
+                                另一個例子中，系統對女性特別是深膚色女性的識別錯誤率過高。</p>
                         </div>
                     </div>
                 </div>
@@ -1085,93 +1169,89 @@
                 <h2>設<br>計<br>更<br>好<br>女<br>性<br>產<br>品<br>的<br>七<br>種<br>方<br>法</h2>
             </div>
             <div class="card-container">
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>為所有人設計</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">為所有人設計</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>不要為男性或女性設計，為所有人設計。<br>
-                                缺乏的是包容性設計，<br>即使是設計為性別中立的產品，<br>往往也是為男性設計的。
-                            </p>
+                                缺乏的是包容性設計，<br>即使是設計為性別中立的產品，<br>往往也是為男性設計的。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>辨別和質疑</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">辨別和質疑</p>
                         </div>
-                        <div class="card-back">
-                            <p> 談到汽車，它們對女性來說不那麼安全，<br>
-                                美國安全法規長期以來<br>更偏向於使用男性假人進行測試。
-                            </p>
+                        <div class="flip-card-back">
+                            <p>談到汽車，它們對女性來說不那麼安全，<br>
+                                美國安全法規長期以來<br>更偏向於使用男性假人進行測試。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>考慮定製化</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">考慮定製化</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>定製化可以很好地解決為所有人設計的問題。<br>
                                 對家庭使用的醫療產品進行了用戶研究，
                                 發現多位女性對攜帶包都不滿意，
-                                因為它們醜陋或攜帶不便。
-                            </p>
+                                因為它們醜陋或攜帶不便。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>在工作場所踐行這些理念</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">在工作場所踐行這些理念</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>
                                 多數男性組成的團隊可能會做出有利於男性用戶的決定。<br>這可能不是故意的，而是一種習慣。
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>做研究，生成數據</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">做研究，生成數據</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>
                                 數據最具有影響力，<br>進行用戶測試以支持你對產品應該如何設計和為誰設計的想法。
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>女性不是一個整體</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">女性不是一個整體</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>
                                 女性中有些人喜歡粉紅色，有些人不喜歡。<br>有些人喜歡花卉圖案，有些人不喜歡。
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>評估你的行業</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">評估你的行業</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>
                                 一些行業在為女性產品方面比其他更成熟。<br>像是運動服裝行業比大多數行業更好
                             </p>
                         </div>
                     </div>
                 </div>
-    
             </div>
             <button class="card-button" onclick="goToScene('scene39_4')">繼續▶</button>
         </div>
@@ -1237,163 +1317,150 @@
                 <h2>來<br>自<br>真<br>實<br>的<br>心<br>聲</h2>
             </div>
             <div class="card-container">
-                <!-- Example card structure with front and back -->
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>服裝</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">服裝</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>雖然現狀有所改進，但仍然是一大困擾。<br>
                                 T 恤不需要都是短版上衣。<br>
                                 需要更多且更大的實用口袋。<br>
-                                否則我們需要更小的手機和錢包選擇。
-                            </p>
+                                否則我們需要更小的手機和錢包選擇。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>鞋子</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">鞋子</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>找到我們喜歡且合適尺寸的鞋款實在太難了<br>
-                                並不是所有女性的腳都是同樣大小。
-                            </p>
+                                並不是所有女性的腳都是同樣大小。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>運動服和設備</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">運動服和設備</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>運動服還是有太多裝飾或收腰的款式。<br>
                                 還有希望運動設備也需要改進，<br>
-                                像是握把尺寸較小的網球拍和能夠適應更廣泛體型和身材的自行車裝備。
-                            </p>
+                                像是握把尺寸較小的網球拍和能夠適應更廣泛體型和身材的自行車裝備。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>產品包裝</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">產品包裝</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>不完全是女性專屬問題，但與許多女性相關。<br>
                                 不應該需要像攀岩者一樣的握力才能打開一個罐頭。
-                                這個問題隨著年齡增長、握力減弱而變得更嚴重。
-                            </p>
+                                這個問題隨著年齡增長、握力減弱而變得更嚴重。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>其他工具</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">其他工具</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>我們很難找到為女性手部設計的合適工具，<br>
                                 無論是尺寸還是單手操作所需的指力。<br>
-                                設計女用工具不應該只是縮小男用工具。
-                            </p>
+                                設計女用工具不應該只是縮小男用工具。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>婦科檢查器具</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">婦科檢查器具</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>鴨嘴的發明是一名男醫師，<br>
-                                有人說這是當代女性刑具。
-                            </p>
+                                有人說這是當代女性刑具。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>樂器</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">樂器</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>如薩克斯風和長號，<br>
                                 對於手小或手臂較短的人來說更難演奏。
                                 雖然重新設計可能會面臨影響音質的額外挑戰。
-                                但值得解決這個問題，不然這種情況會導致樂團分部的性別隔離持續存在。
-                            </p>
+                                但值得解決這個問題，不然這種情況會導致樂團分部的性別隔離持續存在。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>安全帶</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">安全帶</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>我們之前說過，並且會繼續說：<br>
                                 汽車中的安全帶需要設計成保護所有人，<br>
-                                而不僅僅是「平均男性」。
-                            </p>
+                                而不僅僅是「平均男性」。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>傳統男性零售商</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">傳統男性零售商</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>五金行、汽車經銷商等等<br>
                                 往往讓女性和非強勢男性感到疏離。<br>
                                 進門就意識到自己進入「不屬於你」的區域，<br>
-                                並預期會受到不相應的對待。
-                            </p>
+                                並預期會受到不相應的對待。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>安全設備</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">安全設備</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>相關領域的女性通常很難找到合適的裝備，<br>
                                 如果你需要降落傘、防彈衣、頭盔、呼吸器、再呼吸器或摩托車服，
                                 選項非常有限，<br>
-                                這可能會導致額外的成本、時間損失或生產力降低以及增加的心理負擔。
-                            </p>
+                                這可能會導致額外的成本、時間損失或生產力降低以及增加的心理負擔。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>醫療服務</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">醫療服務</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>醫療服務確實需要重新設計以考慮女性需求。<br>
                                 與男性相比女性更容易被誤診，<br>
                                 其擔憂也更容易被醫療提供者忽視。<br>
-                                一項研究發現，女性因嚴重腹痛到急診室等待時間比同樣症狀的男性長33%。
-                            </p>
+                                一項研究發現，女性因嚴重腹痛到急診室等待時間比同樣症狀的男性長33%。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>AI</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">AI</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>自然語言處理中的詞嵌入有些過時的刻板印象<br>
                                 例如一個AI系統可能推理<br>「男性是工程師，女性是家庭主婦」。<br>
-                                另一個例子中，系統對女性特別是深膚色女性的識別錯誤率過高。
-                            </p>
+                                另一個例子中，系統對女性特別是深膚色女性的識別錯誤率過高。</p>
                         </div>
                     </div>
                 </div>
@@ -1405,93 +1472,89 @@
                 <h2>設<br>計<br>更<br>好<br>女<br>性<br>產<br>品<br>的<br>七<br>種<br>方<br>法</h2>
             </div>
             <div class="card-container">
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>為所有人設計</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">為所有人設計</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>不要為男性或女性設計，為所有人設計。<br>
-                                缺乏的是包容性設計，<br>即使是設計為性別中立的產品，<br>往往也是為男性設計的。
-                            </p>
+                                缺乏的是包容性設計，<br>即使是設計為性別中立的產品，<br>往往也是為男性設計的。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>辨別和質疑</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">辨別和質疑</p>
                         </div>
-                        <div class="card-back">
-                            <p> 談到汽車，它們對女性來說不那麼安全，<br>
-                                美國安全法規長期以來<br>更偏向於使用男性假人進行測試。
-                            </p>
+                        <div class="flip-card-back">
+                            <p>談到汽車，它們對女性來說不那麼安全，<br>
+                                美國安全法規長期以來<br>更偏向於使用男性假人進行測試。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>考慮定製化</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">考慮定製化</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>定製化可以很好地解決為所有人設計的問題。<br>
                                 對家庭使用的醫療產品進行了用戶研究，
                                 發現多位女性對攜帶包都不滿意，
-                                因為它們醜陋或攜帶不便。
-                            </p>
+                                因為它們醜陋或攜帶不便。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>在工作場所踐行這些理念</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">在工作場所踐行這些理念</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>
                                 多數男性組成的團隊可能會做出有利於男性用戶的決定。<br>這可能不是故意的，而是一種習慣。
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>做研究，生成數據</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">做研究，生成數據</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>
                                 數據最具有影響力，<br>進行用戶測試以支持你對產品應該如何設計和為誰設計的想法。
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>女性不是一個整體</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">女性不是一個整體</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>
                                 女性中有些人喜歡粉紅色，有些人不喜歡。<br>有些人喜歡花卉圖案，有些人不喜歡。
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>評估你的行業</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">評估你的行業</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>
                                 一些行業在為女性產品方面比其他更成熟。<br>像是運動服裝行業比大多數行業更好
                             </p>
                         </div>
                     </div>
                 </div>
-    
             </div>
             <button class="card-button" onclick="goToScene('scene52_3')">繼續▶</button>
         </div>
@@ -1564,163 +1627,150 @@
                 <h2>來<br>自<br>真<br>實<br>的<br>心<br>聲</h2>
             </div>
             <div class="card-container">
-                <!-- Example card structure with front and back -->
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>服裝</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">服裝</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>雖然現狀有所改進，但仍然是一大困擾。<br>
                                 T 恤不需要都是短版上衣。<br>
                                 需要更多且更大的實用口袋。<br>
-                                否則我們需要更小的手機和錢包選擇。
-                            </p>
+                                否則我們需要更小的手機和錢包選擇。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>鞋子</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">鞋子</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>找到我們喜歡且合適尺寸的鞋款實在太難了<br>
-                                並不是所有女性的腳都是同樣大小。
-                            </p>
+                                並不是所有女性的腳都是同樣大小。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>運動服和設備</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">運動服和設備</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>運動服還是有太多裝飾或收腰的款式。<br>
                                 還有希望運動設備也需要改進，<br>
-                                像是握把尺寸較小的網球拍和能夠適應更廣泛體型和身材的自行車裝備。
-                            </p>
+                                像是握把尺寸較小的網球拍和能夠適應更廣泛體型和身材的自行車裝備。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>產品包裝</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">產品包裝</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>不完全是女性專屬問題，但與許多女性相關。<br>
                                 不應該需要像攀岩者一樣的握力才能打開一個罐頭。
-                                這個問題隨著年齡增長、握力減弱而變得更嚴重。
-                            </p>
+                                這個問題隨著年齡增長、握力減弱而變得更嚴重。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>其他工具</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">其他工具</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>我們很難找到為女性手部設計的合適工具，<br>
                                 無論是尺寸還是單手操作所需的指力。<br>
-                                設計女用工具不應該只是縮小男用工具。
-                            </p>
+                                設計女用工具不應該只是縮小男用工具。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>婦科檢查器具</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">婦科檢查器具</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>鴨嘴的發明是一名男醫師，<br>
-                                有人說這是當代女性刑具。
-                            </p>
+                                有人說這是當代女性刑具。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>樂器</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">樂器</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>如薩克斯風和長號，<br>
                                 對於手小或手臂較短的人來說更難演奏。
                                 雖然重新設計可能會面臨影響音質的額外挑戰。
-                                但值得解決這個問題，不然這種情況會導致樂團分部的性別隔離持續存在。
-                            </p>
+                                但值得解決這個問題，不然這種情況會導致樂團分部的性別隔離持續存在。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>安全帶</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">安全帶</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>我們之前說過，並且會繼續說：<br>
                                 汽車中的安全帶需要設計成保護所有人，<br>
-                                而不僅僅是「平均男性」。
-                            </p>
+                                而不僅僅是「平均男性」。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>傳統男性零售商</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">傳統男性零售商</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>五金行、汽車經銷商等等<br>
                                 往往讓女性和非強勢男性感到疏離。<br>
                                 進門就意識到自己進入「不屬於你」的區域，<br>
-                                並預期會受到不相應的對待。
-                            </p>
+                                並預期會受到不相應的對待。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>安全設備</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">安全設備</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>相關領域的女性通常很難找到合適的裝備，<br>
                                 如果你需要降落傘、防彈衣、頭盔、呼吸器、再呼吸器或摩托車服，
                                 選項非常有限，<br>
-                                這可能會導致額外的成本、時間損失或生產力降低以及增加的心理負擔。
-                            </p>
+                                這可能會導致額外的成本、時間損失或生產力降低以及增加的心理負擔。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>醫療服務</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">醫療服務</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>醫療服務確實需要重新設計以考慮女性需求。<br>
                                 與男性相比女性更容易被誤診，<br>
                                 其擔憂也更容易被醫療提供者忽視。<br>
-                                一項研究發現，女性因嚴重腹痛到急診室等待時間比同樣症狀的男性長33%。
-                            </p>
+                                一項研究發現，女性因嚴重腹痛到急診室等待時間比同樣症狀的男性長33%。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>AI</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">AI</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>自然語言處理中的詞嵌入有些過時的刻板印象<br>
                                 例如一個AI系統可能推理<br>「男性是工程師，女性是家庭主婦」。<br>
-                                另一個例子中，系統對女性特別是深膚色女性的識別錯誤率過高。
-                            </p>
+                                另一個例子中，系統對女性特別是深膚色女性的識別錯誤率過高。</p>
                         </div>
                     </div>
                 </div>
@@ -1732,93 +1782,89 @@
                 <h2>設<br>計<br>更<br>好<br>女<br>性<br>產<br>品<br>的<br>七<br>種<br>方<br>法</h2>
             </div>
             <div class="card-container">
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>為所有人設計</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">為所有人設計</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>不要為男性或女性設計，為所有人設計。<br>
-                                缺乏的是包容性設計，<br>即使是設計為性別中立的產品，<br>往往也是為男性設計的。
-                            </p>
+                                缺乏的是包容性設計，<br>即使是設計為性別中立的產品，<br>往往也是為男性設計的。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>辨別和質疑</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">辨別和質疑</p>
                         </div>
-                        <div class="card-back">
-                            <p> 談到汽車，它們對女性來說不那麼安全，<br>
-                                美國安全法規長期以來<br>更偏向於使用男性假人進行測試。
-                            </p>
+                        <div class="flip-card-back">
+                            <p>談到汽車，它們對女性來說不那麼安全，<br>
+                                美國安全法規長期以來<br>更偏向於使用男性假人進行測試。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>考慮定製化</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">考慮定製化</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>定製化可以很好地解決為所有人設計的問題。<br>
                                 對家庭使用的醫療產品進行了用戶研究，
                                 發現多位女性對攜帶包都不滿意，
-                                因為它們醜陋或攜帶不便。
-                            </p>
+                                因為它們醜陋或攜帶不便。</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>在工作場所踐行這些理念</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">在工作場所踐行這些理念</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>
                                 多數男性組成的團隊可能會做出有利於男性用戶的決定。<br>這可能不是故意的，而是一種習慣。
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>做研究，生成數據</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">做研究，生成數據</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>
                                 數據最具有影響力，<br>進行用戶測試以支持你對產品應該如何設計和為誰設計的想法。
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>女性不是一個整體</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">女性不是一個整體</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>
                                 女性中有些人喜歡粉紅色，有些人不喜歡。<br>有些人喜歡花卉圖案，有些人不喜歡。
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>評估你的行業</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="card-title">評估你的行業</p>
                         </div>
-                        <div class="card-back">
+                        <div class="flip-card-back">
                             <p>
                                 一些行業在為女性產品方面比其他更成熟。<br>像是運動服裝行業比大多數行業更好
                             </p>
                         </div>
                     </div>
                 </div>
-    
             </div>
             <button class="card-button" onclick="goToScene('scene41_4')">繼續▶</button>
         </div>
@@ -1869,15 +1915,15 @@
             <div class="about-container">
                 <div class="about-text">
                     <p>劉芷婷｜大同大學資訊工程學系三年級</p>
-                    <p>不擅長畫畫，只是喜歡畫畫，高中上課都在課本亂塗</p>
-                    <p>不擅長寫程式，只是剛好讀資工（而且數學太差了頭很痛）</p>
-                    <p>不擅長想劇本，只是一個天馬行空的人，偶爾喜歡寫散文</p>
+                    <p>不擅長畫畫，只是喜歡畫畫，高中上課都在課本亂塗<br>
+                    不擅長寫程式，只是剛好讀資工（而且數學太差了頭很痛）<br>
+                    不擅長想劇本，只是一個天馬行空的人，偶爾喜歡寫散文</p>
                     <p>會製作這次遊戲的動機是因為2023年夏天在日本實習，參加和當地20代的交流會，我分配到的題目是「Ｇender gap」，
-                    拿到題目時不知道該怎麼用日文和其他人討論，於是找了非常多資料，結果在和日本人討論時，
-                    也許是因為講到較為敏感的話題，對方反應不是很好，我只好順著對方的話題完成交流。
+                    拿到題目時不知道該怎麼用日文和其他人討論，於是找了非常多資料，但結果在和日本人討論時，
+                    因為一些因素，無法很順利的討論和分享。<br>
                     從那次之後我就一直對於我想表達的話無從說出口很可惜，所以想透過這次遊戲的方式來讓大家認識到女性權益的問題。
                 </p>
-                <p>小提示一下遊戲有好幾個支線和結局，歡迎大家探索看看喔！</p>
+                <p>（※小提示一下遊戲有好幾個支線和結局，歡迎大家探索看看喔！）</p>
 
                 </div>
             </div>
@@ -1909,7 +1955,27 @@
                 <div class="reference">
                     <p><a href="https://www.smashingmagazine.com/2022/09/unconscious-biases-inclusive-design/" target="_blank">Unconscious Biases That Get In The Way Of Inclusive Design</a></p>
                 </div>
-                <!-- 更多參考資料 -->
+                <div class="reference">
+                    <p><a href="https://shiga-u.repo.nii.ac.jp › record › files" target="_blank">性の商品化と商品価値 - ジェンダーを焦点にして滋賀大学学術情報リポジトリ</a></p>
+                </div>
+                <div class="reference">
+                    <p><a href="https://www.tandfonline.com/doi/epdf/10.1080/17547075.2018.1516437?needAccess=true
+                        " target="_blank">Gender by Design:Performativity and Consumer Packaging</a>
+                    </p>
+                </div>
+                <div class="reference">
+                    <p><a href="https://www.researchgate.net/publication/260363791_Workshop_Perspectives_on_Gender_and_Product_Design
+                        " target="_blank">Workshop: Perspectives on Gender and Product Design</a>
+                    </p>
+                </div>
+                <div class="reference">
+                    <p><a href="https://www.researchgate.net/publication/321309974_Genders_of_Products_Creating_Genderless_Design" target="_blank">Genders of Products: Creating Genderless Design</a>
+                    </p>
+                </div>
+                <div class="reference">
+                    <p><a href="https://womany.net/read/article/24828" target="_blank">「女人已經習慣，上廁所免不了排隊」這件事有什麼問題？</a>
+                    </p>
+                </div>
             </div>
             <button class="ref-button" onclick="goToScene('scene46')">選單</button>
 
@@ -1918,63 +1984,174 @@
         
        <!-- 場景 60-->
        <div id="scene60" class="scene scene60" style="display: none;">
-            <div class="text-scene">
-                <h1>不只粉紅和縮小</h1>
-                <h2>「縮小它，然後變粉紅」</h2>
-                <p>這句話在產品設計中經常用來形容為女性設計產品的方式。<br>
-                    許多女性別無選擇，<br>只能使用那些由男性為男性設計，<br>
-                    然後僅僅縮小尺寸並染上粉紅色或其他刻板印象中女性顏色的產品。<br>
-                    在某些情況下，這可能是侮辱性的；在最糟的情況下，這可能是致命的。</p>
-                <button class="tell-button" onclick="goToScene('scene61')">翻頁▶</button>
+        <div class="center-container">
+            <div class="window">
+                <div class="titlebar">
+                    <div class="window-top">
+                        <div class="window-circle">
+                            <span class="red window-circle2"></span>
+                        </div>
+                        <div class="window-circle">
+                            <span class="yellow window-circle2"></span>
+                        </div>
+                        <div class="window-circle">
+                            <span class="green window-circle2"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="window-container">
+                    <h1>不只粉紅和縮小</h1>
+                    <h2>「縮小它，然後變粉紅」</h2>
+                    <p>這句話在產品設計中經常用來形容為女性設計產品的方式。<br>
+                        許多女性別無選擇，<br>只能使用那些由男性為男性設計，<br>
+                        然後<span class="point">僅僅縮小尺寸並染上粉紅色或其他刻板印象中女性顏色的產品。</span><br>
+                        在某些情況下，這可能是侮辱性的；在最糟的情況下，這可能是致命的。</p>
+                    <button class="tell-button" onclick="goToScene('scene61')">下一篇▶</button>
+                </div>
             </div>
+        </div>
         </div>
 
 
     <!-- 場景 9-->
     <div id="scene61" class="scene scene61" style="display: none;">
-        <div class="text-scene">
-            <h1>經典範例</h1>
-            <h2>跑鞋設計的性別偏見</h2>
-            <p>現今市場上的大多數跑鞋都是用男性鞋楦設計的，<br>
-                這是一個「縮小並粉紅」的典型例子。<br>
-                女性跑者所穿的鞋實際上是為男性腳設計的鞋，<br>這種設計忽略了女性腳部的特殊需求。</p>
-            <button class="tell-button" onclick="goToScene('scene62')">翻頁▶</button>
+        <div class="center-container">
+            <div class="window">
+                <div class="titlebar">
+                    <div class="window-top">
+                        <div class="window-circle">
+                            <span class="red window-circle2"></span>
+                        </div>
+                        <div class="window-circle">
+                            <span class="yellow window-circle2"></span>
+                        </div>
+                        <div class="window-circle">
+                            <span class="green window-circle2"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="window-container">
+                    <h1>經典範例</h1>
+                    <h2>跑鞋設計看見性別偏見</h2>
+                    <p>現今市場上的大多數跑鞋都是用男性鞋楦設計的，
+                        這是一個<span class="point">「縮小並粉紅」</span>的典型例子。<br>
+                        女性跑者所穿的鞋實際上是為男性腳設計的鞋，這種設計忽略了女性腳部的特殊需求。</p>
+                    <button class="tell-button" onclick="goToScene('scene62')">下一篇▶</button>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- 場景 10-->
     <div id="scene62" class="scene scene62" style="display: none;">
-        <div class="text-scene10">
-            <h1>關於更多</h1>
-            <h2>女性占全球人口的超過一半，在美國，她們影響了近90%的所有購買決策。</h2>
-            <p>
-                在工業設計師男女比失衡的情況下<br>
-                從個人剃刀、手機到電動工具，這些聲稱是「中性」的產品，<br>實際上是由男性來決定「中性」是什麼，<br>
-                結果顯然是，這基本上意味著「男性化」。</p>
-            <img src="barchart.png">
-            <p class="text-scene-ref custom-class">資料來源：<a href="https://www.sir.advancedleadership.harvard.edu/articles/shrink-it-and-pink-it-gender-bias-product-design">Shrink It and Pink It: Gender Bias in Product Design</a></p>
-            <button class="tell-button" onclick="goToScene('scene63')">翻頁▶</button>
+        <div class="center-container">
+            <div class="window">
+                <div class="titlebar">
+                    <div class="window-top">
+                        <div class="window-circle">
+                            <span class="red window-circle2"></span>
+                        </div>
+                        <div class="window-circle">
+                            <span class="yellow window-circle2"></span>
+                        </div>
+                        <div class="window-circle">
+                            <span class="green window-circle2"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="window-container">
+                    <h1>關於更多</h1>
+                    <h2>女性占全球人口的超過一半，在美國，她們影響了近90%的購買決策。</h2>
+                    <p>在工業設計師男女比失衡的情況下<br>
+                        從個人剃刀、手機到電動工具，這些聲稱是「中性」的產品，<br>實際上是由<span class="point">男性來決定「中性」是什麼，</span><br>
+                        結果顯然這基本上意味著「男性化」。</p>
+                    <img src="barchart.png">
+                    <p class="text-scene-ref custom-class">資料來源：<a href="https://www.sir.advancedleadership.harvard.edu/articles/shrink-it-and-pink-it-gender-bias-product-design">Shrink It and Pink It: Gender Bias in Product Design</a></p>
+                    <button class="tell-button" onclick="goToScene('scene63')">下一篇▶</button>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- 場景 11-->
     <div id="scene63" class="scene scene63" style="display: none;">
-        <div class="text-scene11">
-            <h1>女性在特定場合受傷的可能性</h1>
-            <h2>車禍、消防和軍隊</h2>
-            <p>
-                汽車碰撞測試假人在1950年代引入，數十年來這些模型都是基於男性的生理特徵設計的<br>
-                即使研究人員控制了身高、體重、安全帶使用和撞擊強度等因素<br><br>•女性在車禍中受嚴重傷的可能性比男性高47%
-                ，中度受傷的可能性高71%，<br>死亡的可能性高達17%<br>
-                <br>
-                •女性消防員受傷的比率是男性的四倍<br>
-                <br>
-                •女性在軍隊中骨盆骨折的比率遠高於男性
-            </p>
-            <p class="text-scene-ref custom-class">資料來源：<a href="https://www.plasticsengineering.org/2023/06/gender-bias-in-design-000036/">Gender Bias In Design</a></p>
-            <button class="tell-button" onclick="goToScene('scene63_1')">翻頁▶</button>
+        <div class="center-container">
+            <div class="window">
+                <div class="titlebar">
+                    <div class="window-top">
+                        <div class="window-circle">
+                            <span class="red window-circle2"></span>
+                        </div>
+                        <div class="window-circle">
+                            <span class="yellow window-circle2"></span>
+                        </div>
+                        <div class="window-circle">
+                            <span class="green window-circle2"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="window-container">
+                    <h1>女性在特定場合受傷的可能性</h1>
+                    <h2>車禍、消防和軍隊</h2>
+                    <p>汽車碰撞測試假人在1950年代引入，數十年來這些模型都是基於男性的生理特徵設計的<br>
+                        即使研究人員控制了身高、體重、安全帶使用和撞擊強度等因素<br><br>•女性在車禍中受嚴重傷的可能性比男性高47%
+                        ，中度受傷的可能性高71%，<br><span class="point">死亡的可能性高達17%</span><br>
+                        <br>
+                        •女性消防員受傷的比率是男性的<span class="point">四倍</span><br>
+                        <br>
+                        •女性在軍隊中<span class="point">骨盆骨折</span>的比率遠高於男性</p>
+                    <p class="text-scene-ref custom-class">資料來源：<a href="https://www.plasticsengineering.org/2023/06/gender-bias-in-design-000036/">Gender Bias In Design</a></p>
+                    <button class="tell-button" onclick="goToScene('scene63_1_1')">下一篇▶</button>
+                </div>
+            </div>
         </div>
     </div>
+
+    <div id="scene63_1_1" class="scene scene63_1_1" style="display: none;">
+        <div class="center-container">
+            <div class="window">
+                <div class="titlebar">
+                    <div class="window-top">
+                        <div class="window-circle">
+                            <span class="red window-circle2"></span>
+                        </div>
+                        <div class="window-circle">
+                            <span class="yellow window-circle2"></span>
+                        </div>
+                        <div class="window-circle">
+                            <span class="green window-circle2"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="window-container">
+                    <h1>產品設計以男性為標準的例子</h1>
+                    <h3 class="t1">疫情期間女性前線醫護人員的PPE使用<br></h3>
+                    <p class="t1-1">
+                        在COVID-19疫情期間，只有<span class="point">14%的女性</span>醫護人員使用過合適的個人防護裝備（PPE）。<br>
+                    </p>
+                    <h3 class="t2">鋼琴鍵盤設計的不平等</h3>
+                    <p class="t2-1"> 
+                        <span class="point">87%的成年女性</span>鋼琴家和24%的成年男性鋼琴家手掌較小，他們在彈奏樂器時更容易感到疼痛和受傷。<br>
+                        相當多的高級鋼琴曲目對於這些人來說甚至是物理上不可能演奏的。<br>
+                    </p>
+                    <h3 class="t3">機器人設計中的性別刻板印象</h3>
+                    <p class="t3-1"> 
+                        當機器人被認為是男性時，它們會被以不同於女性機器人的方式對待和評判。<br>
+                        即使機器人沒有明確的性別，它們仍可能被解釋為男性或女性。<br>
+                        機器人的設計方式可能會無意中反映和<span class="point">加強性別刻板印象</span>。<br>
+                    </p>
+                    <h3 class="t4">語音識別技術中的性別偏見</h3>
+                    <p class="t4-1">
+                        語音識別軟體對女性語音的準確處理可能性較低，
+                        因為這些<span class="point">數據女性代表性不足</span>。<br>例如，Google的語音識別軟件顯著更有可能準確地轉錄男性語音。
+                    </p>
+                    <p class="text-scene-ref custom-class">資料來源：<a href="https://www.genderbias.design/examples_of_gender_bias">Examples of gender bias in products</a></p>
+                    <button class="tell-button" onclick="goToScene('scene63_1')">下一篇▶</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="scene63_1" class="scene scene63_1" style="display: none;">
         <div class="text-scene13_1">
             <h1>酷兒理論</h1>
@@ -2033,68 +2210,98 @@
                 當考慮到性別時，產品設計往往採用理想化的性別「使用者」模型<br>
                 人們還不太了解在設計過程中是如何建構性別偏見或性別中立性的</p>
             <p>「性別」通常不是在設計這些科技時明確考慮的因素</p>
-            <button class="tell-button" onclick="goToScene('scene64')">關閉▶</button>
-        </div>
-    </div>
-    <!-- 場景 12-->
-    <div id="scene64" class="scene scene64" style="display: none;">
-        <div class="text-scene12">
-            <h1>產品設計以男性為標準的例子</h1>
-            <h3>疫情期間女性前線醫護人員的PPE使用<br></h3>
-            <p>
-                在COVID-19疫情期間，只有14%的女性醫護人員使用過合適的個人防護裝備（PPE）。<br>
-            </p>
-            <h3>鋼琴鍵盤設計的不平等</h3>
-            <p> 
-                87%的成年女性鋼琴家和24%的成年男性鋼琴家手掌較小，他們在彈奏樂器時更容易感到疼痛和受傷。<br>
-                相當多的高級鋼琴曲目對於這些人來說甚至是物理上不可能演奏的。<br>
-            </p>
-            <h3>機器人設計中的性別刻板印象</h3>
-            <p> 
-                當機器人被認為是男性時，它們會被以不同於女性機器人的方式對待和評判。<br>
-                即使機器人沒有明確的性別，它們仍可能被解釋為男性或女性。<br>
-                機器人的設計方式可能會無意中反映和加強性別刻板印象。<br>
-            </p>
-            <h3>語音識別技術中的性別偏見</h3>
-            <p>
-                語音識別軟體對女性語音的準確處理可能性較低，<br>
-                因為這些程序的數據集中女性代表性不足。例如，Google的語音識別軟件顯著更有可能準確地轉錄男性語音。
-            </p>
-
-            <p class="text-scene-ref custom-class">資料來源：<a href="https://www.genderbias.design/examples_of_gender_bias">Examples of gender bias in products</a></p>
             <button class="tell-button" onclick="goToScene('scene65')">繼續▶</button>
         </div>
     </div>
+
     <div id="scene65" class="scene scene65" style="display: none;">
-        <div class="text-scene28">
-            <h1>辦公室溫度</h1>
-            <h2>辦公室溫度是否以男性為標準設定？</h2>
-            <p>
-                女性在典型的寒冷辦公室中的代謝率較低，<br>舒適溫度區間在約23.2°C至26.1°C之間。<br>
-                有大量非正式證據表明，女性比男性更容易感到寒冷<br><br><br>
-                將辦公室溫度從20°C提高到約25°C可以減少錯誤並提高打字任務的生產力。<br>
-                提高辦公室溫度不僅可以讓的工作人員感到舒適，還可以減少空調的使用，<br>
-                美國能源部估計每年約有1億噸二氧化碳排放是由於美國家庭使用空調所致。
-            </p>
-            <img src="boxplot.png">
-            <p class="text-scene-ref custom-class">資料來源：<a href="https://www.popsci.com/study-finds-gender-bias-office-air-conditioning/">Are Office Temperatures Optimized For Men?</a></p>
-            <button class="tell-button" onclick="goToScene('scene66')">下一篇▶</button>
+        <div class="center-container">
+            <div class="window">
+                <div class="titlebar">
+                    <div class="window-top">
+                        <div class="window-circle">
+                            <span class="red window-circle2"></span>
+                        </div>
+                        <div class="window-circle">
+                            <span class="yellow window-circle2"></span>
+                        </div>
+                        <div class="window-circle">
+                            <span class="green window-circle2"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="window-container">
+                    <h1>辦公室溫度</h1>
+                    <h2>辦公室溫度是否以男性為標準設定？</h2>
+                    <p>女性在典型的寒冷辦公室中的代謝率較低，<br>舒適溫度區間在約<span class="point">23.2°C至26.1°C</span> 之間。<br>
+                        有大量非正式證據表明，女性比男性更容易感到寒冷<br><br><br>
+                        將辦公室溫度從20°C<span class="point">提高到約25°C</span> 可以減少錯誤並提高打字任務的生產力。<br>
+                        提高辦公室溫度不僅可以讓的工作人員感到舒適，還可以減少空調的使用，<br>
+                        美國能源部估計每年約有<span class="point">1億噸二氧化碳排放</span> 是由於美國家庭使用空調所致。</p>
+                    <img src="boxplot.png">
+                    <p class="text-scene-ref custom-class">資料來源：<a href="https://www.popsci.com/study-finds-gender-bias-office-air-conditioning/">Are Office Temperatures Optimized For Men?</a></p>
+                    <button class="tell-button" onclick="goToScene('scene66')">下一篇▶</button>
+                </div>
+            </div>
         </div>
     </div>
     <!-- 場景 31-->
     <div id="scene66" class="scene scene66" style="display: none;">
-        <div class="text-scene31">
-            <h1>女性廁所排隊：性別不平等的日常提醒</h1>
-            <h2>女性使用廁所的時間，是男性的 2.3 倍。</h2>
-            <p>•大多的老人和行動不便者都是女性，而這兩個族群使用廁所的時間都較長。<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;➤婦女帶著小孩、陪伴老人和行動不便者的機率也較高。<br><br>
-                •女性中隨時有 20~25% 的正值月經來潮，必須定時更換生理用品。<br><br>
-                •女性使用廁所的頻繁度也超過男人：<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;➤懷孕期間膀胱容量會大幅減少<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;➤婦女發生泌尿道感染的機率是男人的 8 倍<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;➤生理期間沒有廁所供女性更換衛生棉條，感染鏈球菌毒性休克症候群的機率也會增加
-            </p>
-            <p class="text-scene-ref custom-class">資料來源：<a href="https://womany.net/read/article/24828">「女人已經習慣，上廁所免不了排隊」這件事有什麼問題？</a></p>
+        <div class="center-container">
+            <div class="window">
+                <div class="titlebar">
+                    <div class="window-top">
+                        <div class="window-circle">
+                            <span class="red window-circle2"></span>
+                        </div>
+                        <div class="window-circle">
+                            <span class="yellow window-circle2"></span>
+                        </div>
+                        <div class="window-circle">
+                            <span class="green window-circle2"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="window-container">
+                    <h1>女性廁所排隊：性別不平等的日常提醒</h1>
+                    <h2>女性使用廁所的時間，是男性的 2.3 倍。</h2>
+                    <p><span class="info-title">•大多的<span class="point"> 老人 </span>和<span class="point"> 行動不便者 </span> 都是女性，而這兩個族群使用廁所的時間都較長。</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;➤婦女帶著小孩、陪伴老人和行動不便者的機率也較高。<br><br>
+                        <span class="info-title">•女性中隨時有 <span class="point">20%~25% 的正值月經</span> 來潮，必須定時更換生理用品。</span><br><br>
+                        <span class="info-title">•女性使用廁所的頻繁度也超過男性：</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;➤懷孕期間膀胱容量會大幅減少<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;➤婦女發生<span class="point"> 泌尿道感染 </span>的機率是男人的<span class="point"> 8倍</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;➤生理期間沒有廁所供女性更換衛生棉條，感染<span class="point"> 鏈球菌毒性休克症候群 </span>的機率也會增加</p>
+                    <p class="text-scene-ref custom-class">資料來源：<a href="https://womany.net/read/article/24828">「女人已經習慣，上廁所免不了排隊」這件事有什麼問題？</a></p>
+                    <button class="tell-button" onclick="goToScene('scene66_1_1')">下一篇▶</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="scene66_1_1" class="scene scene66_1_1" style="display: none;">
+        <div class="text-scene13_1">
+            <h1>強化或挑戰社會建構的性別認同</h1>
+            <p class="highlight">模糊男性和女性產品之間的界線</p>
+            <p>設計師應該努力消除產品中男性氣概和女性氣質之間的區別。<br>
+                例如透過使用中性色彩、形狀、尺寸和介面來實現</p>
+            <p class="highlight">專注於所有使用者共同關心的特性</p>
+            <p>設計師可以創造出對所有性別都具有吸引力的產品。</p>
+            <p class="highlight">考慮產品的背景</p>
+            <p>產品的類型會影響設計師處理性別議題的方式。<br>
+                這是因為某些性別識別元素（如尺寸、顏色和曲線類型）<br>
+                對於不同類型的產品具有不同的優先順序。</p>
+            <button class="tell-button" onclick="goToScene('scene66_1_2')">繼續▶</button>
+        </div>
+    </div>
+    <div id="scene66_1_2" class="scene scene66_1_2" style="display: none;">
+        <div class="text-scene13_1">
+            <h1>促進科技領域性別的多元與包容性</h1>
+            <p class="highlight">增加對科技設計和使用性別影響的研究和理解</p>
+            <p>討論什麼構成性別中立或性別包容的設計／開發環境，<br>
+                包括考慮軟體工具以及數位或實體協作設計／開發環境中的設計偏見。</p>
+            <p class="highlight">思考如何在科技領域以及與科技生產相關的領域</p>
+            <p>包括電腦科學與工程，以及設計、設計研究和相關領域<br>
+                的設計過程中，增加細緻入微的性別觀點的代表性</p>
             <button class="tell-button" onclick="goToScene('scene66_1')">繼續▶</button>
         </div>
     </div>
@@ -2103,162 +2310,150 @@
             <h2>來<br>自<br>真<br>實<br>的<br>心<br>聲</h2>
         </div>
         <div class="card-container">
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <h3>服裝</h3>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="card-title">服裝</p>
                     </div>
-                    <div class="card-back">
+                    <div class="flip-card-back">
                         <p>雖然現狀有所改進，但仍然是一大困擾。<br>
                             T 恤不需要都是短版上衣。<br>
                             需要更多且更大的實用口袋。<br>
-                            否則我們需要更小的手機和錢包選擇。
-                        </p>
+                            否則我們需要更小的手機和錢包選擇。</p>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <h3>鞋子</h3>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="card-title">鞋子</p>
                     </div>
-                    <div class="card-back">
+                    <div class="flip-card-back">
                         <p>找到我們喜歡且合適尺寸的鞋款實在太難了<br>
-                            並不是所有女性的腳都是同樣大小。
-                        </p>
+                            並不是所有女性的腳都是同樣大小。</p>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <h3>運動服和設備</h3>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="card-title">運動服和設備</p>
                     </div>
-                    <div class="card-back">
+                    <div class="flip-card-back">
                         <p>運動服還是有太多裝飾或收腰的款式。<br>
                             還有希望運動設備也需要改進，<br>
-                            像是握把尺寸較小的網球拍和能夠適應更廣泛體型和身材的自行車裝備。
-                        </p>
+                            像是握把尺寸較小的網球拍和能夠適應更廣泛體型和身材的自行車裝備。</p>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <h3>產品包裝</h3>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="card-title">產品包裝</p>
                     </div>
-                    <div class="card-back">
+                    <div class="flip-card-back">
                         <p>不完全是女性專屬問題，但與許多女性相關。<br>
                             不應該需要像攀岩者一樣的握力才能打開一個罐頭。
-                            這個問題隨著年齡增長、握力減弱而變得更嚴重。
-                        </p>
+                            這個問題隨著年齡增長、握力減弱而變得更嚴重。</p>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <h3>其他工具</h3>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="card-title">其他工具</p>
                     </div>
-                    <div class="card-back">
+                    <div class="flip-card-back">
                         <p>我們很難找到為女性手部設計的合適工具，<br>
                             無論是尺寸還是單手操作所需的指力。<br>
-                            設計女用工具不應該只是縮小男用工具。
-                        </p>
+                            設計女用工具不應該只是縮小男用工具。</p>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <h3>婦科檢查器具</h3>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="card-title">婦科檢查器具</p>
                     </div>
-                    <div class="card-back">
+                    <div class="flip-card-back">
                         <p>鴨嘴的發明是一名男醫師，<br>
-                            有人說這是當代女性刑具。
-                        </p>
+                            有人說這是當代女性刑具。</p>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <h3>樂器</h3>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="card-title">樂器</p>
                     </div>
-                    <div class="card-back">
+                    <div class="flip-card-back">
                         <p>如薩克斯風和長號，<br>
                             對於手小或手臂較短的人來說更難演奏。
                             雖然重新設計可能會面臨影響音質的額外挑戰。
-                            但值得解決這個問題，不然這種情況會導致樂團分部的性別隔離持續存在。
-                        </p>
+                            但值得解決這個問題，不然這種情況會導致樂團分部的性別隔離持續存在。</p>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <h3>安全帶</h3>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="card-title">安全帶</p>
                     </div>
-                    <div class="card-back">
+                    <div class="flip-card-back">
                         <p>我們之前說過，並且會繼續說：<br>
                             汽車中的安全帶需要設計成保護所有人，<br>
-                            而不僅僅是「平均男性」。
-                        </p>
+                            而不僅僅是「平均男性」。</p>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <h3>傳統男性零售商</h3>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="card-title">傳統男性零售商</p>
                     </div>
-                    <div class="card-back">
+                    <div class="flip-card-back">
                         <p>五金行、汽車經銷商等等<br>
                             往往讓女性和非強勢男性感到疏離。<br>
                             進門就意識到自己進入「不屬於你」的區域，<br>
-                            並預期會受到不相應的對待。
-                        </p>
+                            並預期會受到不相應的對待。</p>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <h3>安全設備</h3>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="card-title">安全設備</p>
                     </div>
-                    <div class="card-back">
+                    <div class="flip-card-back">
                         <p>相關領域的女性通常很難找到合適的裝備，<br>
                             如果你需要降落傘、防彈衣、頭盔、呼吸器、再呼吸器或摩托車服，
                             選項非常有限，<br>
-                            這可能會導致額外的成本、時間損失或生產力降低以及增加的心理負擔。
-                        </p>
+                            這可能會導致額外的成本、時間損失或生產力降低以及增加的心理負擔。</p>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <h3>醫療服務</h3>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="card-title">醫療服務</p>
                     </div>
-                    <div class="card-back">
+                    <div class="flip-card-back">
                         <p>醫療服務確實需要重新設計以考慮女性需求。<br>
                             與男性相比女性更容易被誤診，<br>
                             其擔憂也更容易被醫療提供者忽視。<br>
-                            一項研究發現，女性因嚴重腹痛到急診室等待時間比同樣症狀的男性長33%。
-                        </p>
+                            一項研究發現，女性因嚴重腹痛到急診室等待時間比同樣症狀的男性長33%。</p>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <h3>AI</h3>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="card-title">AI</p>
                     </div>
-                    <div class="card-back">
+                    <div class="flip-card-back">
                         <p>自然語言處理中的詞嵌入有些過時的刻板印象<br>
                             例如一個AI系統可能推理<br>「男性是工程師，女性是家庭主婦」。<br>
-                            另一個例子中，系統對女性特別是深膚色女性的識別錯誤率過高。
-                        </p>
+                            另一個例子中，系統對女性特別是深膚色女性的識別錯誤率過高。</p>
                     </div>
                 </div>
             </div>
@@ -2271,93 +2466,89 @@
             <h2>設<br>計<br>更<br>好<br>女<br>性<br>產<br>品<br>的<br>七<br>種<br>方<br>法</h2>
         </div>
         <div class="card-container">
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <h3>為所有人設計</h3>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="card-title">為所有人設計</p>
                     </div>
-                    <div class="card-back">
+                    <div class="flip-card-back">
                         <p>不要為男性或女性設計，為所有人設計。<br>
-                            缺乏的是包容性設計，<br>即使是設計為性別中立的產品，<br>往往也是為男性設計的。
-                        </p>
+                            缺乏的是包容性設計，<br>即使是設計為性別中立的產品，<br>往往也是為男性設計的。</p>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <h3>辨別和質疑</h3>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="card-title">辨別和質疑</p>
                     </div>
-                    <div class="card-back">
-                        <p> 談到汽車，它們對女性來說不那麼安全，<br>
-                            美國安全法規長期以來<br>更偏向於使用男性假人進行測試。
-                        </p>
+                    <div class="flip-card-back">
+                        <p>談到汽車，它們對女性來說不那麼安全，<br>
+                            美國安全法規長期以來<br>更偏向於使用男性假人進行測試。</p>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <h3>考慮定製化</h3>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="card-title">考慮定製化</p>
                     </div>
-                    <div class="card-back">
+                    <div class="flip-card-back">
                         <p>定製化可以很好地解決為所有人設計的問題。<br>
                             對家庭使用的醫療產品進行了用戶研究，
                             發現多位女性對攜帶包都不滿意，
-                            因為它們醜陋或攜帶不便。
-                        </p>
+                            因為它們醜陋或攜帶不便。</p>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <h3>在工作場所踐行這些理念</h3>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="card-title">在工作場所踐行這些理念</p>
                     </div>
-                    <div class="card-back">
+                    <div class="flip-card-back">
                         <p>
                             多數男性組成的團隊可能會做出有利於男性用戶的決定。<br>這可能不是故意的，而是一種習慣。
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <h3>做研究，生成數據</h3>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="card-title">做研究，生成數據</p>
                     </div>
-                    <div class="card-back">
+                    <div class="flip-card-back">
                         <p>
                             數據最具有影響力，<br>進行用戶測試以支持你對產品應該如何設計和為誰設計的想法。
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <h3>女性不是一個整體</h3>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="card-title">女性不是一個整體</p>
                     </div>
-                    <div class="card-back">
+                    <div class="flip-card-back">
                         <p>
                             女性中有些人喜歡粉紅色，有些人不喜歡。<br>有些人喜歡花卉圖案，有些人不喜歡。
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <h3>評估你的行業</h3>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="card-title">評估你的行業</p>
                     </div>
-                    <div class="card-back">
+                    <div class="flip-card-back">
                         <p>
                             一些行業在為女性產品方面比其他更成熟。<br>像是運動服裝行業比大多數行業更好
                         </p>
                     </div>
                 </div>
             </div>
-
         </div>
         <button class="ref-button" onclick="goToScene('scene46')">選單</button>
     </div>

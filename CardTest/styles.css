@@ -1,0 +1,78 @@
+.window {
+    width: 1000px;
+    height: 670px;
+    background: #e4c4d1;
+    border: 1px solid #888287;
+    font-size: 14px;
+    font-family: monospace;
+    overflow: auto;
+    position: absolute;
+    top: 15%;
+    right: 22%;
+  }
+
+  .titlebar {
+    font-family: monospace;
+    font-size: 21px;
+    font-weight: 450;
+    background-color: #d3b6c7;
+    border: 1px solid #585056;
+    width: 100%;
+    text-align: right;
+  }
+  .window-top {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+  .window-circle {
+    padding: 0 4px;
+  }
+  .window-circle2 {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 5px;
+  }
+.red {
+    background-color: #ff605c;
+  }
+  
+  .yellow {
+    background-color: #ffbd44;
+  }
+  
+  .green {
+    background-color: #00ca4e;
+  }
+  .window-container {
+    text-align: center;
+  }
+  .window-container h1 {
+    position:absolute;
+    font-size: 17px;
+    margin-bottom: 5px;
+    top: -8px;
+    left: 14%;
+    color: #524747;
+}
+  .window-container h2 {
+    position:absolute;
+    top: 5%;
+    font-size: 36px;
+    color: #ff69b4; 
+    margin-bottom: 1em;
+    left: 3%;
+}
+.window-container  p {
+    position:absolute;
+    top: 27%;
+    left: 3%;
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.6;
+    text-align: left;
+    
+}
