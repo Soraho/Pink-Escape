@@ -18,6 +18,16 @@ function goToScene(sceneId) {
         scenes[i].style.display = 'none';
     }
     document.getElementById(sceneId).style.display = 'flex';
+    
+    if (sceneId === 'scene8' || sceneId === 'scene9' || sceneId === 'scene10'|| sceneId === 'scene11'|| sceneId === 'scene12'||
+    sceneId === 'scene28' || sceneId === 'scene31'|| sceneId === 'scene60'|| sceneId === 'scene61'|| sceneId === 'scene62'|| 
+    sceneId === 'scene63'|| sceneId === 'scene63_1_1'|| sceneId === 'scene65'|| sceneId === 'scene66'
+    ) {
+        targetScene.classList.add('scene-slide-in');
+        setTimeout(function() {
+            targetScene.classList.remove('scene-slide-in');
+        }, 1000); 1
+    }
 
     if (sceneId === 'scene7_1') {
         setTimeout(function() {

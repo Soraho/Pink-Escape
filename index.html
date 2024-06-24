@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     
 </head>
@@ -23,7 +26,7 @@
             <img src="tittle.PNG" alt="Game Title" class="title">
             <img src="coveritem.png" alt="Game Title" class="cover-item">
             <button class="start-button" onclick="startGame()">開始遊戲</button>
-            <p>※為了最佳遊戲體驗<br>&nbsp;&nbsp;請使用電腦全螢幕（1920px*2080px），以及開啟音量</p>
+            <p>※為了最佳遊戲體驗<br>&nbsp;&nbsp;請使用電腦全螢幕（1920px*1080px），以及開啟音量</p>
         </div>
         
         <!-- 故事場景一 -->
@@ -151,9 +154,9 @@
         </div>
 
         <!-- 場景 8-->
-        <div id="scene8" class="scene scene8" style="display: none;">
+        <div id="scene8" class="scene scene8 " style="display: none;">
             <div class="center-container">
-                <div class="window">
+                <div class="window scene-slide-in">
                     <div class="titlebar">
                         <div class="window-top">
                             <div class="window-circle">
@@ -191,9 +194,9 @@
 
 
         <!-- 場景 9-->
-        <div id="scene9" class="scene scene9" style="display: none;">
+        <div id="scene9" class="scene scene9 " style="display: none;">
             <div class="center-container">
-                <div class="window">
+                <div class="window scene-slide-in">
                     <div class="titlebar">
                         <div class="window-top">
                             <div class="window-circle">
@@ -230,7 +233,7 @@
         <!-- 場景 10-->
         <div id="scene10" class="scene scene10" style="display: none;">
             <div class="center-container">
-                <div class="window">
+                <div class="window scene-slide-in">
                     <div class="titlebar">
                         <div class="window-top">
                             <div class="window-circle">
@@ -270,9 +273,9 @@
         </div>
 
         <!-- 場景 11-->
-        <div id="scene11" class="scene scene11" style="display: none;">
-            <div class="center-container">
-                <div class="window">
+        <div id="scene11" class="scene scene11 " style="display: none;">
+            <div class="center-container ">
+                <div class="window scene-slide-in">
                     <div class="titlebar">
                         <div class="window-top">
                             <div class="window-circle">
@@ -318,9 +321,9 @@
             </div> -->
         </div>
         <!-- 場景 12-->
-        <div id="scene12" class="scene scene12" style="display: none;">
+        <div id="scene12" class="scene scene12 " style="display: none;">
             <div class="center-container">
-                <div class="window">
+                <div class="window scene-slide-in">
                     <div class="titlebar">
                         <div class="window-top">
                             <div class="window-circle">
@@ -563,7 +566,7 @@
         <!-- 場景 28-->
         <div id="scene28" class="scene scene28" style="display: none;">
             <div class="center-container">
-                <div class="window">
+                <div class="window scene-slide-in">
                     <div class="titlebar">
                         <div class="window-top">
                             <div class="window-circle">
@@ -608,7 +611,7 @@
         </div>
         <!-- 場景 31-->
         <div id="scene31" class="scene scene31" style="display: none;">
-            <div class="center-container">
+            <div class="center-container scene-slide-in">
                 <div class="window">
                     <div class="titlebar">
                         <div class="window-top">
@@ -1259,7 +1262,7 @@
             <div class="dialog-box">
                 <img src="tell.png" alt="Dialog Box" class="dialog">
                 <p class="dialog-name">同事們</p>
-                <p class="dialog-text">你的資料非常有力，那我們就朝著個方向研發新產品，並且請你當負責人。</p>
+                <p class="dialog-text">你的資料非常有力，那我們就朝著這個方向研發新產品，並且請你當負責人。</p>
                 <button class="tell-button" onclick="goToScene('scene40')">繼續▶</button>
                 <img src="people.png" alt="Main Character" class="character">
             </div>
@@ -1918,10 +1921,10 @@
                     <p>不擅長畫畫，只是喜歡畫畫，高中上課都在課本亂塗<br>
                     不擅長寫程式，只是剛好讀資工（而且數學太差了頭很痛）<br>
                     不擅長想劇本，只是一個天馬行空的人，偶爾喜歡寫散文</p>
-                    <p>會製作這次遊戲的動機是因為2023年夏天在日本實習，參加和當地20代的交流會，我分配到的題目是「Ｇender gap」，
-                    拿到題目時不知道該怎麼用日文和其他人討論，於是找了非常多資料，但結果在和日本人討論時，
+                    <p>會製作這次遊戲的動機是因為2023年夏天在日本實習，參加和當地20代的交流會，我分配到的題目是SDGs下的「Ｇender gap」，
+                    拿到題目時不知道該怎麼用日文和其他人討論，於是找了非常多資料，結果過程中
                     因為一些因素，無法很順利的討論和分享。<br>
-                    從那次之後我就一直對於我想表達的話無從說出口很可惜，所以想透過這次遊戲的方式來讓大家認識到女性權益的問題。
+                    從那次之後我就一直對於我想表達的話無從說出口感到可惜，所以想透過這次遊戲的方式來讓大家認識到女性權益的問題。
                 </p>
                 <p>（※小提示一下遊戲有好幾個支線和結局，歡迎大家探索看看喔！）</p>
 
@@ -1976,6 +1979,11 @@
                     <p><a href="https://womany.net/read/article/24828" target="_blank">「女人已經習慣，上廁所免不了排隊」這件事有什麼問題？</a>
                     </p>
                 </div>
+                <div class="reference">
+                    <p><a href="https://freetouse.com/music/lukrembo/branch" target="_blank">背景音樂：Lukrembo - Branch</a>
+                    </p>
+                </div>
+                
             </div>
             <button class="ref-button" onclick="goToScene('scene46')">選單</button>
 
@@ -1984,7 +1992,7 @@
         
        <!-- 場景 60-->
        <div id="scene60" class="scene scene60" style="display: none;">
-        <div class="center-container">
+        <div class="center-container scene-slide-in">
             <div class="window">
                 <div class="titlebar">
                     <div class="window-top">
@@ -2015,8 +2023,8 @@
 
     <!-- 場景 9-->
     <div id="scene61" class="scene scene61" style="display: none;">
-        <div class="center-container">
-            <div class="window">
+        <div class="center-container ">
+            <div class="window scene-slide-in">
                 <div class="titlebar">
                     <div class="window-top">
                         <div class="window-circle">
@@ -2045,7 +2053,7 @@
     <!-- 場景 10-->
     <div id="scene62" class="scene scene62" style="display: none;">
         <div class="center-container">
-            <div class="window">
+            <div class="window scene-slide-in">
                 <div class="titlebar">
                     <div class="window-top">
                         <div class="window-circle">
@@ -2076,7 +2084,7 @@
     <!-- 場景 11-->
     <div id="scene63" class="scene scene63" style="display: none;">
         <div class="center-container">
-            <div class="window">
+            <div class="window scene-slide-in">
                 <div class="titlebar">
                     <div class="window-top">
                         <div class="window-circle">
@@ -2109,7 +2117,7 @@
 
     <div id="scene63_1_1" class="scene scene63_1_1" style="display: none;">
         <div class="center-container">
-            <div class="window">
+            <div class="window scene-slide-in">
                 <div class="titlebar">
                     <div class="window-top">
                         <div class="window-circle">
@@ -2216,7 +2224,7 @@
 
     <div id="scene65" class="scene scene65" style="display: none;">
         <div class="center-container">
-            <div class="window">
+            <div class="window scene-slide-in">
                 <div class="titlebar">
                     <div class="window-top">
                         <div class="window-circle">
@@ -2248,7 +2256,7 @@
     <!-- 場景 31-->
     <div id="scene66" class="scene scene66" style="display: none;">
         <div class="center-container">
-            <div class="window">
+            <div class="window scene-slide-in">
                 <div class="titlebar">
                     <div class="window-top">
                         <div class="window-circle">

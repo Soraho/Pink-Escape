@@ -2005,6 +2005,7 @@ body.fade-out {
   
 
 .scene46 {
+    font-family: "Microsoft JhengHei", sans-serif;
     text-align: center;
     padding-top: 20px;
     background-color: #efe5ea;
@@ -2188,6 +2189,7 @@ body.fade-out {
 }
 
 .auth-title {
+    font-family: "Noto Serif TC", serif;
     position: absolute;
     top: 5%;
     font-size: 2.5em;
@@ -2209,6 +2211,7 @@ body.fade-out {
 
 
 .about-text p {
+    font-family: "Noto Serif TC", serif;
     font-size: 1.2em;
     color: #333;
     margin-bottom: 15px;
@@ -2373,3 +2376,19 @@ body.fade-out {
     font-weight: bold;
 }
 
+@keyframes slideInRightZoom {
+    0% {
+        transform: translateX(100%) scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+}
+
+.scene-slide-in {
+    animation: slideInRightZoom 1s ease-in-out;
+    overflow: hidden;
+
+}
