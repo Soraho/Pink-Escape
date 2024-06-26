@@ -1929,8 +1929,8 @@ body.fade-out {
     margin: 0;
     color: #c191a7;
     text-shadow:
-    -1px -1px 0 #827070,
-    1px 1px 0 #ffffff,
+    -1px -1px 0 #fff,
+    1px 1px 0 #827070,
     2px 2px 0 #a17979,
     3px 3px 0 #a17979;
   }
@@ -1963,6 +1963,9 @@ body.fade-out {
   }
   
   .flip-card-front {
+    background-image: url(Cardbg2.png);
+    background-position: center; 
+    background-size: cover; 
     background-color: #e1d5d8;
   }
   
