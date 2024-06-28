@@ -114,7 +114,7 @@ function goToScene(sceneId) {
         setTimeout(function() {
             document.querySelector('.dialog-text').style.display = 'inline-block';
         }, 1000); // 延遲1秒後顯示對話框
-    }, 1000); // 延遲1秒後移除fade-out效果
+    }, 1000); 
 
 
 }
@@ -122,7 +122,6 @@ window.addEventListener('load', function() {
     var audio = document.getElementById('background-music');
     audio.play().catch(function(error) {
         console.log('Playback error:', error);
-        // Optionally, handle the error, e.g., show a play button to the user
     });
 });
 

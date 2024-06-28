@@ -1809,7 +1809,7 @@ body.fade-out {
     align-items: center;
     border-radius: 5px; 
     z-index: 2;
-    animation: blink-animation 1.5s steps(5, start) infinite; /* 閃爍效果 */
+    animation: blink-animation 1.5s steps(5, start) infinite; 
 
 }
 @media screen and (min-width:400px) and (max-width:1200px){
