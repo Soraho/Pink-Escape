@@ -1973,13 +1973,16 @@ body.fade-out {
     background-color: #e1d5d8;
     transform: rotateY(180deg);
   }
+
   .flip-card-back p{
     padding: 2px;
     margin: 2px;
+    font-size: 16px;
     font-weight: bolder;
     background-color: #b3939a;
     color: #efebeb;
   }
+
 .card-button {
     font-family: "DotGothic16", Arial, sans-serif;
     color: white;
@@ -1994,7 +1997,11 @@ body.fade-out {
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
   }
-  
+
+.blur {
+    filter: blur(7px);
+    transition: filter 0.3s ease;
+}
   .card-button:hover {
     background-color: #986f84;
     transform: scale(1.1);
@@ -2168,16 +2175,18 @@ body.fade-out {
       } 
 }
   
-  .ref-button:hover {
+.ref-button:hover {
     background-color: #986f84;
     transform: scale(1.1);
-  }
-  
-  .ref-button span {
-    color: white;
-    font-size: 18px;
-    font-family: "DotGothic16", Arial, sans-serif;
-  }
+}
+
+
+
+.ref-button span {
+color: white;
+font-size: 18px;
+font-family: "DotGothic16", Arial, sans-serif;
+}
 
   .scene80 {
     display: flex;

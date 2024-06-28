@@ -145,6 +145,33 @@ document.addEventListener('mousedown', function(event) {
     }, 3000);
 });
 
+let hoverTimer;
+
+function addBlurEffect() {
+    const cards = document.querySelectorAll('.flip-card');
+    cards.forEach(card => {
+        card.addEventListener('mouseover', function() {
+            hoverTimer = setTimeout(() => {
+                cards.forEach(otherCard => {
+                    if (otherCard !== card) {
+                        otherCard.classList.add('blur');
+                    }
+                });
+            }, 300); 
+        });
+
+        card.addEventListener('mouseout', function() {
+            clearTimeout(hoverTimer);
+            cards.forEach(otherCard => {
+                otherCard.classList.remove('blur');
+            });
+        });
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    addBlurEffect();
+});
 
 
 
