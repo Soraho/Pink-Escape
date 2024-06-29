@@ -199,7 +199,7 @@ body.fade-out {
     align-items: center;
     line-height: 75px;
     text-shadow: 0 0 10px rgba(255, 246, 119, 0.815);
-}
+    z-index: 5;}
 
 .start-button::before {
     content: '❤';
