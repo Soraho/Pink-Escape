@@ -324,10 +324,10 @@ body.fade-out {
     width: 45%;
     height: auto;
 }
-@media screen and (min-width: 3000px), print {
+@media screen and (min-width: 2500px), print {
     .character {
         position: absolute;
-        bottom: -100px;
+        bottom: 10%;
         left: 550px;
         width: 35%;
         height: auto; 
@@ -349,13 +349,13 @@ body.fade-out {
     z-index: 1; 
     filter: drop-shadow(0 0 5px rgba(0,0,0,0.2)); 
 }
-@media screen and (min-width: 3000px), print {
+@media screen and (min-width: 2500px), print {
     .dialog {
         position: fixed;
         font-family: "DotGothic16",Arial, sans-serif;
         width: 80%;
         height: auto;
-        top: 300px;
+        top: 400px;
         left: 10%;
         margin-left: -20px; 
         z-index: 1; 
@@ -376,10 +376,10 @@ body.fade-out {
     white-space: nowrap; 
     animation: typing 3s steps(40) forwards;
 }
-@media screen and (min-width: 3000px), print {
+@media screen and (min-width: 2500px), print {
     .dialog-name {
         position: absolute;
-        top: 690px;
+        top: 59%;
         left: 33%;
         transform: translate(-50%, -50%);
         font-size: 36px;
@@ -484,12 +484,12 @@ body.fade-out {
         z-index: 2;
     }
 }
-@media screen and (min-width: 3000px), print {
+@media screen and (min-width: 2500px), print {
     .tell-button {
         font-family: "DotGothic16", Arial, sans-serif; 
         position:absolute;
         right: 820px;
-        bottom: 90px;
+        bottom: 27%;
         padding: 0;
         margin: 10px;
         width: 120px;
@@ -582,12 +582,12 @@ body.fade-out {
         z-index: 2;
     }
 }
-@media screen and (min-width: 3000px), print {
+@media screen and (min-width: 2500px), print {
     .option-button {
         font-family: "DotGothic16", Arial, sans-serif; 
         position:absolute;
         right: 820px;
-        bottom: 100px;
+        bottom: 25%;
         padding: 0;
         margin: 10px;
         width: 120px;
@@ -655,12 +655,12 @@ body.fade-out {
         z-index: 2;
     }
 }
-@media screen and (min-width: 3000px), print {
+@media screen and (min-width: 2500px), print {
     .option2-button {
         font-family: "DotGothic16", Arial, sans-serif; 
         position:absolute;
         right: 820px;
-        bottom: 140px;
+        bottom: 30%;
         padding: 0;
         margin: 10px;
         width: 120px;
