@@ -199,7 +199,8 @@ body.fade-out {
     align-items: center;
     line-height: 75px;
     text-shadow: 0 0 10px rgba(255, 246, 119, 0.815);
-    z-index: 5;}
+    z-index: 5;
+}
 
 .start-button::before {
     content: '❤';
@@ -1372,6 +1373,7 @@ body.fade-out {
     cursor: pointer;
     animation: blink-animation 1.5s steps(5, start) infinite;
     margin-top: 10px;
+    z-index: 5;
 }
 
 @keyframes blink-animation {
@@ -1630,6 +1632,7 @@ body.fade-out {
     font-weight: bold;
     cursor: pointer;
     animation: blink-animation 1.5s steps(5, start) infinite; 
+    z-index: 5;
 }
 
 @keyframes blink-animation {
@@ -1995,6 +1998,7 @@ body.fade-out {
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    z-index: 5;
     transition: background-color 0.3s, transform 0.3s;
   }
 
@@ -2054,6 +2058,7 @@ body.fade-out {
     cursor: pointer;
     border-radius: 10px;
     transition-duration: 0.4s;
+    z-index: 5;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -2155,6 +2160,7 @@ body.fade-out {
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    z-index: 5;
     transition: background-color 0.3s, transform 0.3s;
   }
   @media screen and (min-width:400px) and (max-width:1200px){
